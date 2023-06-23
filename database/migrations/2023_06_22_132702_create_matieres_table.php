@@ -15,7 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->integer('note');
+            $table->bigInteger('id_decoupage');
             $table->timestamps();
+            $table->foreign('id_decoupage')->references('id')->on('decoupages')->onDelete('cascade');
         });
     }
 
