@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('admis', function (Blueprint $table) {
             $table->id();
             $table->date('date_rentree');
+            $table->bigInteger('id_dossier');
             $table->timestamps();
+            $table->foreign('id_dossier')->references('id')->on('dossiers')->onDelete('cascade');
         });
     }
 

@@ -17,8 +17,8 @@ return new class extends Migration
             $table->bigInteger('id_niveau');
             $table->bigInteger('id_bulletin');
             $table->timestamps();
-            $table->foreign('id_niveau')->references('id')->on('niveaus');
-            $table->foreign('id_bulletin')->references('id')->on('bulletins');
+            $table->foreign('id_niveau')->references('id')->on('niveaus')->onDelete('cascade');
+            $table->foreign('id_bulletin')->references('id')->on('bulletins')->onDelete('cascade');
         });
     }
 
