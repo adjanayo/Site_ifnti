@@ -13,33 +13,18 @@
          <div class="section-title text-center">
                 <h3>Conseil d'administration</h3>
             </div>
-        <div class="row">
-
-        {{-- ligne --}}
+        <div class="row">        {{-- ligne --}}
 
 {{-- ------------------------------------------------------------------ --}}
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="our-team">
                         <div class="team-img">
-                            <img src="{{ asset('vitrine/images/img/jcc.png') }}" />
+                            <img src="{{ asset('vitrine/images/img/fondateur1.png') }}" />
                             {{--  --}}
                         </div>
                         <div class="team-content">
-                            <h3 class="title">Jean-Christophe CARRE</h3>
-                            <span class="post">Enseignant de programmation</span>
-                        </div>
-                    </div>
-                </div>
-{{-- ------------------------------------------------------------------ --}}
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="our-team">
-                        <div class="team-img">
-                            <img src="{{ asset('vitrine/images/img/willy.png') }}" />
-                            {{--  --}}
-                        </div>
-                        <div class="team-content">
-                            <h3 class="title">Willy Aubry</h3>
-                            <span class="post">Enseignant en réseaux et programmation</span>
+                            <h3 class="title">TEOURI Sabirou</h3>
+                            <span class="post">Directeur des études à IFNTI</span>
                         </div>
                     </div>
                 </div>
@@ -52,7 +37,7 @@
                         </div>
                         <div class="team-content">
                             <h3 class="title">Bekoumouda HEGRA</h3>
-                            <span class="post">Responsable administratif</span>
+                            <span class="post">Responsable administratif et Professeur de comptabilité</span>
                         </div>
                     </div>
                 </div>
@@ -70,20 +55,276 @@
                     </div>
                 </div>
 
+{{-- ------------------------------------------------------------------ --}}
+<div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/abdel.png') }}" />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Abdel ADOYI</h3>
+                            <span class="post">Responsable administratif </span>
+                        </div>
+                    </div>
+                </div>
+</div>
+{{-- ------------------------------------------------------------------ --}}
+
         {{-- ligne --}}
 {{-- ------------------------------------------------------------------ --}}
-    {{-- ligne --}}
+<div class="section-title text-center">
+                <h3>Conseil scientifique et pédagogique</h3>
+            </div>
+        {{-- ligne --}}
+{{-- ------------------------------------------------------------------ --}}
+<div class = "row">
+<div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}"  />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Manaar Alissera</h3>
+                            <span class="post">Professeur en gestion de projets et administration de système d'exploitation </span>
+                        </div>
+                    </div>
+                </div>
+{{-- ------------------------------------------------------------------ --}}
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Koumoi </h3>
+                            <span class="post">Professeur en programmation web</span>
+                        </div>
+                    </div>
+                </div>
+{{-- ------------------------------------------------------------------ --}}
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                            {{--  --}}
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Kabossa</h3>
+                            <span class="post">Professeur en mathématiques</span>
+                        </div>
+                    </div>
+                </div>
+{{-- ------------------------------------------------------------------ --}}
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Sema</h3>
+                            <span class="post">Professeur en théorie des ensemble</span>
+                        </div>
+                    </div>
+                </div>
+
+        {{-- ligne --}}
+{{-- ------------------------------------------------------------------ --}}
+
+        {{-- ligne --}}
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/jcc.png') }}" />
+                            {{--  --}}
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Jean-Christophe CARRE</h3>
+                            <span class="post">Enseignant de programmation</span>
+                        </div>
+                    </div>
+                </div>
+{{-- ------------------------------------------------------------------ --}}
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/willy.png') }}" />
+                            {{--  --}}
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Willy Aubry</h3>
+                            <span class="post">Enseignant en réseaux et programmation</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+{{-- ------------------------------------------------------------------ --}}
 
 
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="our-team">
                         <div class="team-img">
-                            <img src="{{ asset('vitrine/images/img/vincent.jpg') }}" />
+                            <img src="{{ asset('vitrine/images/img/vincent1.jpg') }}" />
                             {{--  --}}
                         </div>
                         <div class="team-content">
                             <h3 class="title">Vincent Clément</h3>
-                            <span class="post">Enseignatn réseaux et programmation</span>
+                            <span class="post">Professeur réseaux et programmation</span>
+                        </div>
+                    </div>
+                </div>
+{{-- ------------------------------------------------------------------ --}}
+
+<div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/decq.png') }}" />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">François DECQ </h3>
+                            <span class="post">Professeur en programmation</span>
+                        </div>
+                    </div>
+                </div>
+
+        {{-- ligne --}}
+
+{{-- ------------------------------------------------------------------ --}}
+
+        {{-- ligne --}}
+
+{{-- ------------------------------------------------ --}}
+
+
+
+<div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">ICHAOU Sam </h3>
+                            <span class="post">Professeur en infographie et informatique embarqué</span>
+                        </div>
+                    </div>
+                </div>
+
+
+{{-- ------------------------------------------------------------------ --}}
+
+
+<div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Dogouna </h3>
+                            <span class="post">Professeur en Droits et responsablités sociales</span>
+                        </div>
+                    </div>
+                </div>
+        {{-- ligne --}}</div>
+{{-- ------------------------------------------------------------------ --}}
+<div class="section-title text-center">
+                <h3>Professeurs vacataires</h3>
+            </div>
+        {{-- ligne --}}
+        <div class="row">
+        {{-- ------------------------------------------------------------------ --}}
+
+<div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}"  />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">KONDI Malik</h3>
+                            <span class="post">Professeur en programmation </span>
+                        </div>
+                    </div>
+                </div>
+{{-- ------------------------------------------------------------------ --}}
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">TEOURI Toure-Ydaou </h3>
+                            <span class="post">Professeur en programmation </span>
+                        </div>
+                    </div>
+                </div>
+{{-- ------------------------------------------------------------------ --}}
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                            {{--  --}}
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">KPABOU Isidore</h3>
+                            <span class="post">Professeur en bases de données et programmation </span>
+                        </div>
+                    </div>
+                </div>
+{{-- ------------------------------------------------------------------ --}}
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">TEOURI Samrou</h3>
+                            <span class="post">Professeur en bases de données et programmation </span>
+                        </div>
+                    </div>
+                </div>
+
+        {{-- ligne --}}
+{{-- ------------------------------------------------------------------ --}}
+
+        {{-- ligne --}}
+{{-- ------------------------------------------------------------------ --}}
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                            {{--  --}}
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">AMONA Biréwa Audrey </h3>
+                            <span class="post">Professeur en bases de données et programmation </span>
+                        </div>
+                    </div>
+                </div>
+{{-- ------------------------------------------------------------------ --}}
+<div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}"  />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">EKLOU Kokou Fidèle</h3>
+                            <span class="post">Professeur en programmation </span>
+                        </div>
+                    </div>
+                </div>
+{{-- ------------------------------------------------------------------ --}}
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">LANGOE Fahouzia </h3>
+                            <span class="post">Professeur en bases de données et programmation </span>
                         </div>
                     </div>
                 </div>
@@ -96,94 +337,21 @@
                             <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
                         </div>
                         <div class="team-content">
-                            <h3 class="title">Vincent Clément</h3>
-                            <span class="post">Enseignatn réseaux et programmation</span>
-                        </div>
-                    </div>
-                </div>
-{{-- ------------------------------------------------ --}}
-<div class="col-lg-3 col-md-6 col-12">
-                    <div class="our-team">
-                        <div class="team-img">
-                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
-                        </div>
-                        <div class="team-content">
-                            <h3 class="title">Vincent Clément</h3>
-                            <span class="post">Enseignatn réseaux et programmation</span>
-                        </div>
-                    </div>
-                </div>
-{{-- ------------------------------------------------ --}}
-<div class="col-lg-3 col-md-6 col-12">
-                    <div class="our-team">
-                        <div class="team-img">
-                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
-                        </div>
-                        <div class="team-content">
-                            <h3 class="title">Vincent Clément</h3>
-                            <span class="post">Enseignatn réseaux et programmation</span>
+                            <h3 class="title">KOUTEMA DITOMA</h3>
+                            <span class="post">Professeur en devellopement web</span>
                         </div>
                     </div>
                 </div>
 
-{{-- ------------------------------------------------ --}}
-{{-- ligne --}}
-    {{-- ligne --}}
-
-
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="our-team">
-                        <div class="team-img">
-                            <img src="{{ asset('vitrine/images/img/vincent.jpg') }}" />
-                            {{--  --}}
-                        </div>
-                        <div class="team-content">
-                            <h3 class="title">Vincent Clément</h3>
-                            <span class="post">Enseignatn réseaux et programmation</span>
-                        </div>
-                    </div>
-                </div>
+        {{-- ligne --}}
+        </div>
 {{-- ------------------------------------------------------------------ --}}
 
+        {{-- ligne --}}
 
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="our-team">
-                        <div class="team-img">
-                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
-                        </div>
-                        <div class="team-content">
-                            <h3 class="title">Vincent Clément</h3>
-                            <span class="post">Enseignatn réseaux et programmation</span>
-                        </div>
-                    </div>
-                </div>
-{{-- ------------------------------------------------ --}}
-<div class="col-lg-3 col-md-6 col-12">
-                    <div class="our-team">
-                        <div class="team-img">
-                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
-                        </div>
-                        <div class="team-content">
-                            <h3 class="title">Vincent Clément</h3>
-                            <span class="post">Enseignatn réseaux et programmation</span>
-                        </div>
-                    </div>
-                </div>
-{{-- ------------------------------------------------ --}}
-<div class="col-lg-3 col-md-6 col-12">
-                    <div class="our-team">
-                        <div class="team-img">
-                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
-                        </div>
-                        <div class="team-content">
-                            <h3 class="title">Vincent Clément</h3>
-                            <span class="post">Enseignatn réseaux et programmation</span>
-                        </div>
-                    </div>
-                </div>
 
-{{-- ------------------------------------------------ --}}
-{{-- ligne --}}
+
+
 </div>
         </div>
     </div>

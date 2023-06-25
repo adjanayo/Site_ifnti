@@ -2,7 +2,7 @@
 @section('content')
     <div class="all-title-box">
         <div class="container text-center">
-            <h1>IFNTI<span class="m_1">Institut de Formation aux Normes et Technologies de l'informatique</span></h1>
+            <h1>Formation<span class="m_1">Institut de Formation aux Normes et Technologies de l'informatique</span></h1>
         </div>
     </div>
 

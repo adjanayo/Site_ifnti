@@ -14,9 +14,9 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item {{ Route::currentRouteName() === 'accueil' ? 'active' : '' }}"><a
                             class="nav-link" href="{{ route('accueil') }}">Accueil</a></li>
-                    <li class="nav-item dropdown {{ Route::currentRouteName() === 'ifnti' ? 'active' : '' }}">
-                        <a class="nav-link dropdown-toggle"
-                            href="{{ Route::currentRouteName() === 'ifnti' ? 'active' : '' }}" id="dropdown-a"
+                    <li class="nav-item dropdown  {{ Str::startsWith(Route::currentRouteName(), 'ifnti') ? 'active' : '' }}">
+                        <a class="nav-link dropdown-toggle "
+                             id="dropdown-a"
                             data-toggle="dropdown">IFNTI </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-a">
                             <a class="dropdown-item" href="{{ route('ifnti.presentation') }}">Présentation </a>
