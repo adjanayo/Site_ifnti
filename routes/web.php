@@ -24,6 +24,9 @@ Route::get('/contact', function () {
 })->name('contact');
 Route::prefix("ifnti/")->name("ifnti.")->group(
     function () {
+        Route::get('', function () {
+            return view('vitrine.pages.ifnti.index');
+        })->name('ifnti');
         Route::get('a_propos', function () {
             return view('vitrine.pages.ifnti.about');
         })->name('presentation');
@@ -37,6 +40,9 @@ Route::prefix("ifnti/")->name("ifnti.")->group(
 );
 Route::prefix("admission/")->name("admission.")->group(
     function () {
+        Route::get('', function () {
+            return view('vitrine.pages.admission.index');
+        })->name('frais');
         Route::get('frais', function () {
             return view('vitrine.pages.admission.frais');
         })->name('frais');
@@ -47,6 +53,9 @@ Route::prefix("admission/")->name("admission.")->group(
 );
 Route::prefix("formation/")->name("formation.")->group(
     function () {
+        Route::get('', function () {
+            return view('vitrine.pages.formation.index');
+        })->name('cours-bd');
         Route::get('base_de_deonne', function () {
             return view('vitrine.pages.formation.bd');
         })->name('cours-bd');
@@ -67,5 +76,3 @@ Route::prefix("formation/")->name("formation.")->group(
         })->name('general');
     }
 );
-
-

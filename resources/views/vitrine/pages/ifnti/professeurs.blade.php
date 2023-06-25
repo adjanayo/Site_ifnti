@@ -10,19 +10,19 @@
 
     <div id="teachers" class="section wb">
         <div class="container">
-            <div class="row">
+         <div class="section-title text-center">
+                <h3>Conseil d'administration</h3>
+            </div>
+        <div class="row">
+
+        {{-- ligne --}}
+
+{{-- ------------------------------------------------------------------ --}}
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="our-team">
                         <div class="team-img">
                             <img src="{{ asset('vitrine/images/img/jcc.png') }}" />
-                            <div class="social">
-                                <ul>
-                                    <li><a href="#" class="fa fa-facebook"></a></li>
-                                    <li><a href="#" class="fa fa-twitter"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin"></a></li>
-                                    <li><a href="#" class="fa fa-skype"></a></li>
-                                </ul>
-                            </div>
+                            {{--  --}}
                         </div>
                         <div class="team-content">
                             <h3 class="title">Jean-Christophe CARRE</h3>
@@ -30,19 +30,12 @@
                         </div>
                     </div>
                 </div>
-
+{{-- ------------------------------------------------------------------ --}}
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="our-team">
                         <div class="team-img">
                             <img src="{{ asset('vitrine/images/img/willy.png') }}" />
-                            <div class="social">
-                                <ul>
-                                    <li><a href="#" class="fa fa-facebook"></a></li>
-                                    <li><a href="#" class="fa fa-twitter"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin"></a></li>
-                                    <li><a href="#" class="fa fa-skype"></a></li>
-                                </ul>
-                            </div>
+                            {{--  --}}
                         </div>
                         <div class="team-content">
                             <h3 class="title">Willy Aubry</h3>
@@ -50,19 +43,12 @@
                         </div>
                     </div>
                 </div>
-
+{{-- ------------------------------------------------------------------ --}}
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="our-team">
                         <div class="team-img">
                             <img src="{{ asset('vitrine/images/img/hegra.png') }}" />
-                            <div class="social">
-                                <ul>
-                                    <li><a href="#" class="fa fa-facebook"></a></li>
-                                    <li><a href="#" class="fa fa-twitter"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin"></a></li>
-                                    <li><a href="#" class="fa fa-skype"></a></li>
-                                </ul>
-                            </div>
+                            {{--  --}}
                         </div>
                         <div class="team-content">
                             <h3 class="title">Bekoumouda HEGRA</h3>
@@ -70,19 +56,12 @@
                         </div>
                     </div>
                 </div>
-
+{{-- ------------------------------------------------------------------ --}}
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="our-team">
                         <div class="team-img">
                             <img src="{{ asset('vitrine/images/img/muriel.png') }}" />
-                            <div class="social">
-                                <ul>
-                                    <li><a href="#" class="fa fa-facebook"></a></li>
-                                    <li><a href="#" class="fa fa-twitter"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin"></a></li>
-                                    <li><a href="#" class="fa fa-skype"></a></li>
-                                </ul>
-                            </div>
+                            {{--  --}}
                         </div>
                         <div class="team-content">
                             <h3 class="title">Muriel MILHAU</h3>
@@ -90,18 +69,17 @@
                         </div>
                     </div>
                 </div>
+
+        {{-- ligne --}}
+{{-- ------------------------------------------------------------------ --}}
+    {{-- ligne --}}
+
+
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="our-team">
                         <div class="team-img">
                             <img src="{{ asset('vitrine/images/img/vincent.jpg') }}" />
-                            <div class="social">
-                                <ul>
-                                    <li><a href="#" class="fa fa-facebook"></a></li>
-                                    <li><a href="#" class="fa fa-twitter"></a></li>
-                                    <li><a href="#" class="fa fa-linkedin"></a></li>
-                                    <li><a href="#" class="fa fa-skype"></a></li>
-                                </ul>
-                            </div>
+                            {{--  --}}
                         </div>
                         <div class="team-content">
                             <h3 class="title">Vincent Clément</h3>
@@ -109,7 +87,104 @@
                         </div>
                     </div>
                 </div>
-            </div>
+{{-- ------------------------------------------------------------------ --}}
+
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Vincent Clément</h3>
+                            <span class="post">Enseignatn réseaux et programmation</span>
+                        </div>
+                    </div>
+                </div>
+{{-- ------------------------------------------------ --}}
+<div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Vincent Clément</h3>
+                            <span class="post">Enseignatn réseaux et programmation</span>
+                        </div>
+                    </div>
+                </div>
+{{-- ------------------------------------------------ --}}
+<div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Vincent Clément</h3>
+                            <span class="post">Enseignatn réseaux et programmation</span>
+                        </div>
+                    </div>
+                </div>
+
+{{-- ------------------------------------------------ --}}
+{{-- ligne --}}
+    {{-- ligne --}}
+
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/vincent.jpg') }}" />
+                            {{--  --}}
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Vincent Clément</h3>
+                            <span class="post">Enseignatn réseaux et programmation</span>
+                        </div>
+                    </div>
+                </div>
+{{-- ------------------------------------------------------------------ --}}
+
+
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Vincent Clément</h3>
+                            <span class="post">Enseignatn réseaux et programmation</span>
+                        </div>
+                    </div>
+                </div>
+{{-- ------------------------------------------------ --}}
+<div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Vincent Clément</h3>
+                            <span class="post">Enseignatn réseaux et programmation</span>
+                        </div>
+                    </div>
+                </div>
+{{-- ------------------------------------------------ --}}
+<div class="col-lg-3 col-md-6 col-12">
+                    <div class="our-team">
+                        <div class="team-img">
+                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                        </div>
+                        <div class="team-content">
+                            <h3 class="title">Vincent Clément</h3>
+                            <span class="post">Enseignatn réseaux et programmation</span>
+                        </div>
+                    </div>
+                </div>
+
+{{-- ------------------------------------------------ --}}
+{{-- ligne --}}
+</div>
         </div>
     </div>
 @endsection
