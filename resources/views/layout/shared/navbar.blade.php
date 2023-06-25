@@ -1,7 +1,7 @@
 <header class="top-navbar">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="{{ route('accueil') }}">
                 <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" alt="ifnti" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
@@ -15,9 +15,9 @@
                     <li class="nav-item {{ Route::currentRouteName() === 'accueil' ? 'active' : '' }}"><a
                             class="nav-link" href="{{ route('accueil') }}">Accueil</a></li>
                     <li class="nav-item dropdown  {{ Str::startsWith(Route::currentRouteName(), 'ifnti') ? 'active' : '' }}">
-                        <a class="nav-link dropdown-toggle "
-                             id="dropdown-a"
-                            data-toggle="dropdown">IFNTI </a>
+                        <a class="nav-link "
+                             id="dropdown-a" href="{{ route('ifnti.ifnti') }}"
+                            >IFNTI </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-a">
                             <a class="dropdown-item" href="{{ route('ifnti.presentation') }}">Présentation </a>
                             <a class="dropdown-item" href="{{ route('ifnti.professeurs') }}">Professeurs </a>
@@ -26,8 +26,9 @@
                     </li>
                     <li
                         class="nav-item dropdown {{ Str::startsWith(Route::currentRouteName(), 'formation') ? 'active' : '' }}">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a"
-                            data-toggle="dropdown">Formation </a>
+                        <a class="nav-link" href="{{ route('formation.all') }} "id="dropdown-a"
+                            >Formation </a>
+
                         <div class="dropdown-menu" aria-labelledby="dropdown-a">
                             <a class="dropdown-item" href="{{ route('formation.cours-bd') }}">Base de données</a>
                             <a class="dropdown-item" href="{{ route('formation.cours-se') }}">Système
@@ -42,8 +43,8 @@
                     </li>
                     <li
                         class="nav-item dropdown {{ Str::startsWith(Route::currentRouteName(), 'admission') ? 'active' : '' }}">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a"
-                            data-toggle="dropdown">Admission </a>
+                        <a class="nav-link" href="{{ route("admission.admission") }}" id="dropdown-a"
+                           >Admission </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-a">
                             <a class="dropdown-item" href="{{ route('admission.frais') }}">Frais </a>
                             <a class="dropdown-item" href="{{ route('admission.concours') }}">Concours</a>

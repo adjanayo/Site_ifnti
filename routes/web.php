@@ -26,7 +26,7 @@ Route::prefix("ifnti/")->name("ifnti.")->group(
     function () {
         Route::get('/', function () {
             return redirect(route('ifnti.presentation'));
-        });
+        })->name('ifnti');
         Route::get('a_propos', function () {
             return view('vitrine.pages.ifnti.about');
         })->name('presentation');
@@ -41,8 +41,8 @@ Route::prefix("ifnti/")->name("ifnti.")->group(
 Route::prefix("admission/")->name("admission.")->group(
     function () {
         Route::get('', function () {
-            redirect(route("admission.concours"));
-        });
+            return redirect(route("admission.concours"));
+        })->name('admission');
         Route::get('frais', function () {
             return view('vitrine.pages.admission.frais');
         })->name('frais');
