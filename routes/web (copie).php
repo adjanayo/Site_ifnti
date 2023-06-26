@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,16 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/login', function () {
-//     redirect(route("login"));
-// });
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-
-/**Vitrine */
 Route::get('/', function () {
     return view('vitrine.pages.home');
 })->name('accueil');
