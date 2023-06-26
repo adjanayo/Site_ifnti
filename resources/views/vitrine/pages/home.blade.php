@@ -20,9 +20,9 @@
                                         <p class="lead" id="concour"> Le concours d'entrée pour l'année académique
                                             2022-2023 est
                                             prévu le 10 juiellet 2023 à 07H00 dans nos locaux. </p>
-                                        <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
+                                        <a href="https://forms.gle/wgVHzuGSSbQij73g7" target="_blanc" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="#" class="hover-btn-new"><span>En savoir plus</span></a>
+                                        <a href="{{route("ifnti.presentation")}}" class="hover-btn-new"><span>En savoir plus</span></a>
                                     </div>
                                 </div>
                             </div>
