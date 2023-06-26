@@ -59,7 +59,7 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="our-team">
                         <div class="team-img">
-                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                            <img src="{{ asset('vitrine/images/img/amona.jpg') }}" />
                             {{--  --}}
                         </div>
                         <div class="team-content">

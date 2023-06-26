@@ -51,13 +51,13 @@
                     <li class="nav-item {{ Route::currentRouteName() === 'actualite' ? 'active' : '' }}"><a
                             class="nav-link" href="{{ route('actualite') }}">Actualités</a></li>
 
-                    {{-- <li class="nav-item {{ Route::currentRouteName() === 'contact' ? 'active' : '' }}"><a
+                    <li class="nav-item {{ Route::currentRouteName() === 'contact' ? 'active' : '' }}"><a
                             class="nav-link" href="{{ route('contact') }}">Contact</a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
+                {{-- <ul class="nav navbar-nav navbar-right">
                     <li><a class="hover-btn-new log orange" href="#" data-toggle="modal"
-                            data-target="#login"><span>S'abonner</span></a></li> --}}
-                </ul>
+                            data-target="#login"><span>S'abonner</span></a></li>
+                </ul> --}}
                 <ul class="nav navbar-nav navbar-right">
                     <li><a class="hover-btn-new log orange" href="https://forms.gle/wgVHzuGSSbQij73g7" 
                             ><span>Postuler</span></a></li>
