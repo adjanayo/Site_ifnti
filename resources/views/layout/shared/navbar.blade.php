@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="{{ route('accueil') }}">
-                <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" alt="ifnti" />
+                <img src="{{ asset('vitrine/images/img/logoIfnti1.png') }}" alt="ifnti" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
                 aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,7 +1,5 @@
 
-<div class="section-title text-center">
-                <h3>Professeurs vacataires</h3>
-            </div>
+
         <div class="row">
 {{-- ------------------------------------------------------------------ --}}
 

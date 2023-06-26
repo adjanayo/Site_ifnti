@@ -10,9 +10,20 @@
 
     <div id="teachers" class="section wb">
         <div class="container">
-
+            <div class="section-title text-center">
+                <h3>Conseil d'administration</h3>
+            </div>
             @include('vitrine.composants.professeurs.administration')
+            <div class="section-title text-center">
+                <h3>Conseil scientifique et pédagogique</h3>
+            </div>
+
             @include('vitrine.composants.professeurs.permanents')
+            <div class="section-title text-center">
+                <h3>Professeurs vacataires</h3>
+            </div>
+
+
             @include('vitrine.composants.professeurs.vacataires')
 
         </div>

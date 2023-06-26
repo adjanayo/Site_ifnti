@@ -1,7 +1,5 @@
-<div class="section-title text-center">
-                <h3>Conseil d'administration</h3>
-            </div>
 
+<div class = "row">
 {{-- ------------------------------------------------------------------ --}}
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="our-team">

@@ -1,6 +1,4 @@
-<div class="section-title text-center">
-                <h3>Conseil scientifique et pédagogique</h3>
-            </div>
+
 
 <div class = "row">
 {{-- ------------------------------------------------------------------ --}}
