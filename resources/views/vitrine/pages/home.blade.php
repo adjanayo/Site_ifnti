@@ -43,7 +43,7 @@
                                             matériels récents. </p>
                                         <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="#" class="hover-btn-new"><span>En savoir plus</span></a>
+                                        <a href="{{route("ifnti.presentation")}}" class="hover-btn-new"><span>En savoir plus</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@
                                             étudiants de fin de cycle présenteront leur...</p>
                                         <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="#" class="hover-btn-new"><span>En savoir plus</span></a>
+                                        <a href="{{route("ifnti.presentation")}}" class="hover-btn-new"><span>En savoir plus</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -137,7 +137,7 @@
                             L’IFNTI dispense une formation supérieure en licence de type LMD en informatique. L’IFNTI
                             est une Association à but non lucratif (ASBL). . </p>
 
-                        <a href="#" class="hover-btn-new orange"><span>En savoire plus</span></a>
+                        <a href="{{route("ifnti.presentation")}}" class="hover-btn-new orange"><span>En savoire plus</span></a>
                     </div>
                 </div>
 
@@ -202,7 +202,7 @@
                     <span><br>
                         <i class="fa fa-angle-right"></i>Notre diplôme est reconnu par l'état togolais
                     </span><br>
-                    <a href="#" class="hover-btn-new orange" style="margin-top: 10px;"><span>En savoire
+                    <a href="{{route("actualite")}}" class="hover-btn-new orange" style="margin-top: 10px;"><span>En savoire
                             plus</span></a>
                 </div>
             </div>

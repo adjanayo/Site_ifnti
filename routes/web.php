@@ -76,3 +76,26 @@ Route::prefix("formation/")->name("formation.")->group(
         })->name('general');
     }
 );
+
+Route::prefix("actu/")->name("actu.")->group(
+    function () {
+        Route::get('ceremoniederemisedediplomes', function () {
+            return view('vitrine.pages.actu.ceremoniederemisedediplomes');
+        })->name('ceremoniederemisedediplomes');
+        Route::get('concoursdentree', function () {
+            return view('vitrine.pages.actu.concoursdentree');
+        })->name('concoursdentree');
+        Route::get('journeesportesouvertes', function () {
+            return view('vitrine.pages.actu.journeesportesouvertes');
+        })->name('journeesportesouvertes');
+        Route::get('prixmisstic', function () {
+            return view('vitrine.pages.actu.prixmisstic');
+        })->name('prixmisstic');
+        Route::get('partenariat', function () {
+            return view('vitrine.pages.actu.partenariat');
+        })->name('partenariat');
+        Route::get('nouvellesdecouvertes', function () {
+            return view('vitrine.pages.actu.nouvellesdecouvertes');
+        })->name('nouvellesdecouvertes');
+    }
+);

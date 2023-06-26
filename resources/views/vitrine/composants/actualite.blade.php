@@ -28,7 +28,7 @@
                                 tous une proposition... </p>
                         </div>
                         <div class="blog-button">
-                            <a class="hover-btn-new orange" href="#"><span>Lire Plus<span></a>
+                            <a class="hover-btn-new orange" href="{{route("actu.ceremoniederemisedediplomes")}}"><span>Lire Plus<span></a>
                         </div>
                     </div>
                 </div>
