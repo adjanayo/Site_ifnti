@@ -15,7 +15,7 @@ class Decoupage extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nom'];
+    protected $fillable = ['nom','id_niveau','id_bulletin'];
 
     protected $table = 'decoupages';
 

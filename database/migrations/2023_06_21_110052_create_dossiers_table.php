@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('moyenne_bac');
             $table->string('moyenne_concours');
-            $table->string('serie');
+            //$table->string('serie');
             $table->date('date_soumission');
             $table->string('etat');
             $table->date('date_entretien');
