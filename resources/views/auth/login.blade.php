@@ -1,16 +1,7 @@
-@extends('admin.layouts.base')
+@extends('auth.layouts.formBase')
 
-@section('content')
-    <!-- partial:index.partial.html -->
-    <div class="container">
-        <div class="mainContainer">
-            <div class="formPage">
-                <nav class="formCtlBlock">
-                    <a href="{{ route('login') }}"
-                        class="loginBtn  {{ Str::startsWith(Route::currentRouteName(), 'login') ? 'active' : '' }}"><span>{{ __('Login') }}</span></a>
-                    <a href="{{ route('register') }}"
-                        class="registerBtn  {{ Str::startsWith(Route::currentRouteName(), 'register') ? 'active' : '' }}"><span>{{ __('Register') }}</span></a>
-                </nav>
+@section('form')
+
                 <div class="login formBlock {{ Str::startsWith(Route::currentRouteName(), 'login') ? 'active' : '' }}"
                     id="tab-1">
                     <form name="loginform" method="POST" action="{{ route('login') }}">
@@ -52,10 +43,4 @@
                     </form>
                 </div>
 
-            </div>
-            <!-- /.formPage -->
-        </div>
-        <!-- /.mainContainer -->
-    </div>
-    <!-- /.container -->
 @endsection
