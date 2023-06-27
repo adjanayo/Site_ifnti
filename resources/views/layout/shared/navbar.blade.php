@@ -1,8 +1,8 @@
 <header class="top-navbar">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" alt="ifnti" />
+            <a class="navbar-brand" href="{{ route('accueil') }}">
+                <img src="{{ asset('vitrine/images/img/logoIfnti1.png') }}" alt="ifnti" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
                 aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,10 +14,9 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item {{ Route::currentRouteName() === 'accueil' ? 'active' : '' }}"><a
                             class="nav-link" href="{{ route('accueil') }}">Accueil</a></li>
-                    <li class="nav-item dropdown {{ Route::currentRouteName() === 'ifnti' ? 'active' : '' }}">
-                        <a class="nav-link dropdown-toggle"
-                            href="{{ Route::currentRouteName() === 'ifnti' ? 'active' : '' }}" id="dropdown-a"
-                            data-toggle="dropdown">IFNTI </a>
+                    <li
+                        class="nav-item dropdown  {{ Str::startsWith(Route::currentRouteName(), 'ifnti') ? 'active' : '' }}">
+                        <a class="nav-link " id="dropdown-a" href="{{ route('ifnti.ifnti') }}">IFNTI </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-a">
                             <a class="dropdown-item" href="{{ route('ifnti.presentation') }}">Présentation </a>
                             <a class="dropdown-item" href="{{ route('ifnti.professeurs') }}">Professeurs </a>
@@ -26,8 +25,8 @@
                     </li>
                     <li
                         class="nav-item dropdown {{ Str::startsWith(Route::currentRouteName(), 'formation') ? 'active' : '' }}">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a"
-                            data-toggle="dropdown">Formation </a>
+                        <a class="nav-link" href="{{ route('formation.all') }} "id="dropdown-a">Formation </a>
+
                         <div class="dropdown-menu" aria-labelledby="dropdown-a">
                             <a class="dropdown-item" href="{{ route('formation.cours-bd') }}">Base de données</a>
                             <a class="dropdown-item" href="{{ route('formation.cours-se') }}">Système
@@ -42,8 +41,7 @@
                     </li>
                     <li
                         class="nav-item dropdown {{ Str::startsWith(Route::currentRouteName(), 'admission') ? 'active' : '' }}">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown-a"
-                            data-toggle="dropdown">Admission </a>
+                        <a class="nav-link" href="{{ route('admission.admission') }}" id="dropdown-a">Admission </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown-a">
                             <a class="dropdown-item" href="{{ route('admission.frais') }}">Frais </a>
                             <a class="dropdown-item" href="{{ route('admission.concours') }}">Concours</a>
@@ -56,9 +54,13 @@
                     <li class="nav-item {{ Route::currentRouteName() === 'contact' ? 'active' : '' }}"><a
                             class="nav-link" href="{{ route('contact') }}">Contact</a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
+                {{-- <ul class="nav navbar-nav navbar-right">
                     <li><a class="hover-btn-new log orange" href="#" data-toggle="modal"
                             data-target="#login"><span>S'abonner</span></a></li>
+                </ul> --}}
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="hover-btn-new log orange" href="https://forms.gle/wgVHzuGSSbQij73g7" 
+                            ><span>Postuler</span></a></li>
                 </ul>
             </div>
         </div>

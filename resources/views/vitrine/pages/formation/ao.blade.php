@@ -25,7 +25,7 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="course-item">
                         <div class="image-blog">
-                            <img src="{{ asset('vitinre/images/img/algo.jpg') }}" alt="" class="img-fluid">
+                            <img src="{{ asset('vitrine/images/img/algo.jpg') }}" alt="" class="img-fluid">
                         </div>
                         <div class="course-br">
                             <div class="course-title">
