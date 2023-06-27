@@ -31,9 +31,9 @@ class DossierController extends Controller
      */
     public function store(Request $request)
     {
-        $candidat = Candidat($request->all());
-        $session_concour = Session_concour($request->all());
-        $dossier = Dossier([
+        $candidat = Candidat::create($request->all());
+        $session_concour = Session_concour::create($request->all());
+        $dossier = Dossier::create([
             'id_candidat' => $candidat->id,
             'id_session_concours' => $session_concour->id,
         ]);
@@ -66,6 +66,8 @@ class DossierController extends Controller
         $dossier->candidat->update($request->all());
         $dossier->session_concour->update($request->all());
         $dossier->update($request->all());
+        
+        return redirect()->route('dossier.index');
     }
 
     /**
@@ -74,6 +76,6 @@ class DossierController extends Controller
     public function destroy(Dossier $dossier)
     {
         $dossier->delete();
-        return redirect()->route('dossiers.idex');
+        return redirect()->route('dossier.idex');
     }
 }

@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DossierController;
+use App\Http\Controllers\ParcoursController;
 
 /*
 |--------------------------------------------------------------------------
@@ -87,3 +89,14 @@ Route::prefix("formation/")->name("formation.")->group(
         })->name('general');
     }
 );
+
+
+//routes d'inscription
+Route::get('dossier/list', [DossierController::class, 'index'])->name("dossier.index");
+Route::get('dossier/formulaire/creation', [DossierController::class, 'create'])->name("dossier.create");
+Route::get('dossier/formulaire/edition/{dossier}', [DossierController::class, 'edit'])->name("dossier.edit");
+Route::post('dossier/enregistrement', [ParcoursController::class, 'store'])->name("dossier.store");
+Route::put('dossier/mis_a_jours/{dossier}', [DossierController::class, 'update'])->name("dossier.update");
+Route::get('dossier/{dossier}', [DossierController::class, 'show'])->name("dossier.show");
+Route::delete('dossier/{dossier}', [DossierController::class, 'destroy'])->name("dossier.destroy");
+
