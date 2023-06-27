@@ -32,16 +32,16 @@
                                 </p>
                             @enderror
                         </div>
-
+{{--
                         <div class="form-group remember-block">
                             <label class="" for="remember"> {{ __('Remember Me') }} </label>
                             <input class="" type="checkbox" name="remember" id="remember"
                                 {{ old('remember') ? 'checked' : '' }} />
-                        </div>
+                        </div> --}}
 
                         <div class="form-group alignRight">
                             @if (Route::has('password.request'))
-                                <a class="pwdForget" href="{{ route('password.request') }}">
+                                <a class="pwdForget" href="{{ route('password.request') }}" >
                                     {{ __('Forgot Your Password?') }}</a>
                             @endif
                             <button type="submit"> {{ __('Login') }}</button>
