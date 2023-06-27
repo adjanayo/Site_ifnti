@@ -4,7 +4,10 @@
     <header class="page-header">
         <nav>
             <a href="#" aria-label="forecastr logo" class="logo">
-                <img width="140" height="49" src="{{ asset('admin/images/logotext.png') }}" />
+                <img sizes="(min-width: 700px) 1200px,(min-width: 50px)
+                150px,
+                98vw" srcset="{{ asset('admin/images/logotext-600.png')}} 700w,
+                {{ asset('admin/images/logotext.png') }} 150w," src="{{ asset('admin/images/logotext.png') }}" />
 
             </a>
             <button class="toggle-mob-menu" aria-expanded="false" aria-label="open menu">
@@ -158,7 +161,7 @@
     </section>
     <!-- partial -->
     @push('js')
-    {{-- <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script> --}}
+
     <script src="{{ asset('admin/js/jquery.min.js') }}"></script>
         <script>
             $(function() {
