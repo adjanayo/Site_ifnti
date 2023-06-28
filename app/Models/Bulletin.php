@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use App\Models\Decoupage;
 
-class Bullettin extends Model
+class Bulletin extends Model
 {
     use HasFactory;
 
