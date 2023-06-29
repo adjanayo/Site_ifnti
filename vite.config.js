@@ -11,6 +11,9 @@ export default defineConfig({
                 'resources/js/login.js',
                 'resources/sass/dash.css',
                 'resources/js/dash.js',
+
+                'resources/css/form.css',
+                'resources/js/form.js',
             ],
             refresh: true,
         }),
