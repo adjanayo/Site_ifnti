@@ -16,10 +16,14 @@ return new class extends Migration
             $table->string('nom');
             $table->string('systeme');
             $table->string('annee');
+<<<<<<< HEAD
             $table->string('serie');
             $table->bigInteger('id_dossier');
+=======
+            $table->bigInteger('dossier_id');
+>>>>>>> 91dc2e9eb31c6f16c080ecf8e56c6ff02ed0fa79
             $table->timestamps();
-            $table->foreign('id_dossier')->references('id')->on('dossiers')->onDelete('cascade');
+            $table->foreign('dossier_id')->references('id')->on('dossiers')->onDelete('cascade');
         });
     }
 

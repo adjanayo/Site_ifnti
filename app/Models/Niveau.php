@@ -2,11 +2,12 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use App\Models\Dossier;
 use App\Models\Decoupage;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Niveau extends Model
 {
@@ -17,10 +18,11 @@ class Niveau extends Model
     protected $table = 'niveaus';
 
     public function dossier():BelongsTo{
-        return belongsTo(Dossier::class);
+        return $this->belongsTo(Dossier::class);
     }
 
-    public function decoupages():HasMany{
+    public function decoupage(): HasMany
+    {
         return $this->hasMany(Decoupage::class);
     }
 }

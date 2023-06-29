@@ -11,11 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('session_concours', function (Blueprint $table) {
+        Schema::create('decoupages', function (Blueprint $table) {
             $table->id();
-            $table->date('date_debut');
-            $table->date('date_fin');
+            $table->string('nom');
+            $table->bigInteger('niveau_id');
             $table->timestamps();
+            $table->foreign('niveau_id')->references('id')->on('niveaus')->onDelete('cascade');
         });
     }
 
@@ -24,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('session_concours');
+        Schema::dropIfExists('decoupages');
     }
 };
