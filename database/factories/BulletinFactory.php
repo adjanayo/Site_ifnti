@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use Illuminate\Http\UploadedFile;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,9 +18,13 @@ class BulletinFactory extends Factory
      */
     public function definition(): array
     {
+        Storage::fake("photos");
         return [
             //
-            "fichier" => $this->faker->word()
+
+            "fichier" =>  UploadedFile::fake()->createWithContent("1ere.pdf", "drop of"),
+
+
         ];
     }
 }
