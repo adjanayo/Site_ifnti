@@ -142,7 +142,9 @@
             </div>
         </section>
         <section class="grid">
-            <article></article>
+            <article>
+                @include("admin.dataTable")
+            </article>
             <article></article>
             <article></article>
             <article></article>

@@ -1,14 +1,18 @@
 <div class="dossiers-container">
-    {{-- @foreach ($sessionConcours as $sessionConcour ) --}}
-
     <div class="header-dossier">
         <div class="session-concours">
 
             Session: </div>
         <div class="switcher-session-concours">
-            @include("admin.composants.dash.leftArrow")
-            <div class="date-concours">{Sat, Nov 25 2020}</div>
-            @include("admin.composants.dash.rightArrow")
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left">
+                <path d="M15 18l-6-6 6-6" />
+            </svg>
+            <div class="date-concours">Sat, Nov 25 2020</div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                <path d="M9 18l6-6-6-6" />
+            </svg>
         </div>
         <div class="button-create-session">
             <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -36,7 +40,6 @@
                 </tr>
             </thead>
             <tbody>
-
                 <tr>
                     <td>
                         <input type="checkbox" id="" class="">
@@ -107,8 +110,6 @@
             </tbody>
         </table>
     </div>
-
-    {{-- @endforeach --}}
 </div>
 
 <!-- partial -->

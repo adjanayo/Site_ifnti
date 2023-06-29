@@ -1,4 +1,6 @@
 import { defineConfig } from 'vite';
+
+
 import laravel from 'laravel-vite-plugin';
 
 export default defineConfig({
@@ -10,12 +12,19 @@ export default defineConfig({
                 'resources/sass/login.css',
                 'resources/js/login.js',
 
+
+
                 'resources/sass/dash.css',
                 'resources/js/dash.js',
 
-            ],
-            refresh: true,
-        }),
-    ],
-});
 
+                'resources/sass/dataTable.css',
+
+
+            ],
+
+            refresh: true
+        }),]
+
+
+});
