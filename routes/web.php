@@ -91,7 +91,7 @@ Route::prefix("formation/")->name("formation.")->group(
 );
 
 
-<<<<<<< HEAD
+
 //routes d'inscription
 Route::get('dossier/list', [DossierController::class, 'index'])->name("dossier.index");
 Route::get('dossier/formulaire/creation', [DossierController::class, 'create'])->name("dossier.create");
@@ -101,10 +101,10 @@ Route::put('dossier/mis_a_jours/{dossier}', [DossierController::class, 'update']
 Route::get('dossier/{dossier}', [DossierController::class, 'show'])->name("dossier.show");
 Route::delete('dossier/{dossier}', [DossierController::class, 'destroy'])->name("dossier.destroy");
 
-=======
+
 Route::prefix('admission/')->name('admission.')->group(function(){
     Route::get('formulaire', function (){
         return view('admission.index');
     });
 });
->>>>>>> 68285228a0efdc69749d066ba1159672d58e9cfb
+
