@@ -6,165 +6,167 @@ use Illuminate\Http\Request;
 use App\Models\Niveau;
 use App\Models\Decoupage;
 use App\Models\Matiere;
-use App\Models\Bullettin;
+use App\Models\Bulletin;
 
 class ParcoursController extends Controller
 {
     public function store(Request $request)
     {
-        $dossier = app()->call('App\Http\Controllers\DossierControleur@store');
+        $dossier = app()->call('App\Http\Controllers\DossierController@store');
         //les cinq niveaux
 
         /*****************************Seconde*************************/
         $seconde = Niveau::create([
-            $request['nom'] => 'seconde',
-            $request['serie'] => $request->input('serie_seconde'),
-            $request['systeme'] => $request->input('systeme_seconde'),
-            $request['annee'] => $request->input('annee_seconde'),
-            $request['id_dossier'] => $dossier->id,
+            'nom' => 'seconde',
+            'serie' => $request->input('serie_seconde'),
+            // 'systeme' => $request->input('systeme_seconde'),
+            'systeme' => 'semestriel',
+            //$request['annee'] => $request->input('annee_seconde'),
+            'etablissement' => $request->input('etablissement_seconde'),
+            'dossier_id' => $dossier->id,
         ]);
 
         if($seconde->systeme == 'semestriel'){
             //les bullettins sem1 et sem2
-            $bullettin_seconde_semestre1 = Bullettin::create([
-                $request['fichier'] => $request->input('bullettin_seconde_semestre1'),
+            $bullettin_seconde_semestre1 = Bulletin::create([
+                'fichier' => $request->input('bullettin_seconde_semestre1'),
             ]);
-            $bullettin_seconde_semestre2 = Bullettin::create([
-                $request['fichier'] => $request->input('bullettin_seconde_semestre2'),
+            $bullettin_seconde_semestre2 = Bulletin::create([
+                'fichier' => $request->input('bullettin_seconde_semestre2'),
             ]);
 
             $seconde_semestre1 = Decoupage::create([
-                $request['nom'] => 'semestre1',
-                $request['id_niveau'] => $seconde->id,
-                $request['id_bulletin'] => $bullettin_seconde_semestre1->id,
+                'nom' => 'semestre1',
+                'niveau_id' => $seconde->id,
+                'id_bulletin' => $bullettin_seconde_semestre1->id,
             ]);
             //les notes
             $math = Matiere::create([
-                $request['nom'] => 'math',
-                $request['note'] => $request->input('note_math_seconde_s1'),
-                $request['id_decoupage'] => $seconde_semestre1->id,
+                'nom' => 'math',
+                'note' => $request->input('note_math_seconde_s1'),
+                'decoupage_id' => $seconde_semestre1->id,
 
             ]);
             $fr = Matiere::create([
-                $request['nom'] => 'fr',
-                $request['note'] => $request->input('note_fr_seconde_s1'),
-                $request['id_decoupage'] => $seconde_semestre1->id,
+                'nom' => 'fr',
+                'note' => $request->input('note_fr_seconde_s1'),
+                'decoupage_id' => $seconde_semestre1->id,
 
             ]);
             $ang = Matiere::create([
-                $request['nom'] => 'ang',
-                $request['note'] => $request->input('note_ang_seconde_s1'),
-                $request['id_decoupage'] => $seconde_semestre1->id,
+                'nom' => 'ang',
+                'note' => $request->input('note_ang_seconde_s1'),
+                'decoupage_id' => $seconde_semestre1->id,
 
             ]);
 
             $seconde_semestre2 = Decoupage::create([
-                $request['nom'] => 'semestre2',
-                $request['id_niveau'] => $seconde->id,
-                $request['id_bulletin'] => $bullettin_seconde_semestre2->id,
+                'nom' => 'semestre2',
+                'niveau_id' => $seconde->id,
+                'id_bulletin' => $bullettin_seconde_semestre2->id,
             ]);
             //les notes
             $math = Matiere::create([
-                $request['nom'] => 'math',
-                $request['note'] => $request->input('note_math_seconde_s2'),
-                $request['id_decoupage'] => $seconde_semestre2->id,
+                'nom' => 'math',
+                'note' => $request->input('note_math_seconde_s2'),
+               'decoupage_id' => $seconde_semestre2->id,
 
             ]);
             $fr = Matiere::create([
-                $request['nom'] => 'fr',
-                $request['note'] => $request->input('note_fr_seconde_s2'),
-                $request['id_decoupage'] => $seconde_semestre2->id,
+               'nom' => 'fr',
+                'note' => $request->input('note_fr_seconde_s2'),
+               'decoupage_id' => $seconde_semestre2->id,
 
             ]);
             $ang = Matiere::create([
-                $request['nom'] => 'ang',
-                $request['note'] => $request->input('note_ang_seconde_s2'),
-                $request['id_decoupage'] => $seconde_semestre2->id,
+                'nom' => 'ang',
+                'note' => $request->input('note_ang_seconde_s2'),
+                'decoupage_id' => $seconde_semestre2->id,
 
             ]);
         }else{
             $bullettin_seconde_trimestre1 = Bullettin::create([
-                $request['fichier'] => $request->input('bullettin_seconde_trimestre1'),
+                'fichier' => $request->input('bullettin_seconde_trimestre1'),
             ]);
-            $bullettin_seconde_trimestre2 = Bullettin::create([
-                $request['fichier'] => $request->input('bullettin_seconde_trimestre2'),
+            $bullettin_seconde_trimestre2 = Bulletin::create([
+                'fichier' => $request->input('bullettin_seconde_trimestre2'),
             ]);
-            $bullettin_seconde_trimestre3 = Bullettin::create([
-                $request['fichier'] => $request->input('bullettin_seconde_trimestre3'),
+            $bullettin_seconde_trimestre3 = Bulletin::create([
+                'fichier' => $request->input('bullettin_seconde_trimestre3'),
             ]);
 
             $seconde_trimestre1 = Decoupage::create([
-                $request['nom'] => 'trimestre1',
-                $request['id_niveau'] => $seconde->id,
-                $request['id_bulletin'] => $bullettin_seconde_trimestre1->id,
+                'nom' => 'trimestre1',
+                'niveau_id' => $seconde->id,
+                'id_bulletin' => $bullettin_seconde_trimestre1->id,
             ]);
             //les notes
             $math = Matiere::create([
-                $request['nom'] => 'math',
-                $request['note'] => $request->input('note_math_seconde_trim1'),
-                $request['id_decoupage'] => $seconde_trimestre1->id,
+                'nom' => 'math',
+                'note' => $request->input('note_math_seconde_trim1'),
+                'decoupage_id' => $seconde_trimestre1->id,
 
             ]);
             $fr = Matiere::create([
-                $request['nom'] => 'fr',
-                $request['note'] => $request->input('note_fr_seconde_trim1'),
-                $request['id_decoupage'] => $seconde_trimestre1->id,
+                'nom' => 'fr',
+                'note' => $request->input('note_fr_seconde_trim1'),
+                'decoupage_id' => $seconde_trimestre1->id,
 
             ]);
             $ang = Matiere::create([
-                $request['nom'] => 'ang',
-                $request['note'] => $request->input('note_ang_seconde_trim1'),
-                $request['id_decoupage'] => $seconde_trimestre1->id,
+                'nom' => 'ang',
+                'note' => $request->input('note_ang_seconde_trim1'),
+                'decoupage_id' => $seconde_trimestre1->id,
 
             ]);
 
             $seconde_trimestre2 = Decoupage::create([
-                $request['nom'] => 'trimestre2',
-                $request['id_niveau'] => $seconde->id,
-                $request['id_bulletin'] => $bullettin_seconde_trimestre2->id,
+                'nom' => 'trimestre2',
+                'niveau_id' => $seconde->id,
+                'id_bulletin' => $bullettin_seconde_trimestre2->id,
             ]);
             //les notes
             $math = Matiere::create([
-                $request['nom'] => 'math',
-                $request['note'] => $request->input('note_math_seconde_trim2'),
-                $request['id_decoupage'] => $seconde_trimestre2->id,
+                'nom' => 'math',
+                'note' => $request->input('note_math_seconde_trim2'),
+                'decoupage_id' => $seconde_trimestre2->id,
 
             ]);
             $fr = Matiere::create([
-                $request['nom'] => 'fr',
-                $request['note'] => $request->input('note_fr_seconde_trim2'),
-                $request['id_decoupage'] => $seconde_trimestre2->id,
+                'nom' => 'fr',
+                'note' => $request->input('note_fr_seconde_trim2'),
+                'decoupage_id' => $seconde_trimestre2->id,
 
             ]);
             $ang = Matiere::create([
-                $request['nom'] => 'ang',
-                $request['note'] => $request->input('note_ang_seconde_trim2'),
-                $request['id_decoupage'] => $seconde_trimestre2->id,
+                'nom' => 'ang',
+                'note' => $request->input('note_ang_seconde_trim2'),
+                'decoupage_id' => $seconde_trimestre2->id,
 
             ]);
 
             $trimestre3 = Decoupage::create([
-                $request['nom'] => 'trimestre3',
-                $request['id_niveau'] => $seconde->id,
-                $request['id_bulletin'] => $bullettin_seconde_trimestre3->id,
+                'nom' => 'trimestre3',
+                'niveau_id' => $seconde->id,
+                'id_bulletin' => $bullettin_seconde_trimestre3->id,
             ]);
             //les notes
             $math = Matiere::create([
-                $request['nom'] => 'math',
-                $request['note'] => $request->input('note_math_seconde_trim3'),
-                $request['id_decoupage'] => $seconde_trimestre3->id,
+                'nom' => 'math',
+                'note' => $request->input('note_math_seconde_trim3'),
+                'decoupage_id' => $seconde_trimestre3->id,
 
             ]);
             $fr = Matiere::create([
-                $request['nom'] => 'fr',
-                $request['note'] => $request->input('note_fr_seconde_trim3'),
-                $request['id_decoupage'] => $seconde_trimestre3->id,
+                'nom' => 'fr',
+                'note' => $request->input('note_fr_seconde_trim3'),
+                'decoupage_id' => $seconde_trimestre3->id,
 
             ]);
             $ang = Matiere::create([
-                $request['nom'] => 'ang',
-                $request['note'] => $request->input('note_ang_seconde_trim3'),
-                $request['id_decoupage'] => $seconde_trimestre3->id,
+                'nom' => 'ang',
+                'note' => $request->input('note_ang_seconde_trim3'),
+                'decoupage_id' => $seconde_trimestre3->id,
 
             ]);
 
@@ -172,154 +174,156 @@ class ParcoursController extends Controller
 
         /*****************************Premiere*************************/
         $premiere = Niveau::create([
-            $request['nom'] => 'premiere',
-            $request['serie'] => $request->input('serie_premiere'),
-            $request['systeme'] => $request->input('systeme_premiere'),
-            $request['annee'] => $request->input('annee_premiere'),
-            $request['id_dossier'] => $dossier->id,
+            'nom' => 'premiere',
+            'serie' => $request->input('serie_premiere'),
+            // 'systeme' => $request->input('systeme_premiere'),
+            'systeme' => 'semestriel',
+            'etablissement' => $request->input('etablissement_premiere'),
+            //'annee' => $request->input('annee_premiere'),
+            'dossier_id' => $dossier->id,
         ]);
 
         if($premiere->systeme == 'semestriel'){
             //les bullettins sem1 et sem2
-            $bullettin_premiere_semestre1 = Bullettin::create([
-                $request['fichier'] => $request->input('bullettin_premiere_semestre1'),
+            $bullettin_premiere_semestre1 = Bulletin::create([
+                'fichier' => $request->input('bullettin_premiere_semestre1'),
             ]);
-            $bullettin_premiere_semestre2 = Bullettin::create([
-                $request['fichier'] => $request->input('bullettin_premiere_semestre2'),
+            $bullettin_premiere_semestre2 = Bulletin::create([
+                'fichier' => $request->input('bullettin_premiere_semestre2'),
             ]);
 
             $premiere_semestre1 = Decoupage::create([
-                $request['nom'] => 'semestre1',
-                $request['id_niveau'] => $premiere->id,
-                $request['id_bulletin'] => $bullettin_premiere_semestre1->id,
+                'nom' => 'semestre1',
+                'niveau_id' => $premiere->id,
+                'id_bulletin' => $bullettin_premiere_semestre1->id,
             ]);
             //les notes
             $math = Matiere::create([
-                $request['nom'] => 'math',
-                $request['note'] => $request->input('note_math_premiere_s1'),
-                $request['id_decoupage'] => $premiere_semestre1->id,
+                'nom' => 'math',
+                'note' => $request->input('note_math_premiere_s1'),
+                'decoupage_id' => $premiere_semestre1->id,
 
             ]);
             $fr = Matiere::create([
-                $request['nom'] => 'fr',
-                $request['note'] => $request->input('note_fr_premiere_s1'),
-                $request['id_decoupage'] => $premiere_semestre1->id,
+                'nom' => 'fr',
+                'note' => $request->input('note_fr_premiere_s1'),
+                'decoupage_id' => $premiere_semestre1->id,
 
             ]);
             $ang = Matiere::create([
-                $request['nom'] => 'ang',
-                $request['note'] => $request->input('note_ang_premiere_s1'),
-                $request['id_decoupage'] => $premiere_semestre1->id,
+                'nom' => 'ang',
+                'note' => $request->input('note_ang_premiere_s1'),
+                'decoupage_id' => $premiere_semestre1->id,
 
             ]);
 
             $premiere_semestre2 = Decoupage::create([
-                $request['nom'] => 'semestre2',
-                $request['id_niveau'] => $premiere->id,
-                $request['id_bulletin'] => $bullettin_premiere_semestre2->id,
+                'nom' => 'semestre2',
+                'niveau_id' => $premiere->id,
+                'id_bulletin' => $bullettin_premiere_semestre2->id,
             ]);
             //les notes
             $math = Matiere::create([
-                $request['nom'] => 'math',
-                $request['note'] => $request->input('note_math_premiere_s2'),
-                $request['id_decoupage'] => $premiere_semestre2->id,
+                'nom' => 'math',
+                'note' => $request->input('note_math_premiere_s2'),
+                'decoupage_id' => $premiere_semestre2->id,
 
             ]);
             $fr = Matiere::create([
-                $request['nom'] => 'fr',
-                $request['note'] => $request->input('note_fr_premiere_s2'),
-                $request['id_decoupage'] => $premiere_semestre2->id,
+                'nom' => 'fr',
+                'note' => $request->input('note_fr_premiere_s2'),
+                'decoupage_id' => $premiere_semestre2->id,
 
             ]);
             $ang = Matiere::create([
-                $request['nom'] => 'ang',
-                $request['note'] => $request->input('note_ang_premiere_s2'),
-                $request['id_decoupage'] => $premiere_semestre2->id,
+                'nom' => 'ang',
+                'note' => $request->input('note_ang_premiere_s2'),
+                'decoupage_id' => $premiere_semestre2->id,
 
             ]);
         }else{
-            $bullettin_premiere_trimestre1 = Bullettin::create([
-                $request['fichier'] => $request->input('bullettin_premiere_trimestre1'),
+            $bullettin_premiere_trimestre1 = Bulletin::create([
+                'fichier' => $request->input('bullettin_premiere_trimestre1'),
             ]);
-            $bullettin_premiere_trimestre2 = Bullettin::create([
-                $request['fichier'] => $request->input('bullettin_premiere_trimestre2'),
+            $bullettin_premiere_trimestre2 = Bulletin::create([
+                'fichier' => $request->input('bullettin_premiere_trimestre2'),
             ]);
-            $bullettin_premiere_trimestre3 = Bullettin::create([
-                $request['fichier'] => $request->input('bullettin_premiere_trimestre3'),
+            $bullettin_premiere_trimestre3 = Bulletin::create([
+               'fichier' => $request->input('bullettin_premiere_trimestre3'),
             ]);
 
             $premiere_trimestre1 = Decoupage::create([
-                $request['nom'] => 'trimestre1',
-                $request['id_niveau'] => $premiere->id,
-                $request['id_bulletin'] => $bullettin_premiere_trimestre1->id,
+                'nom' => 'trimestre1',
+                'niveau_id' => $premiere->id,
+                'id_bulletin' => $bullettin_premiere_trimestre1->id,
             ]);
             //les notes
             $math = Matiere::create([
-                $request['nom'] => 'math',
-                $request['note'] => $request->input('note_math_premiere_trim1'),
-                $request['id_decoupage'] => $premiere_trimestre1->id,
+                'nom' => 'math',
+                'note' => $request->input('note_math_premiere_trim1'),
+                'decoupage_id' => $premiere_trimestre1->id,
 
             ]);
             $fr = Matiere::create([
-                $request['nom'] => 'fr',
-                $request['note'] => $request->input('note_fr_premiere_trim1'),
-                $request['id_decoupage'] => $premiere_trimestre1->id,
+                'nom' => 'fr',
+                'note' => $request->input('note_fr_premiere_trim1'),
+                'decoupage_id' => $premiere_trimestre1->id,
 
             ]);
             $ang = Matiere::create([
-                $request['nom'] => 'ang',
-                $request['note'] => $request->input('note_ang_premiere_trim1'),
-                $request['id_decoupage'] => $premiere_trimestre1->id,
+                'nom' => 'ang',
+                'note' => $request->input('note_ang_premiere_trim1'),
+                'decoupage_id' => $premiere_trimestre1->id,
 
             ]);
 
             $premiere_trimestre2 = Decoupage::create([
-                $request['nom'] => 'trimestre2',
-                $request['id_niveau'] => $premiere->id,
-                $request['id_bulletin'] => $bullettin_premiere_trimestre2->id,
+                'nom' => 'trimestre2',
+                'niveau_id' => $premiere->id,
+                'id_bulletin' => $bullettin_premiere_trimestre2->id,
             ]);
             //les notes
             $math = Matiere::create([
-                $request['nom'] => 'math',
-                $request['note'] => $request->input('note_math_premiere_trim2'),
-                $request['id_decoupage'] => $premiere_trimestre2->id,
+                'nom' => 'math',
+                'note' => $request->input('note_math_premiere_trim2'),
+                'decoupage_id' => $premiere_trimestre2->id,
 
             ]);
             $fr = Matiere::create([
-                $request['nom'] => 'fr',
-                $request['note'] => $request->input('note_fr_premiere_trim2'),
-                $request['id_decoupage'] => $premiere_trimestre2->id,
+                'nom' => 'fr',
+                'note' => $request->input('note_fr_premiere_trim2'),
+                'decoupage_id' => $premiere_trimestre2->id,
 
             ]);
             $ang = Matiere::create([
-                $request['nom'] => 'ang',
-                $request['note'] => $request->input('note_ang_premiere_trim2'),
-                $request['id_decoupage'] => $premiere_trimestre2->id,
+                'nom' => 'ang',
+                'note' => $request->input('note_ang_premiere_trim2'),
+                'decoupage_id' => $premiere_trimestre2->id,
 
             ]);
 
             $trimestre3 = Decoupage::create([
-                $request['nom'] => 'trimestre3',
-                $request['id_niveau'] => $premiere->id,
-                $request['id_bulletin'] => $bullettin_premiere_trimestre3->id,
+                'nom' => 'trimestre3',
+                'niveau_id' => $premiere->id,
+                'id_bulletin' => $bullettin_premiere_trimestre3->id,
             ]);
             //les notes
             $math = Matiere::create([
-                $request['nom'] => 'math',
-                $request['note'] => $request->input('note_math_premiere_trim3'),
-                $request['id_decoupage'] => $premiere_trimestre3->id,
+                'nom' => 'math',
+                'note' => $request->input('note_math_premiere_trim3'),
+                'decoupage_id' => $premiere_trimestre3->id,
 
             ]);
             $fr = Matiere::create([
-                $request['nom'] => 'fr',
-                $request['note'] => $request->input('note_fr_premiere_trim3'),
-                $request['id_decoupage'] => $premiere_trimestre3->id,
+               'nom' => 'fr',
+                'note' => $request->input('note_fr_premiere_trim3'),
+                'decoupage_id' => $premiere_trimestre3->id,
 
             ]);
             $ang = Matiere::create([
-                $request['nom'] => 'ang',
-                $request['note'] => $request->input('note_ang_premiere_trim3'),
-                $request['id_decoupage'] => $premiere_trimestre3->id,
+                'nom' => 'ang',
+                'note' => $request->input('note_ang_premiere_trim3'),
+                'decoupage_id' => $premiere_trimestre3->id,
 
             ]);
 
@@ -327,154 +331,156 @@ class ParcoursController extends Controller
 
         /*****************************Terminale*************************/
         $terminale = Niveau::create([
-            $request['nom'] => 'terminale',
-            $request['serie'] => $request->input('serie_terminale'),
-            $request['systeme'] => $request->input('systeme_terminale'),
-            $request['annee'] => $request->input('annee_terminale'),
-            $request['id_dossier'] => $dossier->id,
+            'nom' => 'terminale',
+            'serie' => $request->input('serie_terminale'),
+            // 'systeme' => $request->input('systeme_terminale'),
+            'systeme' => 'semestriel',
+            'etablissement' => $request->input('etablissement_terminale'),
+            //'annee' => $request->input('annee_terminale'),
+            'dossier_id' => $dossier->id,
         ]);
 
         if($terminale->systeme == 'semestriel'){
             //les bullettins sem1 et sem2
-            $bullettin_terminale_semestre1 = Bullettin::create([
-                $request['fichier'] => $request->input('bullettin_terminale_semestre1'),
+            $bullettin_terminale_semestre1 = Bulletin::create([
+                'fichier' => $request->input('bullettin_terminale_semestre1'),
             ]);
-            $bullettin_terminale_semestre2 = Bullettin::create([
-                $request['fichier'] => $request->input('bullettin_terminale_semestre2'),
+            $bullettin_terminale_semestre2 = Bulletin::create([
+                'fichier' => $request->input('bullettin_terminale_semestre2'),
             ]);
 
             $terminale_semestre1 = Decoupage::create([
-                $request['nom'] => 'semestre1',
-                $request['id_niveau'] => $terminale->id,
-                $request['id_bulletin'] => $bullettin_terminale_semestre1->id,
+                'nom' => 'semestre1',
+                'niveau_id' => $terminale->id,
+                'id_bulletin' => $bullettin_terminale_semestre1->id,
             ]);
             //les notes
             $math = Matiere::create([
-                $request['nom'] => 'math',
-                $request['note'] => $request->input('note_math_terminale_s1'),
-                $request['id_decoupage'] => $terminale_semestre1->id,
+                'nom' => 'math',
+                'note' => $request->input('note_math_terminale_s1'),
+                'decoupage_id' => $terminale_semestre1->id,
 
             ]);
             $fr = Matiere::create([
-                $request['nom'] => 'fr',
-                $request['note'] => $request->input('note_fr_terminale_s1'),
-                $request['id_decoupage'] => $terminale_semestre1->id,
+                'nom' => 'fr',
+                'note' => $request->input('note_fr_terminale_s1'),
+                'decoupage_id' => $terminale_semestre1->id,
 
             ]);
             $ang = Matiere::create([
-                $request['nom'] => 'ang',
-                $request['note'] => $request->input('note_ang_terminale_s1'),
-                $request['id_decoupage'] => $terminale_semestre1->id,
+                'nom' => 'ang',
+                'note' => $request->input('note_ang_terminale_s1'),
+                'decoupage_id' => $terminale_semestre1->id,
 
             ]);
 
             $terminale_semestre2 = Decoupage::create([
-                $request['nom'] => 'semestre2',
-                $request['id_niveau'] => $terminale->id,
-                $request['id_bulletin'] => $bullettin_terminale_semestre2->id,
+                'nom' => 'semestre2',
+                'niveau_id' => $terminale->id,
+                'id_bulletin' => $bullettin_terminale_semestre2->id,
             ]);
             //les notes
             $math = Matiere::create([
-                $request['nom'] => 'math',
-                $request['note'] => $request->input('note_math_terminale_s2'),
-                $request['id_decoupage'] => $terminale_semestre2->id,
+                'nom' => 'math',
+                'note' => $request->input('note_math_terminale_s2'),
+                'decoupage_id' => $terminale_semestre2->id,
 
             ]);
             $fr = Matiere::create([
-                $request['nom'] => 'fr',
-                $request['note'] => $request->input('note_fr_terminale_s2'),
-                $request['id_decoupage'] => $terminale_semestre2->id,
+                'nom' => 'fr',
+                'note' => $request->input('note_fr_terminale_s2'),
+                'decoupage_id' => $terminale_semestre2->id,
 
             ]);
             $ang = Matiere::create([
-                $request['nom'] => 'ang',
-                $request['note'] => $request->input('note_ang_terminale_s2'),
-                $request['id_decoupage'] => $terminale_semestre2->id,
+                'nom' => 'ang',
+                'note' => $request->input('note_ang_terminale_s2'),
+                'decoupage_id' => $terminale_semestre2->id,
 
             ]);
         }else{
-            $bullettin_terminale_trimestre1 = Bullettin::create([
-                $request['fichier'] => $request->input('bullettin_terminale_trimestre1'),
+            $bullettin_terminale_trimestre1 = Bulletin::create([
+                'fichier' => $request->input('bullettin_terminale_trimestre1'),
             ]);
-            $bullettin_terminale_trimestre2 = Bullettin::create([
-                $request['fichier'] => $request->input('bullettin_terminale_trimestre2'),
+            $bullettin_terminale_trimestre2 = Bulletin::create([
+                'fichier' => $request->input('bullettin_terminale_trimestre2'),
             ]);
-            $bullettin_terminale_trimestre3 = Bullettin::create([
-                $request['fichier'] => $request->input('bullettin_terminale_trimestre3'),
+            $bullettin_terminale_trimestre3 = Bulletin::create([
+                'fichier' => $request->input('bullettin_terminale_trimestre3'),
             ]);
 
             $terminale_trimestre1 = Decoupage::create([
-                $request['nom'] => 'trimestre1',
-                $request['id_niveau'] => $terminale->id,
-                $request['id_bulletin'] => $bullettin_terminale_trimestre1->id,
+                'nom' => 'trimestre1',
+                'niveau_id' => $terminale->id,
+                'id_bulletin' => $bullettin_terminale_trimestre1->id,
             ]);
             //les notes
             $math = Matiere::create([
-                $request['nom'] => 'math',
-                $request['note'] => $request->input('note_math_terminale_trim1'),
-                $request['id_decoupage'] => $terminale_trimestre1->id,
+                'nom' => 'math',
+                'note' => $request->input('note_math_terminale_trim1'),
+                'decoupage_id' => $terminale_trimestre1->id,
 
             ]);
             $fr = Matiere::create([
-                $request['nom'] => 'fr',
-                $request['note'] => $request->input('note_fr_terminale_trim1'),
-                $request['id_decoupage'] => $terminale_trimestre1->id,
+                'nom' => 'fr',
+                'note' => $request->input('note_fr_terminale_trim1'),
+                'decoupage_id' => $terminale_trimestre1->id,
 
             ]);
             $ang = Matiere::create([
-                $request['nom'] => 'ang',
-                $request['note'] => $request->input('note_ang_terminale_trim1'),
-                $request['id_decoupage'] => $terminale_trimestre1->id,
+                'nom' => 'ang',
+                'note' => $request->input('note_ang_terminale_trim1'),
+                'decoupage_id' => $terminale_trimestre1->id,
 
             ]);
 
             $terminale_trimestre2 = Decoupage::create([
-                $request['nom'] => 'trimestre2',
-                $request['id_niveau'] => $terminale->id,
-                $request['id_bulletin'] => $bullettin_terminale_trimestre2->id,
+                'nom' => 'trimestre2',
+                'niveau_id' => $terminale->id,
+                'id_bulletin' => $bullettin_terminale_trimestre2->id,
             ]);
             //les notes
             $math = Matiere::create([
-                $request['nom'] => 'math',
-                $request['note'] => $request->input('note_math_terminale_trim2'),
-                $request['id_decoupage'] => $terminale_trimestre2->id,
+                'nom' => 'math',
+                'note' => $request->input('note_math_terminale_trim2'),
+                'decoupage_id' => $terminale_trimestre2->id,
 
             ]);
             $fr = Matiere::create([
-                $request['nom'] => 'fr',
-                $request['note'] => $request->input('note_fr_terminale_trim2'),
-                $request['id_decoupage'] => $terminale_trimestre2->id,
+                'nom' => 'fr',
+                'note' => $request->input('note_fr_terminale_trim2'),
+                'decoupage_id' => $terminale_trimestre2->id,
 
             ]);
             $ang = Matiere::create([
-                $request['nom'] => 'ang',
-                $request['note'] => $request->input('note_ang_terminale_trim2'),
-                $request['id_decoupage'] => $terminale_trimestre2->id,
+                'nom' => 'ang',
+                'note' => $request->input('note_ang_terminale_trim2'),
+                'decoupage_id' => $terminale_trimestre2->id,
 
             ]);
 
             $trimestre3 = Decoupage::create([
-                $request['nom'] => 'trimestre3',
-                $request['id_niveau'] => $terminale->id,
-                $request['id_bulletin'] => $bullettin_terminale_trimestre3->id,
+                'nom' => 'trimestre3',
+                'niveau_id' => $terminale->id,
+                'id_bulletin' => $bullettin_terminale_trimestre3->id,
             ]);
             //les notes
             $math = Matiere::create([
-                $request['nom'] => 'math',
-                $request['note'] => $request->input('note_math_terminale_trim3'),
-                $request['id_decoupage'] => $terminale_trimestre3->id,
+                'nom' => 'math',
+                'note' => $request->input('note_math_terminale_trim3'),
+                'decoupage_id' => $terminale_trimestre3->id,
 
             ]);
             $fr = Matiere::create([
-                $request['nom'] => 'fr',
-                $request['note'] => $request->input('note_fr_terminale_trim3'),
-                $request['id_decoupage'] => $terminale_trimestre3->id,
+                'nom' => 'fr',
+                'note' => $request->input('note_fr_terminale_trim3'),
+                'decoupage_id' => $terminale_trimestre3->id,
 
             ]);
             $ang = Matiere::create([
-                $request['nom'] => 'ang',
-                $request['note'] => $request->input('note_ang_terminale_trim3'),
-                $request['id_decoupage'] => $terminale_trimestre3->id,
+                'nom' => 'ang',
+                'note' => $request->input('note_ang_terminale_trim3'),
+                'decoupage_id' => $terminale_trimestre3->id,
 
             ]);
 
@@ -486,40 +492,41 @@ class ParcoursController extends Controller
 
         /*****************************bac1*************************/
         $bac1 = Niveau::create([
-            $request['nom'] => 'bac1',
-            $request['serie'] => $request->input('serie_bac1'),
-            $request['systeme'] => '1',
-            $request['annee'] => $request->input('annee_bac1'),
-            $request['id_dossier'] => $dossier->id,
+            'nom' => 'bac1',
+            'serie' => $request->input('serie_bac1'),
+            'systeme' => 'examen',
+            'etablissement' => $request->input('etablissement_premiere'),
+            //'annee' => $request->input('annee_bac1'),
+            'dossier_id' => $dossier->id,
         ]);
 
-        $releve_bac1= Bullettin::create([
-            $request['fichier'] => $request->input('releve_bac1'),
+        $releve_bac1= Bulletin::create([
+            'fichier' => $request->input('releve_bac1'),
         ]);
         
 
         $bac1_decoupage = Decoupage::create([
-            $request['nom'] => 'bac1',
-            $request['id_niveau'] => $bac1->id,
-            $request['id_bulletin'] => $releve_bac1->id,
+            'nom' => 'bac1',
+            'niveau_id' => $bac1->id,
+            'id_bulletin' => $releve_bac1->id,
         ]);
         //les notes
         $math = Matiere::create([
-            $request['nom'] => 'math',
-            $request['note'] => $request->input('note_math_bac1'),
-            $request['id_decoupage'] => $bac1_decoupage->id,
+            'nom' => 'math',
+            'note' => $request->input('note_math_bac1'),
+            'decoupage_id' => $bac1_decoupage->id,
 
         ]);
         $fr = Matiere::create([
-            $request['nom'] => 'fr',
-            $request['note'] => $request->input('note_fr_bac1'),
-            $request['id_decoupage'] => $bac1_decoupage->id,
+            'nom' => 'fr',
+            'note' => $request->input('note_fr_bac1'),
+            'decoupage_id' => $bac1_decoupage->id,
 
         ]);
         $ang = Matiere::create([
-            $request['nom'] => 'ang',
-            $request['note'] => $request->input('note_ang_bac1'),
-            $request['id_decoupage'] => $bac1_decoupage->id,
+            'nom' => 'ang',
+            'note' => $request->input('note_ang_bac1'),
+            'decoupage_id' => $bac1_decoupage->id,
 
         ]);
 
@@ -527,40 +534,41 @@ class ParcoursController extends Controller
 
         /*****************************bac2*************************/
         $bac2 = Niveau::create([
-            $request['nom'] => 'bac2',
-            $request['serie'] => $request->input('serie_bac2'),
-            $request['systeme'] => '1',
-            $request['annee'] => $request->input('annee_bac2'),
-            $request['id_dossier'] => $dossier->id,
+            'nom' => 'bac2',
+            'serie' => $request->input('serie_bac2'),
+            'systeme' => 'examen',
+            'etablissement' => $request->input('etablissement_terminale'),
+            //'annee' => $request->input('annee_bac2'),
+            'dossier_id' => $dossier->id,
         ]);
 
-        $releve_bac2= Bullettin::create([
-            $request['fichier'] => $request->input('releve_bac2'),
+        $releve_bac2= Bulletin::create([
+            'fichier' => $request->input('releve_bac2'),
         ]);
         
 
         $bac2_decoupage = Decoupage::create([
-            $request['nom'] => 'bac2',
-            $request['id_niveau'] => $bac2->id,
-            $request['id_bulletin'] => $releve_bac2->id,
+            'nom' => 'bac2',
+            'niveau_id' => $bac2->id,
+            'id_bulletin' => $releve_bac2->id,
         ]);
         //les notes
         $math = Matiere::create([
-            $request['nom'] => 'math',
-            $request['note'] => $request->input('note_math_bac2'),
-            $request['id_decoupage'] => $bac2_decoupage->id,
+            'nom' => 'math',
+            'note' => $request->input('note_math_bac2'),
+            'decoupage_id' => $bac2_decoupage->id,
 
         ]);
         $fr = Matiere::create([
-            $request['nom'] => 'fr',
-            $request['note'] => $request->input('note_fr_bac2'),
-            $request['id_decoupage'] => $bac2_decoupage->id,
+            'nom' => 'fr',
+            'note' => $request->input('note_fr_bac2'),
+            'decoupage_id' => $bac2_decoupage->id,
 
         ]);
         $ang = Matiere::create([
-            $request['nom'] => 'ang',
-            $request['note'] => $request->input('note_ang_bac2'),
-            $request['id_decoupage'] => $bac2_decoupage->id,
+            'nom' => 'ang',
+            'note' => $request->input('note_ang_bac2'),
+            'decoupage_id' => $bac2_decoupage->id,
 
         ]);
 

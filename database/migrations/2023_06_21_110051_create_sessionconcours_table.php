@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('sessionconcours', function (Blueprint $table) {
             $table->id();
-            $table->date('date_debut');
-            $table->date('date_fin');
+            $table->date('date_debut')->nullable();
+            $table->date('date_fin')->nullable();
             $table->timestamps();
         });
     }

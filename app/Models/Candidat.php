@@ -10,9 +10,9 @@ class Candidat extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nom', 'prenom', 'dateNaissance','adresse', 'telephone', 'email', 'etablissement', 'nationalite', 'tel_tuteur', 'genre'];
+    protected $fillable = ['nom', 'prenom', 'dateNaissance','adresse', 'telephone', 'email', 'etablissement', 'nationalite', 'tel_tuteur', 'genre','situation'];
 
-    protected $table = 'candidats';
+    //protected $table = 'candidats';
     public function dossier():HasOne{
         return $this->hasOne(Dossier::class);
     }

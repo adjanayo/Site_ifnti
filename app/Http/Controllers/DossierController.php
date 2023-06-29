@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Candidat;
-use App\Models\Session_concour;
+use App\Models\SessionConcour;
 use App\Models\Dossier;
 
 class DossierController extends Controller
@@ -23,7 +23,7 @@ class DossierController extends Controller
      */
     public function create()
     {
-        return view('dossiers.create');
+        return view('admission.index');
     }
 
     /**
@@ -32,10 +32,13 @@ class DossierController extends Controller
     public function store(Request $request)
     {
         $candidat = Candidat::create($request->all());
-        $session_concour = Session_concour::create($request->all());
+        $session_concour = SessionConcour::create([
+            'date_debut' => '2000-02-02',
+            'date_fin' => '2000-02-02',
+        ]);
         $dossier = Dossier::create([
-            'id_candidat' => $candidat->id,
-            'id_session_concours' => $session_concour->id,
+            'candidat_id' => $candidat->id,
+            'session_concour_id' => $session_concour->id,
         ]);
 
         return $dossier;
