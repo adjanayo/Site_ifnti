@@ -12,7 +12,8 @@ export default defineConfig({
 
                 'resources/sass/dash.css',
                 'resources/js/dash.js',
-
+                'resources/css/form.css',
+                'resources/js/form.js',
             ],
             refresh: true,
         }),

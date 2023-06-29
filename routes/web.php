@@ -87,3 +87,10 @@ Route::prefix("formation/")->name("formation.")->group(
         })->name('general');
     }
 );
+
+
+Route::prefix('admission/')->name('admission.')->group(function(){
+    Route::get('formulaire', function (){
+        return view('admission.index');
+    });
+});
