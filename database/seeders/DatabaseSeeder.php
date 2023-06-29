@@ -39,7 +39,7 @@ class DatabaseSeeder extends Seeder
         SessionConcour::factory()
             ->has(
                 Dossier::factory()
-                    ->count(50)
+            ->count(50)
                     ->hasNote()
                     ->for(Candidat::factory())
                     ->has(Niveau::factory()
