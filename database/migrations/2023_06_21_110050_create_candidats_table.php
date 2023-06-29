@@ -18,11 +18,11 @@ return new class extends Migration
             $table->date('dateNaissance');
             $table->string('genre');
             $table->string('adresse');
-            $table->bigInteger('telephone');
+            $table->string('telephone');
             $table->string('email');
             $table->string('etablissement');
             $table->string('nationalite');
-            $table->bigInteger('tel_tuteur');
+            $table->string('tel_tuteur');
             $table->timestamps();
         });
     }

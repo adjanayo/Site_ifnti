@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('nom');
             $table->string('systeme');
             $table->string('annee');
-            $table->bigInteger('id_dossier');
+            $table->bigInteger('dossier_id');
             $table->timestamps();
-            $table->foreign('id_dossier')->references('id')->on('dossiers')->onDelete('cascade');
+            $table->foreign('dossier_id')->references('id')->on('dossiers')->onDelete('cascade');
         });
     }
 

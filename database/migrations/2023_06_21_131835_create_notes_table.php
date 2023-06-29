@@ -13,12 +13,12 @@ return new class extends Migration
     {
         Schema::create('notes', function (Blueprint $table) {
             $table->id();
-            $table->string('math');
-            $table->string('fr');
-            $table->string('ang');
-            $table->bigInteger('id_dossier');
+            $table->float('math');
+            $table->float('fr');
+            $table->float('ang');
+            $table->bigInteger('dossier_id');
             $table->timestamps();
-            $table->foreign('id_dossier')->references('id')->on('dossiers')->onDelete('cascade');
+            $table->foreign('dossier_id')->references('id')->on('dossiers')->onDelete('cascade');
         });
     }
 

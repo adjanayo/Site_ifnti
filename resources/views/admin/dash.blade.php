@@ -5,9 +5,8 @@
         <nav>
             <a href="#" aria-label="forecastr logo" class="logo">
                 <img sizes="(min-width: 700px) 1200px,(min-width: 50px)
-                150px,
-                98vw" srcset="{{ asset('admin/images/logotext-600.png')}} 700w,
-                {{ asset('admin/images/logotext.png') }} 150w," src="{{ asset('admin/images/logotext.png') }}" />
+                300px" srcset="{{ asset('admin/images/logotext-600.png')}} 700w,
+                {{ asset('admin/images/logotext.png') }} 300w," src="{{ asset('admin/images/logotext.png') }}" />
 
             </a>
             <button class="toggle-mob-menu" aria-expanded="false" aria-label="open menu">
