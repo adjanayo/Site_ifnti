@@ -14,7 +14,7 @@ class Note extends Model
     protected $fillable = ['math', 'ang', 'fr'];
 
     protected $table = 'notes';
-    
+
 
     public function dossier():BelongsTo{
         return $this->belongsTo(Dossier::class);
