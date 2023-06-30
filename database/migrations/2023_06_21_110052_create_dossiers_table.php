@@ -16,16 +16,15 @@ return new class extends Migration
             $table->string('moyenne_bac')->nullable();
             $table->float('moyenne_concours')->nullable();
             $table->date('date_soumission')->nullable();
-            $table->string('etat')->nullable();
+            $table->string('etat')-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>nullable();
             $table->date('date_entretien')->nullable();
             $table->boolean('estValide')->nullable();
             $table->string('appreciation')->nullable();
             $table->bigInteger('candidat_id');
-            $table->bigInteger('session_concour_id');
+            $table->bigInteger('sessionconcour_id');
             $table->timestamps();
             $table->foreign('candidat_id')->references('id')->on('candidats')->onDelete('cascade');
-            $table->foreign('session_concour_id')->references('id')->on('sessionconcours')->onDelete('cascade');
-          
+            $table->foreign('sessionconcour_id')->references('id')->on('sessionconcours')->onDelete('cascade');
         });
     }
 
