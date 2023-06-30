@@ -2,6 +2,16 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
 
+@font-face {
+    font-family: 'Gudea';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/gudea/v15/neIFzCqgsI0mp9CI_oU.ttf) format('truetype');
+}
+
+
+
+
 :root {
     --page-header-bgColor: #242e42;
     --page-header-bgColor-hover: #1d2636;
@@ -26,15 +36,24 @@
     --switch-bgDarkModeColor: #1f1f27;
 }
 
+
+/* variables */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
     box-sizing: border-box;
 }
 
+ol,
 ul {
     list-style: none;
 }
+
 
 a,
 button {
@@ -43,6 +62,23 @@ button {
 
 a {
     text-decoration: none;
+}
+
+input,
+button {
+    outline: none;
+}
+
+html {
+    line-height: 1.2;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: #2980b9;
+    color: #000;
+    font-family: "Gudea", arial, sans-serif;
+    font-size: 16px;
 }
 
 button {
@@ -75,9 +111,6 @@ svg {
     display: block;
 }
 
-body {
-    font: 16px/1.5 "Lato", sans-serif;
-}
 
 
 /* HEADER STYLES
@@ -108,7 +141,7 @@ body {
 } */
 
 /*remove these styles*/
-.page-header {
+/* .page-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -117,6 +150,7 @@ body {
     overflow: auto;
 }
 
+*/
 .page-header nav {
     display: flex;
     flex-direction: column;
@@ -305,7 +339,7 @@ body {
     background: var(--red);
 }
 
-.page-content .grid {
+/* .page-content .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
@@ -322,7 +356,30 @@ body {
 .page-content .grid>article:first-child,
 .page-content .grid>article:last-child {
     grid-column: 1 / -1;
+} */
+/*Custum PAGES CONTENT GRID*/
+
+
+
+
+.page-content .grid>article {
+    clear: both;
+    display: flex;
+    justify-content: center;
+    background: var(--page-content-blockColor);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
 }
+
+
+
+
+
+
+
+
+
+
 
 
 /* MQ RULES

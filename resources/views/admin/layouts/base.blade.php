@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
 
     <!-- Scripts -->
-    @vite([ 'resources/css/login.css', 'resources/css/dash.css'])
+    @vite([ 'resources/css/login.css', 'resources/css/dash.css', 'resources/css/dataTable.css', 'resources/css/dossier.css'])
 
 </head>
 
@@ -26,7 +26,7 @@
     <main>
         @yield('content')
     </main>
-    @vite(['resources/js/dash.js'])
+    @vite(['resources/js/dash.js', 'resources/js/jquery.min.js'])
     @stack('js')
 </body>
 

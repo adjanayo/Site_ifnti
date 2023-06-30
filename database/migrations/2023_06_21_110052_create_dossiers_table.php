@@ -22,11 +22,11 @@ return new class extends Migration
             $table->boolean('estValide');
             $table->string('appreciation');
             $table->bigInteger('candidat_id');
-            $table->bigInteger('session_concour_id');
+            $table->bigInteger('sessionconcour_id');
             //$table->bigInteger('id_admis');
             $table->timestamps();
             $table->foreign('candidat_id')->references('id')->on('candidats')->onDelete('cascade');
-            $table->foreign('session_concour_id')->references('id')->on('sessionconcours')->onDelete('cascade');
+            $table->foreign('sessionconcour_id')->references('id')->on('sessionconcours')->onDelete('cascade');
             //$table->foreign('id_admis')->references('id')->on('admis');
         });
     }
