@@ -3,6 +3,8 @@
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DossierController;
+use App\Http\Controllers\CandidatController;
 
 /*
 |--------------------------------------------------------------------------
@@ -92,8 +94,20 @@ Route::prefix("formation/")->name("formation.")->group(
 );
 
 
+
+//routes d'inscription
+Route::get('dossier/list', [CandidatController::class, 'index'])->name("dossier.index");
+Route::get('dossier/formulaire/creation', [CandidatController::class, 'create'])->name("dossier.create");
+Route::get('dossier/formulaire/edition/{dossier}', [CandidatController::class, 'edit'])->name("dossier.edit");
+Route::post('dossier/enregistrement', [CandidatController::class, 'store'])->name("dossier.store");
+Route::put('dossier/mis_a_jours/{dossier}', [CandidatController::class, 'update'])->name("dossier.update");
+Route::get('dossier/{dossier}', [CandidatController::class, 'show'])->name("dossier.show");
+Route::delete('dossier/{dossier}', [CandidatController::class, 'destroy'])->name("dossier.destroy");
+
+
 Route::prefix('admission/')->name('admission.')->group(function(){
     Route::get('formulaire', function (){
         return view('admission.index');
     });
 });
+

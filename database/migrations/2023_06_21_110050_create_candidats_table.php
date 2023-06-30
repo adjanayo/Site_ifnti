@@ -17,10 +17,10 @@ return new class extends Migration
             $table->string('prenom');
             $table->date('dateNaissance');
             $table->string('genre');
-            $table->string('adresse');
+            $table->string('adresse')->nullable();
             $table->string('telephone');
             $table->string('email');
-            $table->string('etablissement');
+            $table->string('situation');
             $table->string('nationalite');
             $table->string('tel_tuteur');
             $table->timestamps();

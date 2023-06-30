@@ -13,10 +13,9 @@ return new class extends Migration
     {
         Schema::create('bulletins', function (Blueprint $table) {
             $table->id();
-            $table->string('fichier');
-            $table->bigInteger('decoupage_id');
+            $table->string('fichier')->nullable();
             $table->timestamps();
-            $table->foreign('decoupage_id')->references('id')->on('decoupages')->onDelete('cascade');
+            
         });
     }
 
