@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\DossierUPRequest;
 use App\Models\Dossier;
+use App\Models\Note;
 use Illuminate\Http\Request;
 
 class DossierController extends Controller
@@ -53,13 +55,15 @@ class DossierController extends Controller
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
+
+    // public function update(DossierUPRequest $request, Dossier $dossier)
+    // {
+    //     $math = $request->math;
+    //     $ang = $request->ang;
+    //     $fr = $request->fr;
+    //     $note = Note::find($dossier->note);
+    //     $note->$math
+    // }
 
     /**
      * Remove the specified resource from storage.

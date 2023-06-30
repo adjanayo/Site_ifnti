@@ -105,7 +105,9 @@
                                 <tr>
                                     <td>{{ $decoupage->nom }}</td>
                                     @php
-                                        $matieres = $decoupage->matieres;
+                                        $matieres = $decoupage->matieres
+
+
                                     @endphp
                                     @foreach ($matieres as $matiere)
                                         @if ($matiere->nom == 'math')
@@ -182,20 +184,20 @@
                         <fieldset class="etat-dossier">
                             <legend>Admission du candidat</legend>
                             <div class="form-dossier-ligne">
-                                <label for="attente">En attente</label><input type="radio" name="admis" id="attente"
-                                    value="wait">
+                                <label for="attente">En attente</label><input type="radio" name="etat" id="attente"
+                                    value="en attente">
                                 <label for="attente" class="rad"></label>
 
                             </div>
                             <div class="form-dossier-ligne">
                                 <label for="rejete">Rejeté</label>
-                                <input type="radio" name="admis" id="rejete" value="reject">
+                                <input type="radio" name="atat" id="rejete" value="rejete">
                                 <label for="rejete" class="rad"></label>
 
                             </div>
                             <div class="form-dossier-ligne">
                                 <label for="admis">Admis</label>
-                                <input type="radio" name="admis" id="admis" value="true">
+                                <input type="radio" name="estValide" id="admis" value="true">
                                 <label for="admis" class="rad"></label>
 
                             </div>
