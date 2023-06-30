@@ -21,11 +21,10 @@ return new class extends Migration
             $table->boolean('estValide')->nullable();
             $table->string('appreciation')->nullable();
             $table->bigInteger('candidat_id');
-            $table->bigInteger('session_concour_id');
+            $table->bigInteger('sessionconcour_id');
             $table->timestamps();
             $table->foreign('candidat_id')->references('id')->on('candidats')->onDelete('cascade');
-            $table->foreign('session_concour_id')->references('id')->on('sessionconcours')->onDelete('cascade');
-          
+            $table->foreign('sessionconcour_id')->references('id')->on('sessionconcours')->onDelete('cascade');
         });
     }
 

@@ -43,11 +43,11 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#0">
+                    <a href="{{ route("sessionConcours") }}">
                         <svg>
                             <use xlink:href="#collection"></use>
                         </svg>
-                        <span>Collection</span>
+                        <span>Sessions concours</span>
                     </a>
                 </li>
                 <li>
@@ -130,11 +130,10 @@
                     </svg>
 
                     <div class="logout-conteneur">
-
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
-                            <button type="submit">
-                                {{ __('Logout') }}
+                            <button type="submit" id="logout">
+                                <i class="fas fa-sign-out-alt"></i>                                {{ __('Logout') }}
                             </button>
                         </form>
                     </div>
@@ -142,14 +141,16 @@
             </div>
         </section>
         <section class="grid">
+            <article>
+               @yield("action")
+            </article>
+            {{-- <article></article>
             <article></article>
             <article></article>
             <article></article>
             <article></article>
             <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
+            <article></article> --}}
         </section>
         <footer class="page-footer">
             <span>made by </span>
