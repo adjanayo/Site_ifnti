@@ -123,39 +123,45 @@
             @php
                 $niveaux = $dossier->niveau;
             @endphp
-            @foreach ($niveaux as $niveau)
-                <h2 class="title-dossier">{{ $niveau->nom }} ({{ $niveau->annee }})</h2>
-                <div class="conatainer-table">
-                    <table class="dossier-data-table">
-                        <thead>
-                            <tr>
-                                <th>Decoupage</th>
-                                <th>MAth</th>
-                                <th>Français</th>
-                                <th>Anglais</th>
-                                <th>Bulltein</th>
-                            </tr>
-                        </thead>
-                        @php
-                            $decoupages = $niveau->decoupage;
-                        @endphp
-                        @foreach ($decoupages as $decoupage)
-                            <tbody>
-                                <tr>
-                                    <td>{{ $decoupage->nom }}</td>
-                                    @php
-                                        $matieres = $decoupage->matieres;
-                                    @endphp
-                                    @foreach ($matieres as $matiere)
-                                        @if ($matiere->nom == 'math')
-                                            <td>
-                                                {{ $matiere->note }}</td>
-                                        @endif
 
-                                        @if ($matiere->nom == 'fr')
-                                            <td>
-                                                {{ $matiere->note }}</td>
-                                        @endif
+            <div class="mes-tables">
+
+                <div class="preview" id="previous">
+                    <button id="a1" style="visibility: hidden;"><img src=" {{ asset('admin/images/prev.png') }}"
+                            alt="" id="prev"></button>
+                </div>
+                <div class="container-tables-" id="container-tables">
+                    @foreach ($niveaux as $niveau)
+                        <div class="conatainer-table1 @if ($loop->index < 2) active @endif">
+                            <h2 class="title-dossier">{{ $niveau->nom }} ({{ $niveau->annee }})</h2>
+                            <table class="dossier-tables ">
+                                <thead>
+                                    <tr>
+                                        <th>Decoupage</th>
+                                        <th>MAth</th>
+                                        <th>Français</th>
+                                        <th>Anglais</th>
+                                        <th>Bulltein</th>
+                                    </tr>
+                                </thead>
+                                @php
+                                    $decoupages = $niveau->decoupage;
+                                @endphp
+                                <tbody>
+                                    @foreach ($decoupages as $decoupage)
+                                        <tr>
+                                            <td>{{ $decoupage->nom }}</td>
+                                            @php
+                                                $matieres = $decoupage->matieres;
+                                            @endphp
+                                            @foreach ($matieres as $matiere)
+                                                @if ($matiere->nom == 'math')
+                                                    <td>{{ $matiere->note }}</td>
+                                                @endif
+                                                @if ($matiere->nom == 'fr')
+                                                    <td>
+                                                        {{ $matiere->note }}</td>
+                                                @endif
 
                                                 @if ($matiere->nom == 'ang')
                                                     <td>
@@ -163,7 +169,7 @@
                                                 @endif
                                             @endforeach
 
-                                            <td><button id="dowload-bulletin" >dowload</button></td>
+                                            <td><button id="dowload">dowload</button></td>
                                         </tr>
                                     @endforeach
                                 </tbody>
@@ -214,20 +220,20 @@
                         <fieldset class="etat-dossier">
                             <legend>Admission du candidat</legend>
                             <div class="form-dossier-ligne">
-                                <label for="attente">En attente</label><input type="radio" name="etat" id="attente"
-                                    value="en attente">
+                                <label for="attente">En attente</label><input type="radio" name="admis" id="attente"
+                                    value="wait">
                                 <label for="attente" class="rad"></label>
 
                             </div>
                             <div class="form-dossier-ligne">
                                 <label for="rejete">Rejeté</label>
-                                <input type="radio" name="atat" id="rejete" value="rejete">
+                                <input type="radio" name="admis" id="rejete" value="reject">
                                 <label for="rejete" class="rad"></label>
 
                             </div>
                             <div class="form-dossier-ligne">
                                 <label for="admis">Admis</label>
-                                <input type="radio" name="estValide" id="admis" value="true">
+                                <input type="radio" name="admis" id="admis" value="true">
                                 <label for="admis" class="rad"></label>
 
                             </div>
