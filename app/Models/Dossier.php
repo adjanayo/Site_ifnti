@@ -17,7 +17,7 @@ class Dossier extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['moyenne_bac', 'appreciation', 'estValide', 'moyenne_concours','serie', 'date_soumission','etat','date_entretien'];
+    protected $fillable = ['moyenne_bac', 'appreciation', 'estValide', 'moyenne_concours','serie', 'date_soumission','etat','date_entretien','candidat_id','session_concour_id'];
 
     protected $table = 'dossiers';
 

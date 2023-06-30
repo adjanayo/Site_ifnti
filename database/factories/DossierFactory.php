@@ -20,7 +20,7 @@ class DossierFactory extends Factory
             //
             'moyenne_bac' => $this->faker->randomFloat($nbMaxDecimals = 2, $min = 9, $max = 20),
             'moyenne_concours' => null,
-            "serie" => $this->faker->word(),
+           // "serie" => $this->faker->word(),
             'date_soumission' => $this->faker->date(),
             'etat' => $this->faker->randomElement(["rejeté", "en attente", "complet"]),
             'date_entretien' => null,

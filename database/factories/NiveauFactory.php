@@ -19,7 +19,9 @@ class NiveauFactory extends Factory
         return [
             //
             'systeme' => $this->faker->randomElement(["trim", "sem"]),
-            "annee" => $this->faker->date()
+            "annee" => $this->faker->date(),
+            "serie" => $this->faker->randomElement(["CD", "C4","D","E","F","A4"]),
+            "etablissement" => $this->faker->company(),
         ];
     }
 }
