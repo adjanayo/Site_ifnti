@@ -43,11 +43,11 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#0">
+                    <a href="{{ route("sessionConcours") }}">
                         <svg>
                             <use xlink:href="#collection"></use>
                         </svg>
-                        <span>Collection</span>
+                        <span>Sessions concours</span>
                     </a>
                 </li>
                 <li>
@@ -143,7 +143,7 @@
         </section>
         <section class="grid">
             <article>
-                @include("admin.dataTable")
+               @yield("action")
             </article>
             <article></article>
             <article></article>

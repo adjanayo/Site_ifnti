@@ -17,6 +17,7 @@ export default defineConfig({
                 'resources/sass/dash.css',
                 'resources/js/dash.js',
 
+                'resources/js/jquery.min.js',
 
                 'resources/sass/dataTable.css',
 
