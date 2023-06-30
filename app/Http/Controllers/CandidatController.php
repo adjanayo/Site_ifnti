@@ -13,6 +13,10 @@ use App\Models\Dossier;
 
 class CandidatController extends Controller
 {
+    public function session( ) {
+        return view('admission.session');
+    }
+
     public function index()
     {
         $dossiers = Dossier::all();
@@ -29,7 +33,17 @@ class CandidatController extends Controller
 
     public function store(Request $request)
     {
-        $dossier = app()->call('App\Http\Controllers\DossierController@store');
+        $candidat = Candidat::create($request->all());
+        $session_concour = SessionConcour::create([
+            'date_debut' => '2000-02-02',
+            'date_fin' => '2000-02-02',
+        ]);
+        $dossier = Dossier::create([
+            'candidat_id' => $candidat->id,
+            'session_concour_id' => $session_concour->id,
+        ]);
+
+        
         //les cinq niveaux
 
         /*****************************Seconde*************************/

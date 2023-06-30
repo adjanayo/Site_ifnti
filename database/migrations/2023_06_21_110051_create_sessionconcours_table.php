@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->date('date_debut')->nullable();
             $table->date('date_fin')->nullable();
+            $table->boolean('estCourant')->nullable();
             $table->timestamps();
         });
     }

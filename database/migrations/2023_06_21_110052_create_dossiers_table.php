@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('moyenne_bac')->nullable();
             $table->float('moyenne_concours')->nullable();
             $table->date('date_soumission')->nullable();
-            $table->string('etat')-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>nullable();
+            $table->string('etat')->nullable();
             $table->date('date_entretien')->nullable();
             $table->boolean('estValide')->nullable();
             $table->string('appreciation')->nullable();
