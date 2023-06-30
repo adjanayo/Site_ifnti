@@ -123,7 +123,40 @@
             @php
                 $niveaux = $dossier->niveau;
             @endphp
-           
+            @foreach ($niveaux as $niveau)
+                <h2 class="title-dossier">{{ $niveau->nom }} ({{ $niveau->annee }})</h2>
+                <div class="conatainer-table">
+                    <table class="dossier-data-table">
+                        <thead>
+                            <tr>
+                                <th>Decoupage</th>
+                                <th>MAth</th>
+                                <th>Français</th>
+                                <th>Anglais</th>
+                                <th>Bulltein</th>
+                            </tr>
+                        </thead>
+                        @php
+                            $decoupages = $niveau->decoupage;
+                        @endphp
+                        @foreach ($decoupages as $decoupage)
+                            <tbody>
+                                <tr>
+                                    <td>{{ $decoupage->nom }}</td>
+                                    @php
+                                        $matieres = $decoupage->matieres;
+                                    @endphp
+                                    @foreach ($matieres as $matiere)
+                                        @if ($matiere->nom == 'math')
+                                            <td>
+                                                {{ $matiere->note }}</td>
+                                        @endif
+
+                                        @if ($matiere->nom == 'fr')
+                                            <td>
+                                                {{ $matiere->note }}</td>
+                                        @endif
+
                                                 @if ($matiere->nom == 'ang')
                                                     <td>
                                                         {{ $matiere->note }}</td>
