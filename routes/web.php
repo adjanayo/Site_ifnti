@@ -22,8 +22,8 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/sessionConcour', [App\Http\Controllers\SessionConcourController::class, 'index'])->middleware('auth')->name('sessionConcours');
-Route::get('/dossier/{dossier}', [App\Http\Controllers\DossierController::class, 'show'])->middleware('auth')->name('dossier.show');
+Route::get('/sessionConcour', [App\Http\Controllers\SessionConcourController::class, 'index'])->name('sessionConcours');
+Route::get('/dossier/{dossier}', [App\Http\Controllers\DossierController::class, 'show'])->name('dossier.show');
 
 
 /**Vitrine */
