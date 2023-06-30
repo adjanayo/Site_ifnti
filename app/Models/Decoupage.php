@@ -20,11 +20,11 @@ class Decoupage extends Model
     protected $table = 'decoupages';
 
     public function niveau():BelongsTo{
-        return belongsTo(Niveau::class);
+        return $this->belongsTo(Niveau::class);
     }
 
-    public function bullettin():HasOne{
-        return hasOne(Bullettin::class);
+    public function bulletin():HasOne{
+        return $this->hasOne(Bulletin::class);
     }
 
     public function matieres():HasMany{

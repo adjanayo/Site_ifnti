@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('matieres', function (Blueprint $table) {
             $table->id();
             $table->string('nom');
-            $table->integer('note');
-            $table->bigInteger('id_decoupage');
+            $table->float('note');
+            $table->bigInteger('decoupage_id');
             $table->timestamps();
-            $table->foreign('id_decoupage')->references('id')->on('decoupages')->onDelete('cascade');
+            $table->foreign('decoupage_id')->references('id')->on('decoupages')->onDelete('cascade');
         });
     }
 

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/login', function () {
+//     redirect(route("login"));
+// });
+
+Auth::routes();
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/sessionConcour', [App\Http\Controllers\SessionConcourController::class, 'index'])->name('sessionConcours');
+Route::get('/dossier/{dossier}', [App\Http\Controllers\DossierController::class, 'show'])->name('dossier.show');
+
+
+/**Vitrine */
 Route::get('/', function () {
     return view('vitrine.pages.home');
 })->name('accueil');
@@ -24,6 +38,9 @@ Route::get('/contact', function () {
 })->name('contact');
 Route::prefix("ifnti/")->name("ifnti.")->group(
     function () {
+        Route::get('/', function () {
+            return redirect(route('ifnti.presentation'));
+        })->name('ifnti');
         Route::get('a_propos', function () {
             return view('vitrine.pages.ifnti.about');
         })->name('presentation');
@@ -37,6 +54,9 @@ Route::prefix("ifnti/")->name("ifnti.")->group(
 );
 Route::prefix("admission/")->name("admission.")->group(
     function () {
+        Route::get('', function () {
+            return redirect(route("admission.concours"));
+        })->name('admission');
         Route::get('frais', function () {
             return view('vitrine.pages.admission.frais');
         })->name('frais');
@@ -47,6 +67,9 @@ Route::prefix("admission/")->name("admission.")->group(
 );
 Route::prefix("formation/")->name("formation.")->group(
     function () {
+        Route::get('', function () {
+            return view('vitrine.pages.formation.index');
+        })->name('all');
         Route::get('base_de_deonne', function () {
             return view('vitrine.pages.formation.bd');
         })->name('cours-bd');
@@ -69,3 +92,8 @@ Route::prefix("formation/")->name("formation.")->group(
 );
 
 
+Route::prefix('admission/')->name('admission.')->group(function(){
+    Route::get('formulaire', function (){
+        return view('admission.index');
+    });
+});
