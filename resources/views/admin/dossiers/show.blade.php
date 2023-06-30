@@ -163,7 +163,7 @@
                                                 @endif
                                             @endforeach
 
-                                            <td><button id="dowload" >dowload</button></td>
+                                            <td><button id="dowload-bulletin" >dowload</button></td>
                                         </tr>
                                     @endforeach
                                 </tbody>
