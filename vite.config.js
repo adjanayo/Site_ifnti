@@ -21,6 +21,8 @@ export default defineConfig({
               'resources/js/jquery.min.js',
 
                 'resources/sass/dataTable.css',
+                'resources/sass/script_dossier.js',
+                'resources/sass/style_dossier.css'
             ],
 
             refresh: true
