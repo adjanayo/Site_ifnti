@@ -115,11 +115,11 @@
 }
 
 .dossier-data-table tbody tr:nth-child(2n) {
-    background-color: ivory;
+    background-color: #f1efec;
 }
 
 .dossier-data-table tbody tr:hover {
-    background-color: rgba(201, 169, 110, 0.473);
+    background-color: #25252531;
 }
 
 

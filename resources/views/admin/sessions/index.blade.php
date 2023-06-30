@@ -44,7 +44,7 @@
                         @forelse ($lesDossiers as $dossier)
                             <tr class="clickable-row" data-href='{{ route('dossier.show', $dossier->id) }}'>
                                 <td>
-                                    <input type="checkbox" id="" class="">
+                                    {{-- <input type="checkbox" id="" class=""> --}}
 
                                 </td>
                                 <td>{{ $dossier->candidat->nom }}</td>
