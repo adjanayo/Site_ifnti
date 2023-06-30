@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->bigInteger('niveau_id');
-            $table->bigInteger('id_bulletin');
+           
             $table->timestamps();
             $table->foreign('niveau_id')->references('id')->on('niveaus')->onDelete('cascade');
-            $table->foreign('id_bulletin')->references('id')->on('bulletins')->onDelete('cascade');
+           
         });
     }
 
