@@ -130,11 +130,10 @@
                     </svg>
 
                     <div class="logout-conteneur">
-
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
-                            <button type="submit">
-                                {{ __('Logout') }}
+                            <button type="submit" id="logout">
+                                <i class="fas fa-sign-out-alt"></i>                                {{ __('Logout') }}
                             </button>
                         </form>
                     </div>
