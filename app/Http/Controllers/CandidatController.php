@@ -7,9 +7,26 @@ use App\Models\Niveau;
 use App\Models\Decoupage;
 use App\Models\Matiere;
 use App\Models\Bulletin;
+use App\Models\Candidat;
+use App\Models\SessionConcour;
+use App\Models\Dossier;
 
-class ParcoursController extends Controller
+class CandidatController extends Controller
 {
+    public function index()
+    {
+        $dossiers = Dossier::all();
+        return view('dossiers.index',compact('dossiers'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create()
+    {
+        return view('admission.index');
+    }
+
     public function store(Request $request)
     {
         $dossier = app()->call('App\Http\Controllers\DossierController@store');
@@ -577,4 +594,39 @@ class ParcoursController extends Controller
          
         }
         
+
+    public function show(Dossier $dossier)
+    {
+        return view('dossiers.show',compact('dossier'));
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     */
+    public function edit(Dossier $dossier)
+    {
+        return view('dossiers.edit',compact('dossier'));
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function update(Request $request, Dossier $dossier)
+    {
+       
+        $dossier->candidat->update($request->all());
+        $dossier->session_concour->update($request->all());
+        $dossier->update($request->all());
+        
+        return redirect()->route('dossier.index');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function destroy(Dossier $dossier)
+    {
+        $dossier->delete();
+        return redirect()->route('dossier.idex');
+    }
 }
