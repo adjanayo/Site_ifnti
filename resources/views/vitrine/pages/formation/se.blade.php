@@ -32,8 +32,8 @@
                                 <h2><a href="#" title="">Linux</a></h2>
                             </div>
                             <div class="course-desc">
-                                <p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets
-                                    geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
+                                <p>Linux est connu pour sa stabilité, sa performance, sa sécurité et sa flexibilité. Il est utilisé sur diverses plateformes, depuis les serveurs, les ordinateurs de bureau jusqu'aux smartphones et aux systèmes embarqués. 
+                                    Il existe de nombreuses distributions de Linux, telles que Ubuntu, Fedora et Debian, qui offrent différentes interfaces utilisateur et fonctionnalités pour répondre aux besoins des utilisateurs.... </p>
                             </div>
                             <div class="course-rating">
                                 4.5
@@ -64,8 +64,9 @@
                                 <h2><a href="#" title="">Windows</a></h2>
                             </div>
                             <div class="blog-desc">
-                                <p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets
-                                    geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
+                                <p>Le système d'exploitation Windows est un système d'exploitation développé par Microsoft Corporation. Il est largement utilisé dans le monde entier et est conçu pour offrir une interface conviviale et intuitive aux utilisateurs.
+                                     Windows propose une large gamme de fonctionnalités et de programmes préinstallés, tels que le navigateur Internet Explorer, le logiciel de traitement de texte Word, le tableur Excel, le programme de messagerie électronique Outlook, etc.
+                                     Il existe différentes versions de Windows, telles que Windows 10, Windows 8, Windows 7, et chaque version apporte des améliorations et des fonctionnalités supplémentaires par rapport à la version précédente. </p>
                             </div>
                             <div class="course-rating">
                                 4.5

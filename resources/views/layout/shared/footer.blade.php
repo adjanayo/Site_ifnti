@@ -10,20 +10,24 @@
                     <div class="footer-right">
                         <ul class="footer-links-soi">
                             <li>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a target="_blank" href="https://www.facebook.com/profile.php?id=100028389086679"><i class="fa fa-facebook"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-github"></i></a>
+                                <a target="_blank" href="https://github.com/ifnti-dev/"><i class="fa fa-github"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a  target="_blank" href="https://www.linkedin.com/school/ifnti/"><i class="fa fa-linkedin"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a target="_blank" href="#"><i class="fa fa-instagram"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-youtube"></i></a>
+                                <a target="_blank" href="https://www.youtube.com/@ifntisokode-licenceinforma7120"><i class="fa fa-youtube"></i></a>
                             </li>
+                            <li>
+                                <a target="_blank" href="https://www.tiktok.com/@ifnti_sokode"><<i class="fa fa-tiktok"></i></a>
+                            </li>
+                            
                         </ul>
                         <!-- end links -->
                     </div>

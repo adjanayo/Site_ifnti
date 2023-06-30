@@ -20,9 +20,9 @@
                                         <p class="lead" id="concour"> Le concours d'entrée pour l'année académique
                                             2022-2023 est
                                             prévu le 10 juiellet 2023 à 07H00 dans nos locaux. </p>
-                                        <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
+                                        <a target="_blank" href="https://forms.gle/wgVHzuGSSbQij73g7" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="#" class="hover-btn-new"><span>En savoir plus</span></a>
+                                        <a href="/ifnti/a_propos" class="hover-btn-new"><span>En savoir plus</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -41,9 +41,9 @@
                                         </h2>
                                         <p class="lead" data-animation="animated fadeInLeft">Nos salles sont équipées de
                                             matériels récents. </p>
-                                        <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
+                                        <a target="_blank" href="https://forms.gle/wgVHzuGSSbQij73g7" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="#" class="hover-btn-new"><span>En savoir plus</span></a>
+                                        <a href="/ifnti/a_propos" class="hover-btn-new"><span>En savoir plus</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -64,9 +64,9 @@
                                         <p class="lead" data-animation="animated fadeInLeft">L'IFNTI organise une
                                             journée portes-ouvertes le samedi 21 mai 2022.Dans la matinée, deux
                                             étudiants de fin de cycle présenteront leur...</p>
-                                        <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
+                                        <a target="_blank" href="https://forms.gle/wgVHzuGSSbQij73g7" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="#" class="hover-btn-new"><span>En savoir plus</span></a>
+                                        <a href="/ifnti/a_propos" class="hover-btn-new"><span>En savoir plus</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -254,25 +254,19 @@
                         <div class="timeline__item">
                             <div class="timeline__content img-bg-01">
                                 <h2>2021</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
-                                    condimentum lacus dapibus. Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>L'Institut de formation aux normes et technologies de l'informatique (IFNTI) conçu une imprimante 3D pour tout impression de piece</p>
                             </div>
                         </div>
                         <div class="timeline__item">
                             <div class="timeline__content img-bg-02">
                                 <h2>2022</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
-                                    condimentum lacus dapibus. Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>L'Institut de formation aux normes et technologies de l'informatique (IFNTI), instore le prix de miss TIC. Décerner à une fille travailleuse et laborieuse</p>
                             </div>
                         </div>
                         <div class="timeline__item">
                             <div class="timeline__content img-bg-04">
                                 <h2>2023</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
-                                    condimentum lacus dapibus. Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>L'Institut de formation aux normes et technologies de l'informatique (IFNTI).Avec le concours de Best programmer qui est un concours de programmation</p>
                             </div>
                         </div>
                     </div>

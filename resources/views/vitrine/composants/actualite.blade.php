@@ -14,11 +14,11 @@
                         <div class="image-blog">
                             <img src="{{ asset('vitrine/images/img/a1.png') }}" alt="" class="img-fluid">
                         </div>
-                        <div class="meta-info-blog">
+                        <!--div class="meta-info-blog">
                             <span><i class="fa fa-calendar"></i> <a href="#">May 11, 2015</a> </span>
                             <span><i class="fa fa-tag"></i> <a href="#">News</a> </span>
                             <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
-                        </div>
+                        </div-->
                         <div class="blog-title">
                             <h2><a href="#" title="">Cérémonie de remise de diplômes</a></h2>
                         </div>
@@ -38,18 +38,17 @@
                         <div class="image-blog">
                             <img src="{{ asset('vitrine/images/img/a2.png') }}" alt="" class="img-fluid">
                         </div>
-                        <div class="meta-info-blog">
+                        <!--div class="meta-info-blog">
                             <span><i class="fa fa-calendar"></i> <a href="#">May 11, 2015</a> </span>
                             <span><i class="fa fa-tag"></i> <a href="#">News</a> </span>
                             <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
-                        </div>
+                        </div-->
                         <div class="blog-title">
                             <h2><a href="#" title="">Concours d’entrée 2022 - 2023.</a></h2>
                         </div>
                         <div class="blog-desc">
-                            <p>L ’IFNTI accueillera une nou v elle promotion à la rentrée uni v ersitaire 2022-2023 . C
-                                ette
-                                f ormation recrutera des b ac h eliers des séries C, D, E, ... </p>
+                            <p>L ’IFNTI accueillera une nouvelle promotion à la rentrée universitaire 2022-2023 . Cette
+                                formation recrutera des bacheliers des séries C, D, E, ... </p>
                         </div>
                         <div class="blog-button">
                             <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
@@ -62,11 +61,11 @@
                         <div class="image-blog">
                             <img src="{{ asset('vitrine/images/img/a3.png') }}" alt="" class="img-fluid">
                         </div>
-                        <div class="meta-info-blog">
+                        <!--div class="meta-info-blog">
                             <span><i class="fa fa-calendar"></i> <a href="#">May 11, 2015</a> </span>
                             <span><i class="fa fa-tag"></i> <a href="#">News</a> </span>
                             <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
-                        </div>
+                        </div-->
                         <div class="blog-title">
                             <h2><a href="#" title="">Journées portes ouvertes</a></h2>
                         </div>
@@ -90,11 +89,11 @@
                         <div class="image-blog">
                             <img src="{{ asset('vitrine/images/img/a4.png') }}" alt="" class="img-fluid">
                         </div>
-                        <div class="meta-info-blog">
+                        <!--div class="meta-info-blog">
                             <span><i class="fa fa-calendar"></i> <a href="#">May 11, 2015</a> </span>
                             <span><i class="fa fa-tag"></i> <a href="#">News</a> </span>
                             <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
-                        </div>
+                        </div-->
                         <div class="blog-title">
                             <h2><a href="#" title="">Cérémonie de remise du prix MISS TIC</a></h2>
                         </div>
@@ -108,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-
+                <!--
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="blog-item">
                         <div class="image-blog">
@@ -132,9 +131,9 @@
                             <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
                         </div>
                     </div>
-                </div>
+                </div>-->
 
-                <div class="col-lg-4 col-md-6 col-12">
+                <!-- <div class="col-lg-4 col-md-6 col-12">
                     <div class="blog-item">
                         <div class="image-blog">
                             <img src="{{ asset('vitrine/images/img/a6.png') }}" alt="" class="img-fluid">
@@ -157,7 +156,8 @@
                             <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
                         </div>
                     </div>
-                </div>
+                </div>-->
+
             </div>
         </div>
     </div>

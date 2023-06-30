@@ -59,7 +59,7 @@
                             data-target="#login"><span>S'abonner</span></a></li>
                 </ul> --}}
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="hover-btn-new log orange" href="https://forms.gle/wgVHzuGSSbQij73g7" 
+                    <li><a class="hover-btn-new log orange" target="_blank" href="https://forms.gle/wgVHzuGSSbQij73g7" 
                             ><span>Postuler</span></a></li>
                 </ul>
             </div>

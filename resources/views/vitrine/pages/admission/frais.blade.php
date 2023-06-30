@@ -39,7 +39,7 @@
                     </div>
 
                     <div class="pricingTable-sign-up">
-                        <a href="#" class="hover-btn-new orange"><span>Concours</span></a>
+                        <a target="_blank" href="https://forms.gle/wgVHzuGSSbQij73g7" class="hover-btn-new orange"><span>Concours</span></a>
                     </div>
                 </div>
             </div>

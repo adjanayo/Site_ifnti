@@ -15,7 +15,7 @@
                             <img src="{{ asset('vitrine/images/img/page3_img2.png') }}" alt="" class="img-fluid">
                         </div>
                         <div class="post-content">
-                            <div class="post-date">
+                            <!--<div class="post-date">
                                 <span class="day">30</span>
                                 <span class="month">Nov</span>
                             </div>
@@ -23,7 +23,7 @@
                                 <span><i class="fa fa-calendar"></i> <a href="#">May 11, 2015</a> </span>
                                 <span><i class="fa fa-tag"></i> <a href="#">News</a> </span>
                                 <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
-                            </div>
+                            </div>-->
                             <div class="blog-title">
                                 <h2><a href="#" title="">Presentation</a></h2>
                             </div>
@@ -49,11 +49,11 @@
                             <h3 class="author_name"><a href="#">Jean-Pierre Paillard </a></h3>
                             <h5>est ingénieur informaticien de l’ENSIMAG, Grenoble. Ancien maître de conférences, il a
                                 enseigné aux <a href="#">universités de Grenoble et de La Rochelle.</a></h5>
-                            <p class="author_det">
+                            <!--p class="author_det">
                                 Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut aut
                                 reiciendise voluptat maiores alias consequaturs aut perferendis doloribus omnis saperet
                                 docendi nec, eos ea alii molestiae aliquand.
-                            </p>
+                            </p-->
                         </div>
                         <div class="author-desc">
                             <div class="our-team">

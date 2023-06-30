@@ -47,7 +47,7 @@
             </div>
             <div class="team-content">
                 <h3 class="title">Sema</h3>
-                <span class="post">Professeur en théorie des ensemble</span>
+                <span class="post">Professeur en théorie des ensembles</span>
             </div>
         </div>
     </div>
