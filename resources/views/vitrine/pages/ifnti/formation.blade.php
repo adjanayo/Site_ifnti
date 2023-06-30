@@ -18,8 +18,8 @@
                         <div class="contenu">
 
                             <div class="align-text ">
-                                <h2>Nom du diplôme:s</h2>
-                                <p>Licence en Informatique de organisations (Génie logiciel)
+                                <h2>Nom du diplôme</h2>
+                                <p>Licence en Informatique des organisations (Génie logiciel)
                                 </p>
                             </div>
                             <div class="align-text ">
@@ -34,7 +34,7 @@
                                 </p>
                             </div>
                             <div class="align-text ">
-                                <h2>Modes d’études</h2>
+                                <h2>Mode d’études</h2>
                                 <p>Présentiel cours du jour ou soir
 
                                 </p>
@@ -68,7 +68,7 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="inner-hmv">
                         <div class="icon-box-hmv"><i class="flaticon-achievement"></i></div>
-                        <h3>Une formation regroupe 24 étudiants
+                        <h3>Une promotion regroupe 24 étudiants
                         </h3>
                         <div class="tr-pa">M</div>
                         <p>un stage est garanti à chaque fin d’année, permettant aux étudiants de mettre en pratique leurs

@@ -34,7 +34,7 @@
                                     Fondé en 2009, il est destiné aux bacheliers et aux étudiants souhaitant se
                                     réorienter. L’IFNTI dispense une formation supérieure en licence de type LMD en
                                     informatique. L’IFNTI est une Association à but non lucratif (ASBL). Elle a pour but
-                                    de contribuer a la transmission du savoir et du savoir-faire des technologies
+                                    de contribuer à la transmission du savoir et du savoir-faire des technologies
                                     informatique en privilégiant le sens de la responsabilité et de la qualité.
                                 </blockquote>
                                 <p>Situé à Sokodé dans la Région Centrale du Togo, l’IFNTI est implanté dans le quartier
@@ -49,11 +49,11 @@
                             <h3 class="author_name"><a href="#">Jean-Pierre Paillard </a></h3>
                             <h5>est ingénieur informaticien de l’ENSIMAG, Grenoble. Ancien maître de conférences, il a
                                 enseigné aux <a href="#">universités de Grenoble et de La Rochelle.</a></h5>
-                            <p class="author_det">
+                            <!--<p class="author_det">
                                 Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut aut
                                 reiciendise voluptat maiores alias consequaturs aut perferendis doloribus omnis saperet
                                 docendi nec, eos ea alii molestiae aliquand.
-                            </p>
+                            </p>-->
                         </div>
                         <div class="author-desc">
                             <div class="our-team">
@@ -115,7 +115,7 @@
                             motivation d’activité dans la Communauté économique des États de l’Afrique de l’Ouest
                             (CEDEAO), maîtrise technologique et didactique, expérience professionnelle. Ils partagent
                             des convictions fortes sur la possibilité de réussir à freiner la fuite des cerveaux par une
-                            formation de qualité, et sur la baisse d’attrait de l’émigration qui se fait jour chez les
+                            formation de qualité, et sur la baisse d’attrait de l’émigration qui se fait sentir chez les
                             nouvelles générations. Un engagement sur plus de dix ans dans des activités associatives
                             locales leur a montré les potentialités des petites organisations : associations, ONG, PME.
                         </p>

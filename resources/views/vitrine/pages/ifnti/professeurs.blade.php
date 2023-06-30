@@ -105,7 +105,7 @@
                         </div>
                         <div class="team-content">
                             <h3 class="title">Vincent Clément</h3>
-                            <span class="post">Enseignatn réseaux et programmation</span>
+                            <span class="post">Enseignant réseaux et programmation</span>
                         </div>
                     </div>
                 </div>

@@ -18,8 +18,8 @@
                                         <h2 id="bienvuenue">Bienvuenue à l'<strong>IFNTI </strong><br>
                                             Sokodé</h2>
                                         <p class="lead" id="concour"> Le concours d'entrée pour l'année académique
-                                            2022-2023 est
-                                            prévu le 10 juiellet 2023 à 07H00 dans nos locaux. </p>
+                                            2023-2024 est
+                                            prévu le 10 juillet 2023 à 07H00 dans nos locaux. </p>
                                         <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <a href="#" class="hover-btn-new"><span>En savoir plus</span></a>
@@ -62,8 +62,7 @@
                                             Ouvertes
                                         </h2>
                                         <p class="lead" data-animation="animated fadeInLeft">L'IFNTI organise une
-                                            journée portes-ouvertes le samedi 21 mai 2022.Dans la matinée, deux
-                                            étudiants de fin de cycle présenteront leur...</p>
+                                            journée portes-ouvertes le samedi 21 mai 2023.Présentation de projets étudiants tous plus innovants les uns que les autres..</p>
                                         <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <a href="#" class="hover-btn-new"><span>En savoir plus</span></a>
@@ -85,8 +84,8 @@
                                             remise de diplômes
                                         </h2>
                                         <p class="lead" data-animation="animated fadeInLeft">Grand succès lors de la
-                                            remise des diplômes. Les six candidats ont été diplômés et ils ont tous une
-                                            proposition...</p>
+                                            remise des diplômes. Les six candidats ont été diplômés et ont tous eu au moins une
+                                            proposition d'emploie...</p>
                                         <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <a href="#" class="hover-btn-new"><span>En savoir plus</span></a>
@@ -99,12 +98,12 @@
             </div>
             <a class="new-effect carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <span class="fa fa-angle-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="sr-only">Précédant</span>
             </a>
 
             <a class="new-effect carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                 <span class="fa fa-angle-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only">Suivant</span>
             </a>
         </div>
     </div>
@@ -114,8 +113,8 @@
             <div class="section-title row text-center">
                 <div class="col-md-8 offset-md-2">
                     <h3>À propos</h3>
-                    <p class="lead">L'Institut de formation aux normes et technologies de l'informatique (IFNTI) est une
-                        institution renommée dédiée à l'excellence académique dans le domaine de l'informatique. Avec
+                    <p class="lead">L'Institut de formation aux normes et technologies de l'informatique (IFNTI) est un
+                        institut renommé dédié à l'excellence académique dans le domaine de l'informatique. Avec
                         une approche innovante et axée sur les normes de l'industrie, IFNTI offre une formation pratique
                         de qualité supérieure pour préparer les étudiants à une carrière prometteuse dans le domaine de
                         l'informatique. Notre institut est reconnu pour son corps professoral hautement qualifié, son
@@ -137,7 +136,7 @@
                             L’IFNTI dispense une formation supérieure en licence de type LMD en informatique. L’IFNTI
                             est une Association à but non lucratif (ASBL). . </p>
 
-                        <a href="#" class="hover-btn-new orange"><span>En savoire plus</span></a>
+                        <a href="#" class="hover-btn-new orange"><span>En savoir plus</span></a>
                     </div>
                 </div>
 
@@ -202,7 +201,7 @@
                     <span><br>
                         <i class="fa fa-angle-right"></i>Notre diplôme est reconnu par l'état togolais
                     </span><br>
-                    <a href="#" class="hover-btn-new orange" style="margin-top: 10px;"><span>En savoire
+                    <a href="#" class="hover-btn-new orange" style="margin-top: 10px;"><span>En savoir
                             plus</span></a>
                 </div>
             </div>
@@ -241,7 +240,7 @@
                             <div class="timeline__content img-bg-03">
                                 <h2>2016</h2>
                                 <p>Initialement, la formation était un complément de formation au BTS en deux semestres.
-                                    En 2014, la formation est passé sur un format licence en 6 semestres.</p>
+                                    En 2014, la formation est passée sur un format licence en 6 semestres.</p>
                             </div>
                         </div>
                         <div class="timeline__item">
@@ -254,25 +253,20 @@
                         <div class="timeline__item">
                             <div class="timeline__content img-bg-01">
                                 <h2>2021</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
-                                    condimentum lacus dapibus. Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Création par les étudiants(sous la supervision de leur professeur) d'une imprim	ante 3D.
+                                	permettant de produire des objets de tout type avec des proportions personnalisées et un matériau spécifique.</p>
                             </div>
                         </div>
                         <div class="timeline__item">
                             <div class="timeline__content img-bg-02">
                                 <h2>2022</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
-                                    condimentum lacus dapibus. Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Instauration du prix spécial "Miss TIC", un geste significatif à l'étudiante au parcours le plus inspirant.</p>
                             </div>
                         </div>
                         <div class="timeline__item">
                             <div class="timeline__content img-bg-04">
                                 <h2>2023</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim neque
-                                    condimentum lacus dapibus. Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <p>Instauration du prix "The Best Programmer" primant l'équipe étudiante ayant présenté le meilleur projet informatique.</p>
                             </div>
                         </div>
                     </div>
@@ -311,9 +305,9 @@
                     <span data-scroll class="global-radius icon_wrap effect-1 alignleft">
                         <img src="{{ asset('vitrine/images/img/Protect Cloud-4.svg') }}" alt="">
                     </span>
-                    <strong>L’IFNTI participe ainsi à l’effort national en offrant à la sous-région des formations de
+                    <strong>L’IFNTI participe ainsi à l’effort national en offrant à la sous-région une formation de
                         haute
-                        qualité, à la fois qualifiante pour des compétences techniques et diplômante.
+                        qualité, à la fois qualifiante pour des compétences techniques et diplômantes.
                     </strong>
                 </div>
             </div>
