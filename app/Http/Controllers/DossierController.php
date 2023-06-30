@@ -13,6 +13,7 @@ class DossierController extends Controller
     public function index()
     {
         //
+        return view('admin.dossiers.index')->with(['dossiers'=>Dossier::paginate(10)]);
     }
 
     /**

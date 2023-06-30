@@ -146,7 +146,7 @@
                     <span>Français:</span>
                     <span>{{ $dossier->note->fr }}</span>
                 </div>
-                <a href="#" id="show-dossier-editer-link">Editer</a>
+                <a href="#edit" id="show-dossier-editer-link">Editer</a>
 
             </div>
 
@@ -154,7 +154,7 @@
         </div>
     </section>
     <div class="tout">
-        <div class="dossier-modal">
+        <div class="dossier-modal" id='edit'>
             <div class="adder-notes">
                 <a href="#" id="close">
                     <hr id="trait1">
@@ -218,7 +218,7 @@
             $(function() {
                 $("#close").click(function() {
                     $(".tout").toggle();
-                    $("show").toggleClass('blur');
+                    $(".show").toggleClass('blur');
                 })
                 $(".tout").hide();
                 $("#show-dossier-editer-link").click(function(e) {

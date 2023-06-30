@@ -145,13 +145,13 @@
             <article>
                @yield("action")
             </article>
+            {{-- <article></article>
             <article></article>
             <article></article>
             <article></article>
             <article></article>
             <article></article>
-            <article></article>
-            <article></article>
+            <article></article> --}}
         </section>
         <footer class="page-footer">
             <span>made by </span>
