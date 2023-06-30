@@ -11,7 +11,7 @@ class Matiere extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nom', 'note'];
+    protected $fillable = ['nom', 'note','decoupage_id'];
 
     protected $table = 'matieres';
 

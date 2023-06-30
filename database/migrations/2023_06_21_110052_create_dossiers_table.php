@@ -13,21 +13,18 @@ return new class extends Migration
     {
         Schema::create('dossiers', function (Blueprint $table) {
             $table->id();
-            $table->float('moyenne_bac');
+            $table->string('moyenne_bac')->nullable();
             $table->float('moyenne_concours')->nullable();
-            $table->string('serie');
-            $table->date('date_soumission');
-            $table->string('etat');
+            $table->date('date_soumission')->nullable();
+            $table->string('etat')-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>nullable();
             $table->date('date_entretien')->nullable();
-            $table->boolean('estValide');
-            $table->string('appreciation');
+            $table->boolean('estValide')->nullable();
+            $table->string('appreciation')->nullable();
             $table->bigInteger('candidat_id');
             $table->bigInteger('sessionconcour_id');
-            //$table->bigInteger('id_admis');
             $table->timestamps();
             $table->foreign('candidat_id')->references('id')->on('candidats')->onDelete('cascade');
             $table->foreign('sessionconcour_id')->references('id')->on('sessionconcours')->onDelete('cascade');
-            //$table->foreign('id_admis')->references('id')->on('admis');
         });
     }
 
