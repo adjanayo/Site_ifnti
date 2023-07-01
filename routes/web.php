@@ -99,7 +99,7 @@ Route::get('/dossier/{dossier}', [DossierController::class, 'show'])->name('doss
 Route::put('dossier/mis_a_jours/{dossier}', [DossierController::class, 'update'])->name("dossier.update");
 
 Route::delete('dossier/{dossier}', [DossierController::class, 'destroy'])->name("dossier.destroy");
-Route::get('dossier/list', [DossierController::class, 'index'])->name("dossier.index");
+Route::get('dossiers/index', [DossierController::class, 'index'])->name("dossier.index");
 
 //routes d'inscription
 
@@ -109,8 +109,8 @@ Route::post('dossier/enregistrement', [CandidatController::class, 'store'])->nam
 
 
 
-Route::prefix('admission/')->name('admission.')->group(function(){
-    Route::get('formulaire', function (){
+Route::prefix('admission/')->name('admission.')->group(function () {
+    Route::get('formulaire', function () {
         return view('admission.index');
     });
 });

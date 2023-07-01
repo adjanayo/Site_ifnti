@@ -51,11 +51,11 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#0">
+                    <a href="{{route('dossier.index')}}">
                         <svg>
                             <use xlink:href="#comments"></use>
                         </svg>
-                        <span>Comments</span>
+                        <span>Dossiers</span>
                     </a>
                 </li>
                 <li>

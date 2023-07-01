@@ -1,6 +1,15 @@
+:root {
+    --border        : #1aa385;
+}
 
-:root{
-    --border :#1aa385;
+.container-form form,
+.contianer-recherche,
+.container-select {
+    display        : flex;
+}
+
+.container-form form{
+    justify-content: space-around;
 }
 
 
@@ -14,8 +23,8 @@
     justify-content        : space-between;
 }
 
-.container-tous{
-    margin-top: 20px;
+.container-tous {
+    margin-top        : 20px;
 }
 
 .container-tous,
@@ -25,7 +34,7 @@
     background-color        : #f1efec;
     padding                 : 10px;
     border-radius           : 5px;
-    width: 70%;
+    width                   : 70%;
 }
 
 .container-candidat,
@@ -48,8 +57,9 @@
     border-bottom         : 2px dotted rgb(145, 144, 143);
 }
 
-.container-tous .notes:last-child,.container-tous .infos:last-child{
-    border: none;
+.container-tous .notes:last-child,
+.container-tous .infos:last-child {
+    border        : none;
 }
 
 .dot {
@@ -69,12 +79,14 @@
 }
 
 
-.mes-tables  .preview button img ,.mes-tables  .next button img{
+.mes-tables .preview button img,
+.mes-tables .next button img {
     transition        : all 500ms ease-in-out;
     transform         : scale(0.6);
 }
 
-.mes-tables .preview button,.mes-tables .next button {
+.mes-tables .preview button,
+.mes-tables .next button {
     display                 : flex;
     justify-content         : center;
     width                   : 50px;
@@ -82,22 +94,25 @@
     background-color        : rgb(175, 142, 137);
     border-radius           : 50%;
     margin-bottom           : 8px;
-    border: 0;
-    outline: none;
+    border                  : 0;
+    outline                 : none;
 }
 
-.mes-tables .preview button:hover ,.mes-tables .next button:hover{
+.mes-tables .preview button:hover,
+.mes-tables .next button:hover {
     background-color        : #7a3627;
     transition              : all 100ms ease-in-out;
-    cursor: pointer;
+    cursor                  : pointer;
 }
 
-.mes-tables .next button.dis,.mes-tables .preview button.dis{
-    background-color: rgb(184, 184, 184);
+.mes-tables .next button.dis,
+.mes-tables .preview button.dis {
+    background-color        : rgb(184, 184, 184);
 }
 
-.mes-tables .next button.dis:hover,.mes-tables .preview button.dis:hover{
-    background-color: rgb(184, 184, 184);
+.mes-tables .next button.dis:hover,
+.mes-tables .preview button.dis:hover {
+    background-color        : rgb(184, 184, 184);
 
 }
 
@@ -122,16 +137,16 @@
     text-align        : start;
 }
 
-#dowload{
-    padding: 7px;
-    background-color: #1aa385;
-    border-radius: 10px;
-    color: white;
-    font-size: 10px;
+#dowload {
+    padding                 : 7px;
+    background-color        : #1aa385;
+    border-radius           : 10px;
+    color                   : white;
+    font-size               : 10px;
 }
 
-#dowload:hover{
-    background-color: #19b895;
+#dowload:hover {
+    background-color        : #19b895;
 }
 
 .dossier-tables tbody tr td,
@@ -158,14 +173,54 @@ tr:nth-child(even) {
     display        : block
 }
 
-.mes-tables{
-align-items: center;
+.mes-tables {
+    align-items        : center;
 }
 
-.conatainer-table1{
-   margin: 10px; 
+.conatainer-table1 {
+    margin        : 10px;
 }
-.mes-tables{
-margin-top: 40px;
-margin-bottom:20px;
+
+.mes-tables {
+    margin-top           : 40px;
+    margin-bottom        : 20px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  DOSSIERS                                  */
+/* -------------------------------------------------------------------------- */
+.container-form label,
+.dossiers-container h2 {
+    color        : rgb(116, 115, 115);
+}
+
+
+.contianer-recherche,
+.container-select {
+    /* margin-left                        : 5%; */
+    align-items                        : center;
+    /* background-color                : aquamarine; */
+    width                              : 20%;
+}
+
+.container-form form input,
+.container-form form select {
+    border                  : 2px solid rgb(42, 173, 162);
+    width                   : 50%;
+    min-width               : 30%;
+    padding                 : 3px;
+    margin-left             : 15px;
+    border-radius           : 3px;
+    background-color        : rgb(233, 233, 233);
+    color                   : black;
+
+}
+
+.container-form form .contianer-recherche button {
+   border: 0;
+   background-color: rgb(42, 173, 162);
+   padding: 6px;
+   border-radius: 4px;
+   color: white;
 }
