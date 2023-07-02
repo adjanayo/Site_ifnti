@@ -186,15 +186,16 @@
 
 
             </div>
-
-            <a href="#edit" id="show-dossier-editer-link">Editer</a>
+            <a href="#edit-note" id="show-dossier-editer-note-link">Editer notes</a>
+            <a href="#edit" id="show-dossier-appreciation-link">Ajouter une appréciation</a>
+            <a href="#edit" id="show-dossier-editer-link">Gerer l'admission</a>
 
 
     </section>
-    <div class="tout">
-        <div class="dossier-modal" id='edit'>
+    <div class="note-modal tout">
+        <div class="dossier-modal" id='edit-note'>
             <div class="adder-notes">
-                <a href="#" id="close">
+                <a href="#" class="close-note">
                     <hr id="trait1">
                     <hr id="trait2">
                 </a>
@@ -217,11 +218,52 @@
                                 <input type="number" name="" id="francais">
                             </div>
                         </fieldset>
+                    </section>
+                    <button type="submit" class='saver-doss close-note'>Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="tout appreciation-modal">
+        <div class="dossier-modal" id='edit-appreciation'>
+            <div class="adder-notes">
+                <a href="#" class="close-appreciation">
+                    <hr id="trait1">
+                    <hr id="trait2">
+                </a>
+                <h1>Dossier
+                </h1>
+                <form action="" class="dossier-form">
+                    <section>
+                        <fieldset>
+                            <legend>Appreciation</legend>
+                            <div class="dossier-appreciation">
+                                <textarea name="appreciation" id="appreciation" cols="30" rows="10"></textarea>
+                            </div>
+                        </fieldset>
+                    </section>
+                    <button type="submit" class='saver-doss close-appreciation'>Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="tout admission-modal">
+        <div class="dossier-modal" id='edit-admission'>
+            <div class="adder-notes">
+                <a href="#" class="close-admission">
+                    <hr id="trait1">
+                    <hr id="trait2">
+                </a>
+                <h1>Dossier
+                </h1>
+                <form action="" class="dossier-form">
+                    <section>
+                       
                         <fieldset class="etat-dossier">
                             <legend>Admission du candidat</legend>
                             <div class="form-dossier-ligne">
-                                <label for="attente">En attente</label><input type="radio" name="admis" id="attente"
-                                    value="wait">
+                                <label for="attente">En attente</label><input type="radio" name="admis"
+                                    id="attente" value="wait">
                                 <label for="attente" class="rad"></label>
 
                             </div>
@@ -238,14 +280,9 @@
 
                             </div>
                         </fieldset>
-                        <fieldset>
-                            <legend>Appreciation</legend>
-                            <div class="dossier-appreciation">
-                                <textarea name="appreciation" id="appreciation" cols="30" rows="10"></textarea>
-                            </div>
-                        </fieldset>
+          
                     </section>
-                    <button type="submit" id='saver-doss'>Save</button>
+                    <button type="submit" class='saver-doss close-admission' >Finis</button>
                 </form>
             </div>
         </div>
@@ -254,16 +291,37 @@
         <script src="{{ asset('admin/js/jquery.min.js') }}"></script>
         <script>
             $(function() {
-                $("#close").click(function() {
-                    $(".tout").toggle();
+                $(".tout").hide();
+                $(".close-note").click(function() {
+                    $(".note-modal").toggle();
                     $(".show").toggleClass('blur');
                 })
-                $(".tout").hide();
+                $(".close-appreciation").click(function() {
+                    $(".appreciation-modal").toggle();
+                    $(".show").toggleClass('blur');
+                })
+                $(".close-admission").click(function() {
+                    $(".admission-modal").toggle();
+                    $(".show").toggleClass('blur');
+                })
+
+                $("#show-dossier-editer-note-link").click(function(e) {
+                    e.preventDefault();
+                    $(".note-modal").toggle();
+                    $(".show").toggleClass('blur');
+                })
+                $("#show-dossier-appreciation-link").click(function(e) {
+                    e.preventDefault();
+                    $(".appreciation-modal").toggle();
+                    $(".show").toggleClass('blur');
+                })
                 $("#show-dossier-editer-link").click(function(e) {
-                    $(".tout").toggle();
+                    e.preventDefault();
+                    $(".admission-modal").toggle();
                     $(".show").toggleClass('blur');
                 })
             })
+
         </script>
         <script>
             const lienA1 = document.getElementById('a1');
@@ -343,6 +401,7 @@
                     }
 
                 }
+                //How to create a modal with jquery?
             });
         </script>
     @endpush

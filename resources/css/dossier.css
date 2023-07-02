@@ -14,7 +14,6 @@
     background-color: ivory;
     min-width: 50%;
     margin: 20px;
-
 }
 
 .dossier-vue .info-candidat-container .info-candidat {
@@ -30,9 +29,6 @@
 .dossier-vue .info-candidat-container .info-candidat span:nth-child(2) {
     font-size: 1.3rem;
 }
-
-
-
 
 .dossier-vue .etat {
     color: #1aa385;
@@ -64,7 +60,7 @@
 }
 
 .dossier-vue .etat.en_attente {
-    color: #3E4EC2;
+    color: #3e4ec2;
     position: relative;
 }
 
@@ -96,8 +92,6 @@
         transform: rotate(1turn);
     }
 }
-
-
 
 /*.dossier-data-table {
     border-collapse: collapse;
@@ -178,9 +172,6 @@
     text-align: center;
 }
 
-
-
-
 /*Formulaire d'édition du dossier*/
 .dossier-form {
     padding: 20px;
@@ -211,10 +202,7 @@
     margin: 10px;
 }
 
-
-
 [type="radio"] {
-
     display: none;
 }
 
@@ -231,19 +219,19 @@ input:hover {
     border: 1px black solid;
 }
 
-input:checked~.rad {
+input:checked ~ .rad {
     border: 3px solid black;
 }
 
-#admis:checked~.rad {
+#admis:checked ~ .rad {
     background-color: green;
 }
 
-#rejete:checked~.rad {
+#rejete:checked ~ .rad {
     background-color: red;
 }
 
-#attente:checked~.rad {
+#attente:checked ~ .rad {
     background-color: dodgerblue;
 }
 
@@ -253,28 +241,40 @@ input:checked~.rad {
     caret: 3px;
 }
 
-.adder-notes>h1 {
+.adder-notes > h1 {
     text-align: center;
 }
 
-
+#show-dossier-appreciation-link,
+#show-dossier-editer-note-link,
 #show-dossier-editer-link {
     position: fixed;
-    bottom: 100px;
-    right: 100px;
+    right: 50px;
     text-align: center;
-    margin: auto;
     padding: 15px;
     text-decoration: none;
     color: white;
     background-color: #1aa385;
     border-radius: 15px;
-
+}
+#show-dossier-editer-note-link {
+    bottom: 220px;
+}
+#show-dossier-appreciation-link {
+    bottom: 160px;
+}
+#show-dossier-editer-link {
+    bottom: 100px;
+    background-color: dodgerblue;
 }
 
-#show-dossier-editer-link:hover {
+
+
+#show-dossier-editer-link:hover,
+#show-dossier-appreciation-link:hover,
+#show-dossier-editer-note-link:hover {
     transform: scale(1.1);
-    transition: .5 ease-in-out all;
+    transition: 0.5 ease-in-out all;
 }
 
 .adder-notes {
@@ -324,7 +324,7 @@ input:checked~.rad {
     z-index: -1;
 }
 
-#saver-doss {
+.saver-doss {
     margin: auto;
     padding: 10px;
     border-radius: 15px;
