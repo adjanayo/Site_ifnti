@@ -94,7 +94,7 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/sessionConcour', [SessionConcourController::class, 'index'])->name('sessionConcours');
-Route::get('/sessionConcour/{$session}', [CandidatController::class, 'session'])->name('sessionConcours.choix');
+Route::get('/sessionConcour/go', [CandidatController::class, 'session'])->name('sessionConcours.choix');
 Route::get('/dossier/{dossier}', [DossierController::class, 'show'])->name('dossier.show');
 Route::put('dossier/mis_a_jours/{dossier}', [DossierController::class, 'update'])->name("dossier.update");
 
