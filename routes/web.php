@@ -7,6 +7,7 @@ use App\Http\Controllers\DossierController;
 use App\Http\Controllers\CandidatController;
 use App\Http\Controllers\SessionConcourController;
 use App\Models\Dossier;
+use GuzzleHttp\Psr7\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -94,9 +95,14 @@ Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/sessionConcour', [SessionConcourController::class, 'index'])->name('sessionConcours');
-Route::get('/sessionConcour/{$session}', [CandidatController::class, 'session'])->name('sessionConcours.choix');
+Route::get('/sessionConcour/go', [CandidatController::class, 'session'])->name('sessionConcours.choix');
 Route::get('/dossier/{dossier}', [DossierController::class, 'show'])->name('dossier.show');
-Route::put('dossier/mis_a_jours/{dossier}', [DossierController::class, 'update'])->name("dossier.update");
+Route::put('dossier/mis_a_jours_note/{dossier}', [DossierController::class, 'updateNote'])->name("dossier.updateNote");
+Route::put('dossier/mis_a_jours_appreciation/{dossier}', [DossierController::class, 'updateAppreciation'])->name("dossier.updateAppreciation");
+
+Route::put('dossier/mis_a_jours_admission/{dossier}', [DossierController::class, 'updateDossierStatus'])->name("dossier.updateAdmission");
+
+
 
 Route::delete('dossier/{dossier}', [DossierController::class, 'destroy'])->name("dossier.destroy");
 Route::get('dossier/list', [DossierController::class, 'index'])->name("dossier.index");
@@ -109,8 +115,8 @@ Route::post('dossier/enregistrement', [CandidatController::class, 'store'])->nam
 
 
 
-Route::prefix('admission/')->name('admission.')->group(function(){
-    Route::get('formulaire', function (){
+Route::prefix('admission/')->name('admission.')->group(function () {
+    Route::get('formulaire', function () {
         return view('admission.index');
     });
 });

@@ -36,11 +36,11 @@
 }
 
 .dossier-data-table .etat.est_complet {
-    color: orange;
+    color: green;
 }
 
 .dossier-data-table .etat.est_rejete {
-    color: #d14b69;
+    color: red;
 }
 
 .dossier-data-table .etat.est_rejete svg {
@@ -48,7 +48,7 @@
 }
 
 .dossier-data-table .etat.en_attente {
-    color: #3E4EC2;
+    color: orange;
     position: relative;
 }
 

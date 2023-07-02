@@ -58,10 +58,10 @@
                                 <td>
 
                                     @switch($dossier->etat)
-                                        @case('complet')
+                                        @case('admis')
                                             <div class="etat est_complet">
                                                 @include('admin.composants.dash.accepte')
-                                                Conplet
+                                                Admis
                                             </div>
                                         @break
 

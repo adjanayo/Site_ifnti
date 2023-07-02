@@ -22,7 +22,7 @@ class DossierFactory extends Factory
             'moyenne_concours' => null,
            // "serie" => $this->faker->word(),
             'date_soumission' => $this->faker->date(),
-            'etat' => $this->faker->randomElement(["rejeté", "en attente", "complet"]),
+            'etat' => $this->faker->randomElement(["rejeté", "en attente", "admis"]),
             'date_entretien' => null,
             "appreciation" => $this->faker->text(),
             "estValide" => $this->faker->boolean(),

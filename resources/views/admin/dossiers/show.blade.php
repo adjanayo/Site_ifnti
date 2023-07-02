@@ -1,16 +1,32 @@
 @extends('admin.dash')
 
 @section('action')
-    <section class="show">
+    <section class="show"> @switch($dossier->etat)
+        @case('admis')
+            <div style="width: 100px;height:100px; border-radius:50%; background:green">
+            </div>
+        @break
+
+        @case('rejeté')
+            <div style="width: 100px;height:100px; border-radius:50%; background:red">
+
+            </div>
+        @break
+
+        @default
+            <div style="width: 100px;height:100px; border-radius:50%;background:orange">
+
+            </div>
+    @endswitch
         <div class="dossier-vue">
             <h1 class="leDossier">Dossier No {{ $dossier->id }}</h1>
 
 
             @switch($dossier->etat)
-                @case('complet')
+                @case('admis')
                     <div class="etat est_complet">
                         @include('admin.composants.dash.accepte')
-                        Conplet
+                        Admis
                     </div>
                 @break
 
@@ -186,81 +202,46 @@
 
 
             </div>
-
-            <a href="#edit" id="show-dossier-editer-link">Editer</a>
+            <a href="#edit-note" id="show-dossier-editer-note-link">Editer notes</a>
+            <a href="#edit" id="show-dossier-appreciation-link">Ajouter une appréciation</a>
+            <a href="#edit" id="show-dossier-editer-link">Gerer l'admission</a>
 
 
     </section>
-    <div class="tout">
-        <div class="dossier-modal" id='edit'>
-            <div class="adder-notes">
-                <a href="#" id="close">
-                    <hr id="trait1">
-                    <hr id="trait2">
-                </a>
-                <h1>Dossier
-                </h1>
-                <form action="" class="dossier-form">
-                    <section>
-                        <fieldset>
-                            <legend>Notes concours</legend>
-                            <div class="form-dossier-ligne">
-                                <label for="math">Math</label>
-                                <input type="number" name="" id="math">
-                            </div>
-                            <div class="form-dossier-ligne">
-                                <label for="anglais">Anglais</label>
-                                <input type="number" name="" id="anglais">
-                            </div>
-                            <div class="form-dossier-ligne">
-                                <label for="francais">Français</label>
-                                <input type="number" name="" id="francais">
-                            </div>
-                        </fieldset>
-                        <fieldset class="etat-dossier">
-                            <legend>Admission du candidat</legend>
-                            <div class="form-dossier-ligne">
-                                <label for="attente">En attente</label><input type="radio" name="admis" id="attente"
-                                    value="wait">
-                                <label for="attente" class="rad"></label>
-
-                            </div>
-                            <div class="form-dossier-ligne">
-                                <label for="rejete">Rejeté</label>
-                                <input type="radio" name="admis" id="rejete" value="reject">
-                                <label for="rejete" class="rad"></label>
-
-                            </div>
-                            <div class="form-dossier-ligne">
-                                <label for="admis">Admis</label>
-                                <input type="radio" name="admis" id="admis" value="true">
-                                <label for="admis" class="rad"></label>
-
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Appreciation</legend>
-                            <div class="dossier-appreciation">
-                                <textarea name="appreciation" id="appreciation" cols="30" rows="10"></textarea>
-                            </div>
-                        </fieldset>
-                    </section>
-                    <button type="submit" id='saver-doss'>Save</button>
-                </form>
-            </div>
-        </div>
-    </div>
+    @include('admin.dossiers.editNote')
+    @include('admin.dossiers.editAppreciation')
+    @include('admin.dossiers.editAdmission')
     @push('js')
         <script src="{{ asset('admin/js/jquery.min.js') }}"></script>
         <script>
             $(function() {
-                $("#close").click(function() {
-                    $(".tout").toggle();
+                $(".tout").hide();
+                $(".close-note").click(function() {
+                    $(".note-modal").toggle();
                     $(".show").toggleClass('blur');
                 })
-                $(".tout").hide();
+                $(".close-appreciation").click(function() {
+                    $(".appreciation-modal").toggle();
+                    $(".show").toggleClass('blur');
+                })
+                $(".close-admission").click(function() {
+                    $(".admission-modal").toggle();
+                    $(".show").toggleClass('blur');
+                })
+
+                $("#show-dossier-editer-note-link").click(function(e) {
+                    e.preventDefault();
+                    $(".note-modal").toggle();
+                    $(".show").toggleClass('blur');
+                })
+                $("#show-dossier-appreciation-link").click(function(e) {
+                    e.preventDefault();
+                    $(".appreciation-modal").toggle();
+                    $(".show").toggleClass('blur');
+                })
                 $("#show-dossier-editer-link").click(function(e) {
-                    $(".tout").toggle();
+                    e.preventDefault();
+                    $(".admission-modal").toggle();
                     $(".show").toggleClass('blur');
                 })
             })
@@ -343,6 +324,7 @@
                     }
 
                 }
+                //How to create a modal with jquery?
             });
         </script>
     @endpush
