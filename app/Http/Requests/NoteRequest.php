@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class DossierUPRequest extends FormRequest
+class NoteRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,8 +23,9 @@ class DossierUPRequest extends FormRequest
     {
         return [
             //
-            'appreciation' => 'required|min:3|max:255',
-
+            'math' => 'required|numeric|between:0,20',
+            'ang' => 'required|numeric|between:0,20',
+            'fr' => 'required|numeric|between:0,20',
         ];
     }
 }

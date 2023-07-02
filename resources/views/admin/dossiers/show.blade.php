@@ -1,16 +1,32 @@
 @extends('admin.dash')
 
 @section('action')
-    <section class="show">
+    <section class="show"> @switch($dossier->etat)
+        @case('admis')
+            <div style="width: 100px;height:100px; border-radius:50%; background:green">
+            </div>
+        @break
+
+        @case('rejeté')
+            <div style="width: 100px;height:100px; border-radius:50%; background:red">
+
+            </div>
+        @break
+
+        @default
+            <div style="width: 100px;height:100px; border-radius:50%;background:orange">
+
+            </div>
+    @endswitch
         <div class="dossier-vue">
             <h1 class="leDossier">Dossier No {{ $dossier->id }}</h1>
 
 
             @switch($dossier->etat)
-                @case('complet')
+                @case('admis')
                     <div class="etat est_complet">
                         @include('admin.composants.dash.accepte')
-                        Conplet
+                        Admis
                     </div>
                 @break
 
@@ -192,101 +208,9 @@
 
 
     </section>
-    <div class="note-modal tout">
-        <div class="dossier-modal" id='edit-note'>
-            <div class="adder-notes">
-                <a href="#" class="close-note">
-                    <hr id="trait1">
-                    <hr id="trait2">
-                </a>
-                <h1>Dossier
-                </h1>
-                <form action="" class="dossier-form">
-                    <section>
-                        <fieldset>
-                            <legend>Notes concours</legend>
-                            <div class="form-dossier-ligne">
-                                <label for="math">Math</label>
-                                <input type="number" name="" id="math">
-                            </div>
-                            <div class="form-dossier-ligne">
-                                <label for="anglais">Anglais</label>
-                                <input type="number" name="" id="anglais">
-                            </div>
-                            <div class="form-dossier-ligne">
-                                <label for="francais">Français</label>
-                                <input type="number" name="" id="francais">
-                            </div>
-                        </fieldset>
-                    </section>
-                    <button type="submit" class='saver-doss close-note'>Save</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="tout appreciation-modal">
-        <div class="dossier-modal" id='edit-appreciation'>
-            <div class="adder-notes">
-                <a href="#" class="close-appreciation">
-                    <hr id="trait1">
-                    <hr id="trait2">
-                </a>
-                <h1>Dossier
-                </h1>
-                <form action="" class="dossier-form">
-                    <section>
-                        <fieldset>
-                            <legend>Appreciation</legend>
-                            <div class="dossier-appreciation">
-                                <textarea name="appreciation" id="appreciation" cols="30" rows="10"></textarea>
-                            </div>
-                        </fieldset>
-                    </section>
-                    <button type="submit" class='saver-doss close-appreciation'>Save</button>
-                </form>
-            </div>
-        </div>
-    </div>
-    <div class="tout admission-modal">
-        <div class="dossier-modal" id='edit-admission'>
-            <div class="adder-notes">
-                <a href="#" class="close-admission">
-                    <hr id="trait1">
-                    <hr id="trait2">
-                </a>
-                <h1>Dossier
-                </h1>
-                <form action="" class="dossier-form">
-                    <section>
-                       
-                        <fieldset class="etat-dossier">
-                            <legend>Admission du candidat</legend>
-                            <div class="form-dossier-ligne">
-                                <label for="attente">En attente</label><input type="radio" name="admis"
-                                    id="attente" value="wait">
-                                <label for="attente" class="rad"></label>
-
-                            </div>
-                            <div class="form-dossier-ligne">
-                                <label for="rejete">Rejeté</label>
-                                <input type="radio" name="admis" id="rejete" value="reject">
-                                <label for="rejete" class="rad"></label>
-
-                            </div>
-                            <div class="form-dossier-ligne">
-                                <label for="admis">Admis</label>
-                                <input type="radio" name="admis" id="admis" value="true">
-                                <label for="admis" class="rad"></label>
-
-                            </div>
-                        </fieldset>
-          
-                    </section>
-                    <button type="submit" class='saver-doss close-admission' >Finis</button>
-                </form>
-            </div>
-        </div>
-    </div>
+    @include('admin.dossiers.editNote')
+    @include('admin.dossiers.editAppreciation')
+    @include('admin.dossiers.editAdmission')
     @push('js')
         <script src="{{ asset('admin/js/jquery.min.js') }}"></script>
         <script>
@@ -321,7 +245,6 @@
                     $(".show").toggleClass('blur');
                 })
             })
-
         </script>
         <script>
             const lienA1 = document.getElementById('a1');

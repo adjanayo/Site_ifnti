@@ -48,11 +48,11 @@
 }
 
 .dossier-vue .etat.est_complet {
-    color: orange;
+    color: green;
 }
 
 .dossier-vue .etat.est_rejete {
-    color: #d14b69;
+    color: red;
 }
 
 .dossier-vue .etat.est_rejete svg {
@@ -60,7 +60,7 @@
 }
 
 .dossier-vue .etat.en_attente {
-    color: #3e4ec2;
+    color: orange;
     position: relative;
 }
 
@@ -93,60 +93,7 @@
     }
 }
 
-/*.dossier-data-table {
-    border-collapse: collapse;
-    border: #142940 1px solid;
-    background-color: ivory;
-    margin: auto;
-}
-
-
-
-
-
-
-.dossier-data-table {
-    text-align: left;
-    padding: 0;
-}
-
-.dossier-data-table th {
-    font-size: 14px;
-    color: #fff;
-}
-
-.dossier-data-table tbody tr {
-    border: #142940 1px dotted;
-    cursor: pointer;
-}
-
-.dossier-data-table th,
-.dossier-data-table td {
-    padding: 10px;
-}
-
-
-
-.dossier-data-table thead tr {
-    background-color: gray;
-}
-
-.dossier-data-table tbody tr:nth-child(2n+1) {
-    background-color: white;
-}
-
-.dossier-data-table tbody tr:nth-child(2n) {
-    background-color: ivory;
-}
-
-.dossier-data-table tbody tr:hover {
-    background-color: rgba(201, 169, 110, 0.473);
-} */
-
 /*Ajout*/
-.note-concours {
-    /* display: none; */
-}
 
 .note-concours button,
 .dossier-data-table a {
@@ -232,7 +179,7 @@ input:checked ~ .rad {
 }
 
 #attente:checked ~ .rad {
-    background-color: dodgerblue;
+    background-color: orange;
 }
 
 .dossier-appreciation textarea {
@@ -257,18 +204,19 @@ input:checked ~ .rad {
     background-color: #1aa385;
     border-radius: 15px;
 }
+
 #show-dossier-editer-note-link {
     bottom: 220px;
 }
+
 #show-dossier-appreciation-link {
     bottom: 160px;
 }
+
 #show-dossier-editer-link {
     bottom: 100px;
     background-color: dodgerblue;
 }
-
-
 
 #show-dossier-editer-link:hover,
 #show-dossier-appreciation-link:hover,
