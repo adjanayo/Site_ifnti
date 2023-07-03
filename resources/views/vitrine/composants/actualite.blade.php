@@ -28,7 +28,7 @@
                                 tous une proposition... </p>
                         </div>
                         <div class="blog-button">
-                            <a class="hover-btn-new orange" href="#"><span>Lire Plus<span></a>
+                            <a class="hover-btn-new orange" href="{{route("actu.ceremoniederemisedediplomes")}}"><span>Lire Plus<span></a>
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                                 f ormation recrutera des b ac h eliers des séries C, D, E, ... </p>
                         </div>
                         <div class="blog-button">
-                            <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
+                            <a class="hover-btn-new orange" href="{{route("actu.concoursdentree")}}"><span>Lire Plus</span></a>
                         </div>
                     </div>
                 </div>
@@ -76,7 +76,7 @@
                                 deux étudiants de fin de cycle présenteront leur.. </p>
                         </div>
                         <div class="blog-button">
-                            <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
+                            <a class="hover-btn-new orange" href="{{route("actu.journeesportesouvertes")}}"><span>Lire Plus</span></a>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                                 qui permet de récompenser.. </p>
                         </div>
                         <div class="blog-button">
-                            <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
+                            <a class="hover-btn-new orange" href="{{route("actu.ceremoniederemisedediplomes")}}"><span>Lire Plus</span></a>
                         </div>
                     </div>
                 </div>
@@ -129,7 +129,7 @@
                                 operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
                         </div>
                         <div class="blog-button">
-                            <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
+                            <a class="hover-btn-new orange" href="{{route("actu.partenariat")}}"><span>Lire Plus</span></a>
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                                 operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
                         </div>
                         <div class="blog-button">
-                            <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
+                            <a class="hover-btn-new orange" href="{{route("actu.nouvellesdecouvertes")}}"><span>Lire Plus</span></a>
                         </div>
                     </div>
                 </div>

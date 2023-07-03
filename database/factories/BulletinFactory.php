@@ -18,11 +18,10 @@ class BulletinFactory extends Factory
      */
     public function definition(): array
     {
-        Storage::fake("photos");
         return [
             //
 
-            "fichier" =>  UploadedFile::fake()->createWithContent("1ere.pdf", "drop of"),
+            "fichier" => $this->faker->word(),
 
 
         ];

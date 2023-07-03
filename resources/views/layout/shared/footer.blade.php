@@ -10,19 +10,19 @@
                     <div class="footer-right">
                         <ul class="footer-links-soi">
                             <li>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/people/IFNTI-Sokod%C3%A9-Licence-informatique-LMD/100028389086679/" target="_blanc" ><i class="fa fa-facebook"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-github"></i></a>
+                                <a href="https://github.com/ifnti-dev" target="_blanc"><i class="fa fa-github"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://tg.linkedin.com/in/ifnti-ifnti-59650a205" target="_blanc" ><i class="fa fa-linkedin"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/ifnti/" target="_blanc"><i class="fa fa-instagram"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fa fa-youtube"></i></a>
+                                <a href="https://www.youtube.com/channel/UC7OGoIHsNy8ZjXWhUEd1fkQ" target="_blanc"><i class="fa fa-youtube"></i></a>
                             </li>
                         </ul>
                         <!-- end links -->

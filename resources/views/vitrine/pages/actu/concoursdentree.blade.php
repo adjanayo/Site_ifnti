@@ -2,7 +2,7 @@
 @section('content')
     <div class="all-title-box modif hafiz ifnti">
         <div class="container text-center">
-            <h1>IFNTI</h1>
+            <h1>Découvrez le Concours d'Entrepreneuriat 2023-2024 </h1>
         </div>
     </div>
 
@@ -12,7 +12,7 @@
                 <div class="col-lg-9 blog-post-single">
                     <div class="blog-item">
                         <div class="image-blog">
-                            <img src="{{ asset('vitrine/images/img/page3_img2.png') }}" alt="" class="img-fluid">
+                            <img src="{{ asset('vitrine/images/img/a2.png') }}" alt="" class="img-fluid">
                         </div>
                         <div class="post-content">
                             <div class="post-date">
@@ -25,17 +25,13 @@
                                 <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
                             </div>
                             <div class="blog-title">
-                                <h2><a href="#" title="">Presentation</a></h2>
+                                <h2><a href="#" title="">Les détails du concours :</a></h2>
                             </div>
                             <div class="blog-desc">
-                                <p>L’Institut de formation aux normes et technologies de l’informatique (IFNTI) est un
-                                    institut de formation post-bac situé à Sokodé, dans la région centrale du Togo. </p>
+                                <p>L ’IFNTI accueillera une nou v elle promotion à la rentrée uni v ersitaire 2022-2023 . C ette f ormation recrutera des b ac h eliers des séries C, D, E,</p>
                                 <blockquote class="default">
-                                    Fondé en 2009, il est destiné aux bacheliers et aux étudiants souhaitant se
-                                    réorienter. L’IFNTI dispense une formation supérieure en licence de type LMD en
-                                    informatique. L’IFNTI est une Association à but non lucratif (ASBL). Elle a pour but
-                                    de contribuer a la transmission du savoir et du savoir-faire des technologies
-                                    informatique en privilégiant le sens de la responsabilité et de la qualité.
+                                
+                                Le Concours d'Entrepreneuriat 2023-2024 est ouvert à tous, quels que soient votre âge et votre domaine d'expertise. Que vous ayez une idée de start-up révolutionnaire, une solution technologique prometteuse ou une approche novatrice dans un secteur existant, ce concours est fait pour vous. Il vous suffit de soumettre votre candidature en ligne avant la date limite pour avoir la chance d'être sélectionné parmi les finalistes.
                                 </blockquote>
                                 <p>Situé à Sokodé dans la Région Centrale du Togo, l’IFNTI est implanté dans le quartier
                                     administratif à proximité des deux grands lycées.</p>
@@ -55,25 +51,6 @@
                                 docendi nec, eos ea alii molestiae aliquand.
                             </p>
                         </div>
-                        <div class="author-desc">
-                            <div class="our-team">
-                                <div class="team-img">
-                                    <img src="{{ asset('vitrine/images/img/fondateur.png') }}">
-                                    <div class="social">
-                                        <ul>
-                                            <li><a href="#" class="fa fa-facebook"></a></li>
-                                            <li><a href="#" class="fa fa-twitter"></a></li>
-                                            <li><a href="#" class="fa fa-linkedin"></a></li>
-                                            <li><a href="#" class="fa fa-skype"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Jean-Pierre Paillard </h3>
-                                    <span class="post">Fondateur, Ex Prof</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <hr class="hr3">
 
@@ -86,38 +63,13 @@
                                 recherche L3I de La Rochelle. <a href="#">laboratoire de recherche L3I de La
                                     Rochelle.</a></h5>
                         </div>
-                        <div class="author-desc">
-                            <div class="our-team">
-                                <div class="team-img">
-                                    <img src="{{ asset('vitrine/images/img/fondateur1.png') }}">
-                                    <div class="social">
-                                        <ul>
-                                            <li><a href="#" class="fa fa-facebook"></a></li>
-                                            <li><a href="#" class="fa fa-twitter"></a></li>
-                                            <li><a href="#" class="fa fa-linkedin"></a></li>
-                                            <li><a href="#" class="fa fa-skype"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Sabirou Téouri </h3>
-                                    <span class="post">Fondateur, Ex Prof</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
 
                 <div class="col-lg-3 col-12 right-single">
                     <div class="widget-tags">
-                        <p>Les initiateurs regroupent des compétences complémentaires : connaissance du terrain,
-                            motivation d’activité dans la Communauté économique des États de l’Afrique de l’Ouest
-                            (CEDEAO), maîtrise technologique et didactique, expérience professionnelle. Ils partagent
-                            des convictions fortes sur la possibilité de réussir à freiner la fuite des cerveaux par une
-                            formation de qualité, et sur la baisse d’attrait de l’émigration qui se fait jour chez les
-                            nouvelles générations. Un engagement sur plus de dix ans dans des activités associatives
-                            locales leur a montré les potentialités des petites organisations : associations, ONG, PME.
+                        <p>L'Institut de Formation aux Normes des Technologies de l'Informatique (IFNTI) est sur le point d'accueillir l'un des événements les plus passionnants de l'année : le concours d'entrepreneuriat 2023-2024. Prévu pour le 10 juillet, cet événement rassemblera des esprits créatifs, des innovateurs et des entrepreneurs passionnés, tous désireux de présenter leurs idées et de faire progresser le domaine des technologies de l'information. Dans cet article, nous allons explorer les aspects fascinants de ce concours, qui promet d'être une véritable vitrine du talent et de l'innovation dans le secteur de l'informatique.
                         </p>
                     </div>
                 </div>

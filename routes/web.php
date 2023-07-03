@@ -7,6 +7,7 @@ use App\Http\Controllers\DossierController;
 use App\Http\Controllers\CandidatController;
 use App\Http\Controllers\SessionConcourController;
 use App\Models\Dossier;
+use GuzzleHttp\Psr7\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -89,14 +90,43 @@ Route::prefix("formation/")->name("formation.")->group(
     }
 );
 
+<<<<<<< HEAD
+Route::prefix("actu/")->name("actu.")->group(
+    function () {
+        Route::get('ceremoniederemisedediplomes', function () {
+            return view('vitrine.pages.actu.ceremoniederemisedediplomes');
+        })->name('ceremoniederemisedediplomes');
+        Route::get('concoursdentree', function () {
+            return view('vitrine.pages.actu.concoursdentree');
+        })->name('concoursdentree');
+        Route::get('journeesportesouvertes', function () {
+            return view('vitrine.pages.actu.journeesportesouvertes');
+        })->name('journeesportesouvertes');
+        Route::get('prixmisstic', function () {
+            return view('vitrine.pages.actu.prixmisstic');
+        })->name('prixmisstic');
+        Route::get('partenariat', function () {
+            return view('vitrine.pages.actu.partenariat');
+        })->name('partenariat');
+        Route::get('nouvellesdecouvertes', function () {
+            return view('vitrine.pages.actu.nouvellesdecouvertes');
+        })->name('nouvellesdecouvertes');
+    }
+);
+=======
 /*ADMIN*/
 Auth::routes();
 
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/sessionConcour', [SessionConcourController::class, 'index'])->name('sessionConcours');
-Route::get('/sessionConcour/{$session}', [CandidatController::class, 'session'])->name('sessionConcours.choix');
+Route::get('/sessionConcour/go', [CandidatController::class, 'session'])->name('sessionConcours.choix');
 Route::get('/dossier/{dossier}', [DossierController::class, 'show'])->name('dossier.show');
-Route::put('dossier/mis_a_jours/{dossier}', [DossierController::class, 'update'])->name("dossier.update");
+Route::put('dossier/mis_a_jours_note/{dossier}', [DossierController::class, 'updateNote'])->name("dossier.updateNote");
+Route::put('dossier/mis_a_jours_appreciation/{dossier}', [DossierController::class, 'updateAppreciation'])->name("dossier.updateAppreciation");
+
+Route::put('dossier/mis_a_jours_admission/{dossier}', [DossierController::class, 'updateDossierStatus'])->name("dossier.updateAdmission");
+
+
 
 Route::delete('dossier/{dossier}', [DossierController::class, 'destroy'])->name("dossier.destroy");
 Route::get('dossiers/index', [DossierController::class, 'index'])->name("dossier.index");
@@ -121,3 +151,4 @@ Route::prefix('admission/')->name('admission.')->group(function () {
 // Route::get('/login', function () {
 //     redirect(route("login"));
 // });
+>>>>>>> 1263e8f4066d50b4325aaf35983450b9580c8bab

@@ -29,7 +29,7 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         Candidat::factory()
-            ->count(50)
+            ->count(20)
             ->has(
                 Dossier::factory()
                     ->hasNote()
@@ -102,7 +102,7 @@ class DatabaseSeeder extends Seeder
             )
             ->create();
             Candidat::factory()
-            ->count(50)
+            ->count(20)
             ->has(
                 Dossier::factory()
                     ->hasNote()
@@ -176,7 +176,7 @@ class DatabaseSeeder extends Seeder
             ->create();
 
         Candidat::factory()
-        ->count(50)
+        ->count(20)
         ->has(
             Dossier::factory()
                 ->hasNote()

@@ -2,7 +2,7 @@
 @section('content')
     <div class="all-title-box modif hafiz ifnti">
         <div class="container text-center">
-            <h1>IFNTI</h1>
+            <h1>De nouvelles découvertes avec les applications mobiles</h1>
         </div>
     </div>
 
@@ -12,7 +12,7 @@
                 <div class="col-lg-9 blog-post-single">
                     <div class="blog-item">
                         <div class="image-blog">
-                            <img src="{{ asset('vitrine/images/img/page3_img2.png') }}" alt="" class="img-fluid">
+                            <img src="{{ asset('vitrine/images/img/a6.png') }}" alt="" class="img-fluid">
                         </div>
                         <div class="post-content">
                             <div class="post-date">
@@ -25,7 +25,7 @@
                                 <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
                             </div>
                             <div class="blog-title">
-                                <h2><a href="#" title="">Presentation</a></h2>
+                                <h2><a href="#" title="">De nouvelles découvertes avec les applications mobiles</a></h2>
                             </div>
                             <div class="blog-desc">
                                 <p>L’Institut de formation aux normes et technologies de l’informatique (IFNTI) est un
