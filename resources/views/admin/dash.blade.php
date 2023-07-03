@@ -18,7 +18,7 @@
                 <li class="menu-heading">
                     <h3>Admin</h3>
                 </li>
-                <li>
+                {{-- <li>
                     <a href="#0">
                         <svg>
                             <use xlink:href="#pages"></use>
@@ -41,7 +41,7 @@
                         </svg>
                         <span>Trends</span>
                     </a>
-                </li>
+                </li> --}}
                 <li>
                     <a href="{{ route("sessionConcours") }}">
                         <svg>
@@ -50,7 +50,7 @@
                         <span>Sessions concours</span>
                     </a>
                 </li>
-                <li>
+                {{-- <li>
                     <a href="#0">
                         <svg>
                             <use xlink:href="#comments"></use>
@@ -92,7 +92,7 @@
                         </svg>
                         <span>Charts</span>
                     </a>
-                </li>
+                </li> --}}
                 <li>
                     <div class="switch">
                         <input type="checkbox" id="mode" checked>
