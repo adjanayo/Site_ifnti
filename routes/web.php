@@ -127,7 +127,9 @@ Route::put('dossier/mis_a_jours_admission/{dossier}', [DossierController::class,
 
 
 Route::delete('dossier/{dossier}', [DossierController::class, 'destroy'])->name("dossier.destroy");
-Route::get('dossier/list', [DossierController::class, 'index'])->name("dossier.index");
+Route::get('dossiers/index', [DossierController::class, 'index'])->name("dossier.index");
+Route::get('dossiers/index/search', [DossierController::class, 'index'])->name("dossier.search");
+
 
 //routes d'inscription
 

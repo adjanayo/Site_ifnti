@@ -52,15 +52,15 @@
                         <span>Sessions concours</span>
                     </a>
                 </li>
-                {{-- <li>
-                    <a href="#0">
+                <li>
+                    <a href="{{route('dossier.index')}}">
                         <svg>
                             <use xlink:href="#comments"></use>
                         </svg>
-                        <span>Comments</span>
+                        <span>Dossiers</span>
                     </a>
                 </li>
-                <li>
+              {{--  <li>
                     <a href="#0">
                         <svg>
                             <use xlink:href="#appearance"></use>
