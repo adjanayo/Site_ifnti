@@ -1,6 +1,13 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DossierController;
+use App\Http\Controllers\CandidatController;
+use App\Http\Controllers\SessionConcourController;
+use App\Models\Dossier;
+use GuzzleHttp\Psr7\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +20,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/login', function () {
+//     redirect(route("login"));
+// });
+
+
+/**Vitrine */
 Route::get('/', function () {
     return view('vitrine.pages.home');
 })->name('accueil');
@@ -77,6 +90,7 @@ Route::prefix("formation/")->name("formation.")->group(
     }
 );
 
+<<<<<<< HEAD
 Route::prefix("actu/")->name("actu.")->group(
     function () {
         Route::get('ceremoniederemisedediplomes', function () {
@@ -99,3 +113,40 @@ Route::prefix("actu/")->name("actu.")->group(
         })->name('nouvellesdecouvertes');
     }
 );
+=======
+/*ADMIN*/
+Auth::routes();
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/sessionConcour', [SessionConcourController::class, 'index'])->name('sessionConcours');
+Route::get('/sessionConcour/go', [CandidatController::class, 'session'])->name('sessionConcours.choix');
+Route::get('/dossier/{dossier}', [DossierController::class, 'show'])->name('dossier.show');
+Route::put('dossier/mis_a_jours_note/{dossier}', [DossierController::class, 'updateNote'])->name("dossier.updateNote");
+Route::put('dossier/mis_a_jours_appreciation/{dossier}', [DossierController::class, 'updateAppreciation'])->name("dossier.updateAppreciation");
+
+Route::put('dossier/mis_a_jours_admission/{dossier}', [DossierController::class, 'updateDossierStatus'])->name("dossier.updateAdmission");
+
+
+
+Route::delete('dossier/{dossier}', [DossierController::class, 'destroy'])->name("dossier.destroy");
+Route::get('dossier/list', [DossierController::class, 'index'])->name("dossier.index");
+
+//routes d'inscription
+
+Route::get('dossier/formulaire/creation', [CandidatController::class, 'create'])->name("dossier.create");
+
+Route::post('dossier/enregistrement', [CandidatController::class, 'store'])->name("dossier.store");
+
+
+
+Route::prefix('admission/')->name('admission.')->group(function () {
+    Route::get('formulaire', function () {
+        return view('admission.index');
+    });
+});
+
+
+// Route::get('/login', function () {
+//     redirect(route("login"));
+// });
+>>>>>>> 1263e8f4066d50b4325aaf35983450b9580c8bab

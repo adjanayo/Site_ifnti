@@ -13,21 +13,18 @@ return new class extends Migration
     {
         Schema::create('dossiers', function (Blueprint $table) {
             $table->id();
-            $table->string('moyenne_bac');
-            $table->string('moyenne_concours');
-            $table->string('serie');
-            $table->date('date_soumission');
-            $table->string('etat');
-            $table->date('date_entretien');
-            $table->boolean('estValide');
-            $table->string('appreciation');
-            $table->bigInteger('id_candidat');
-            $table->bigInteger('id_session_concours');
-            //$table->bigInteger('id_admis');
+            $table->string('moyenne_bac')->nullable();
+            $table->float('moyenne_concours')->nullable();
+            $table->date('date_soumission')->nullable();
+            $table->string('etat')->nullable();
+            $table->date('date_entretien')->nullable();
+            $table->boolean('estValide')->nullable();
+            $table->string('appreciation')->nullable();
+            $table->bigInteger('candidat_id');
+            $table->bigInteger('sessionconcour_id');
             $table->timestamps();
-            $table->foreign('id_candidat')->references('id')->on('candidats')->onDelete('cascade');
-            $table->foreign('id_session_concours')->references('id')->on('session_concours')->onDelete('cascade');
-            //$table->foreign('id_admis')->references('id')->on('admis');
+            $table->foreign('candidat_id')->references('id')->on('candidats')->onDelete('cascade');
+            $table->foreign('sessionconcour_id')->references('id')->on('sessionconcours')->onDelete('cascade');
         });
     }
 

@@ -30,7 +30,7 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="our-team">
                         <div class="team-img">
-                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}" />
+                            <img src="{{ asset('vitrine/images/img/isidore.jpg') }}" />
                             {{--  --}}
                         </div>
                         <div class="team-content">
@@ -72,7 +72,7 @@
 <div class="col-lg-3 col-md-6 col-12">
                     <div class="our-team">
                         <div class="team-img">
-                            <img src="{{ asset('vitrine/images/img/logoIfnti.png') }}"  />
+                            <img src="{{ asset('vitrine/images/img/fidele.jpg') }}"  />
                         </div>
                         <div class="team-content">
                             <h3 class="title">EKLOU Kokou Fidèle</h3>
