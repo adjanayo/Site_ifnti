@@ -4,24 +4,24 @@
     <section class="dossiers-container">
         <h2>Rechercher</h2>
         <div class="container-form">
-            <form action="">
+            <form action="{{ route('dossier.search') }}" method="GET">
                 <div class="container-select">
                     <label for="etat">Etat: </label>
-                    <select name="etat" id="etat">
+                    <select name="etat" id="etat" value="{{ $input['etat'] ?? '' }}">
                         <option value=""> Selectionner</option>
                         <option value="en attente"> En attente</option>
                         <option value="complet"> Complet</option>
-                        <option value="réjété"> Réjété</option>
+                        <option value="rejeté"> Réjété</option>
                     </select>
                 </div>
 
                 <div class="contianer-recherche">
                     <label for="date">Date Entretien: </label>
-                    <input type="date" name="date_entretien" id="date">
+                    <input type="date" name="date_entretien" id="date" value="{{ $input['date_entretien'] ?? '' }}">
                 </div>
                 <div class="contianer-recherche">
                     <label for="session">Session: </label>
-                    <input type="number" name="session_id" id="session">
+                    <input type="number" name="session_id" id="session" value="{{ $input['session_id'] ?? '' }}">
                 </div>
                 <div class="contianer-recherche">
                     <button type="submit" id="submit_search">Rechercher</button>
@@ -48,34 +48,57 @@
                 </thead>
                 <tbody>
 
-                    <tr class="clickable-row" data-href='http://127.0.0.1:8000/dossier/15'>
-                        <td>
+                    @php
+                        $lesDossiers = $dossiers;
+                    @endphp
 
+                    @forelse ($lesDossiers as $dossier)
+                        <tr class="clickable-row" data-href='{{ route('dossier.show', $dossier->id) }}'>
+                            <td>
+                                {{-- <input type="checkbox" id="" class=""> --}}
 
-                        </td>
-                        <td>Oberbrunner</td>
-                        <td>Julie</td>
-                        <td>Féminin</td>
-                        <td>16.5</td>
-                        <td>19.27</td>
-                        <td></td>
+                            </td>
+                            <td>{{ $dossier->candidat->nom }}</td>
+                            <td>{{ $dossier->candidat->prenom }}</td>
+                            <td>{{ $dossier->candidat->genre }}</td>
+                            <td>{{ $dossier->moyenne_bac }}</td>
+                            <td>{{ $dossier->moyenne_concours }}</td>
+                            <td>{{ $dossier->serie }}</td>
 
-                        <td>1979-10-17</td>
-                        <td>
+                            <td>{{ $dossier->date_soumission }}</td>
+                            <td>
 
-                            <div class="etat est_complet">
-                                <svg viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M20 6L9 17l-5-5" />
-                                </svg>
-                                Conplet
-                            </div>
+                                @switch($dossier->etat)
+                                    @case('complet')
+                                        <div class="etat est_complet">
+                                            @include('admin.composants.dash.accepte')
+                                            Conplet
+                                        </div>
+                                    @break
 
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                                    @case('rejeté')
+                                        <div class="etat est_rejete">
+                                            @include('admin.composants.dash.rejete')
+                                            Rejeté
+                                        </div>
+                                    @break
 
-    </section>
-@endsection
+                                    @default
+                                        <div class="etat en_attente">
+                                            @include('admin.composants.dash.attente')
+                                            En attente
+                                        </div>
+                                @endswitch
+
+                            </td>
+                        </tr>
+                        @empty
+                            Aucun dossier enregistré pour la session
+                        @endforelse
+
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    @endsection

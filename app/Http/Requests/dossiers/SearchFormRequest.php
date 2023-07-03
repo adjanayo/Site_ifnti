@@ -22,7 +22,9 @@ class SearchFormRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'date_entretien' => ['date', 'nullable']
+            'date_entretien' => ['date', 'nullable'],
+            'session_id' => ['numeric', 'gte:0', 'nullable'],
+            'etat' => ['string', 'nullable']
         ];
     }
 }
