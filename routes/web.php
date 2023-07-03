@@ -90,7 +90,6 @@ Route::prefix("formation/")->name("formation.")->group(
     }
 );
 
-<<<<<<< HEAD
 Route::prefix("actu/")->name("actu.")->group(
     function () {
         Route::get('ceremoniederemisedediplomes', function () {
@@ -113,7 +112,6 @@ Route::prefix("actu/")->name("actu.")->group(
         })->name('nouvellesdecouvertes');
     }
 );
-=======
 /*ADMIN*/
 Auth::routes();
 
@@ -151,4 +149,3 @@ Route::prefix('admission/')->name('admission.')->group(function () {
 // Route::get('/login', function () {
 //     redirect(route("login"));
 // });
->>>>>>> 1263e8f4066d50b4325aaf35983450b9580c8bab

@@ -5,8 +5,10 @@
         <nav>
             <a href="#" aria-label="forecastr logo" class="logo">
                 <img sizes="(min-width: 700px) 1200px,(min-width: 50px)
-                300px" srcset="{{ asset('admin/images/logotext-600.png')}} 700w,
-                {{ asset('admin/images/logotext.png') }} 300w," src="{{ asset('admin/images/logotext.png') }}" />
+                300px"
+                    srcset="{{ asset('admin/images/logotext-600.png') }} 700w,
+                {{ asset('admin/images/logotext.png') }} 300w,"
+                    src="{{ asset('admin/images/logotext.png') }}" />
 
             </a>
             <button class="toggle-mob-menu" aria-expanded="false" aria-label="open menu">
@@ -43,7 +45,7 @@
                     </a>
                 </li> --}}
                 <li>
-                    <a href="{{ route("sessionConcours") }}">
+                    <a href="{{ route('sessionConcours') }}">
                         <svg>
                             <use xlink:href="#collection"></use>
                         </svg>
@@ -133,7 +135,7 @@
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
                             <button type="submit" id="logout">
-                                <i class="fas fa-sign-out-alt"></i>                                {{ __('Logout') }}
+                                <i class="fas fa-sign-out-alt"></i> {{ __('Logout') }}
                             </button>
                         </form>
                     </div>
@@ -142,7 +144,7 @@
         </section>
         <section class="grid">
             <article>
-               @yield("action")
+                @yield('action')
             </article>
             {{-- <article></article>
             <article></article>
@@ -161,8 +163,7 @@
     </section>
     <!-- partial -->
     @push('js')
-
-    <script src="{{ asset('admin/js/jquery.min.js') }}"></script>
+        <script src="{{ asset('admin/js/jquery.min.js') }}"></script>
         <script>
             $(function() {
                 $('#showLogout').click(function(e) {
