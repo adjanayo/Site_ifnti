@@ -38,22 +38,22 @@
                                     dépannage réseau. Rejoignez-nous pour maîtriser le Modèle OSI et exceller dans le
                                     domaine des réseaux.". </p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -73,22 +73,22 @@
                                     et de sécurité. Rejoignez-nous pour maîtriser les compétences pratiques nécessaires
                                     à la mise en place concrète de réseaux réussis. </p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -108,22 +108,22 @@
                                     maîtriser SSH, DHCP, HTTP et DNS et devenir un expert dans le domaine des services
                                     et protocoles réseau.</p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -146,22 +146,22 @@
                                     compétences essentielles en routage avancé et en pare-feux, et devenez un
                                     professionnel accompli dans le domaine de la connectivité sécurisée.</p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -180,22 +180,22 @@
                                     expertise solide en sécurité informatique et devenir un professionnel compétent dans
                                     ce domaine crucial de l'informatique. </p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -214,22 +214,22 @@
                                     techniques avancées liées à HTTP & HTTPS et devenir un expert dans le domaine de la
                                     communication sécurisée sur le web. </p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>

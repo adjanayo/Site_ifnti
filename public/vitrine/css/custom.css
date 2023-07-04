@@ -21,6 +21,11 @@ div.modif.cout.f{
   border    : 2px solid rgba(0, 0, 0, 0.5);
 }
 
+#red.modif.lf{
+  color:rgb(255, 111, 0);
+  font-weight: bolder;
+  font-size: 25px;
+}
 .modif.ctn_infos.f h2 {
   font-size: 18px;
 }
@@ -37,7 +42,7 @@ div.modif.cout.f{
 
 .modif.ctn_infos.f .contenu {
   height    : 100%;
-  border    : 2px solid #fbc01b;
+  border    : 2px solid rgb(255, 111, 0);
   padding   : 30px;
   text-align: center;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
