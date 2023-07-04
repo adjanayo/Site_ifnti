@@ -327,7 +327,7 @@
 
 
             <hr class="hr3">
-
+            {{--@include('vitrine.composants.partenaire')--}}
 
         </div>
     </div>

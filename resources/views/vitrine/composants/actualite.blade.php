@@ -44,12 +44,11 @@
                             <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
                         </div>
                         <div class="blog-title">
-                            <h2><a href="#" title="">Concours d’entrée 2022 - 2023.</a></h2>
+                            <h2><a href="#" title="">Concours d’entrée 2023 - 2024.</a></h2>
                         </div>
                         <div class="blog-desc">
-                            <p>L ’IFNTI accueillera une nou v elle promotion à la rentrée uni v ersitaire 2022-2023 . C
-                                ette
-                                f ormation recrutera des b ac h eliers des séries C, D, E, ... </p>
+                            <p>
+                                L’IFNTI accueillera une nouvelle promotion à la rentrée universitaire 2023-2024. Cette formation recrutera des bacheliers des séries C, D, E ... </p>
                         </div>
                         <div class="blog-button">
                             <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
@@ -71,9 +70,7 @@
                             <h2><a href="#" title="">Journées portes ouvertes</a></h2>
                         </div>
                         <div class="blog-desc">
-                            <p>L 'IFNTI organise une journée portes - ouvertes le samedi 21 mai 2022 . D ans la matinée
-                                ,
-                                deux étudiants de fin de cycle présenteront leur.. </p>
+                            <p>L'IFNTI organise chaque année une journée portes-ouvertes au cours duquel les étudiants accueillent le public pour lui montrer non seulement leurs productions techniques mais aussi les conditions de travail dont ils bénéficient et qui permettent d'arriver à ces résultats. </p>
                         </div>
                         <div class="blog-button">
                             <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
@@ -99,9 +96,7 @@
                             <h2><a href="#" title="">Cérémonie de remise du prix MISS TIC</a></h2>
                         </div>
                         <div class="blog-desc">
-                            <p>Afin d'encourager les filles dans le domaines des TICs , l'IFNTI a instauré un prix MISS
-                                TIC
-                                qui permet de récompenser.. </p>
+                            <p>Afin d'encourager les filles dans le domaine des TICs , l'IFNTI a instauré un prix MISS TIC qui permet de récompenser chaque année une des filles qui s'investissent pour prouver leur talent dans le domaine des technologies informatiques.</p>
                         </div>
                         <div class="blog-button">
                             <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
@@ -120,13 +115,11 @@
                             <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
                         </div>
                         <div class="blog-title">
-                            <h2><a href="#" title="">Partenariat avec une entreprise de cryptomonaie</a>
+                            <h2><a href="#" title="">Partenariat avec une université canadienne "KBU"</a>
                             </h2>
                         </div>
                         <div class="blog-desc">
-                            <p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets
-                                geuiat
-                                operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
+                            <p>Knowbridge Institut University est une université 100% en ligne. C'est un partenaire dont le soutien permet à l'IFNTI de bénéficier du style anglo-saxon dans sa formation.</p>
                         </div>
                         <div class="blog-button">
                             <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
@@ -149,9 +142,7 @@
                                     mobiles</a></h2>
                         </div>
                         <div class="blog-desc">
-                            <p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets
-                                geuiat
-                                operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
+                            <p>Les applications sont de plus en plus embarquées sur des dispositifs mobiles au sein des systèmes ou des environnements variés. L'occasion vous sera donnée de concevoir et de réaliser des applications sur ces différentes plateformes.</p>
                         </div>
                         <div class="blog-button">
                             <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
