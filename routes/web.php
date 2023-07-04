@@ -146,6 +146,6 @@ Route::prefix('admission/')->name('admission.')->group(function () {
 });
 
 
-// Route::get('/login', function () {
-//     redirect(route("login"));
-// });
+Route::get('*', function () {
+    redirect(route("accueil"));
+});
