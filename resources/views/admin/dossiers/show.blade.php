@@ -3,18 +3,18 @@
 @section('action')
     <section class="show"> @switch($dossier->etat)
         @case('admis')
-            <div style="width: 100px;height:100px; border-radius:50%; background:green">
+            <div style="width: 50px;height:50px; border-radius:50%; background:green" class="view_status">
             </div>
         @break
 
         @case('rejeté')
-            <div style="width: 100px;height:100px; border-radius:50%; background:red">
+            <div style="width: 50px;height:50px; border-radius:50%; background:red"class="view_status">
 
             </div>
         @break
 
         @default
-            <div style="width: 100px;height:100px; border-radius:50%;background:orange">
+            <div style="width: 50px;height:50px; border-radius:50%;background:orange"class="view_status">
 
             </div>
     @endswitch
