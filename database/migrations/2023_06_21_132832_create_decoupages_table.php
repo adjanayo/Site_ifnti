@@ -15,8 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('nom');
             $table->bigInteger('niveau_id');
+           
             $table->timestamps();
             $table->foreign('niveau_id')->references('id')->on('niveaus')->onDelete('cascade');
+           
         });
     }
 

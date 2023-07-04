@@ -2,7 +2,7 @@
 @section('content')
     <div class="all-title-box modif hafiz ifnti">
         <div class="container text-center">
-            <h1>IFNTI</h1>
+            <h1>Cérémonie De Remise De Diplômes</h1>
         </div>
     </div>
 
@@ -12,7 +12,7 @@
                 <div class="col-lg-9 blog-post-single">
                     <div class="blog-item">
                         <div class="image-blog">
-                            <img src="{{ asset('vitrine/images/img/page3_img2.png') }}" alt="" class="img-fluid">
+                            <img src="{{ asset('vitrine/images/img/a1.png') }}" alt="" class="img-fluid">
                         </div>
                         <div class="post-content">
                             <div class="post-date">
@@ -25,85 +25,30 @@
                                 <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
                             </div>
                             <div class="blog-title">
-                                <h2><a href="#" title="">Presentation</a></h2>
+                                <h2><a href="#" title="">Déroulement</a></h2>
                             </div>
                             <div class="blog-desc">
-                                <p>L’Institut de formation aux normes et technologies de l’informatique (IFNTI) est un
-                                    institut de formation post-bac situé à Sokodé, dans la région centrale du Togo. </p>
+                                <p>La Cérémonie de Remise de Diplômes à l'Institut de Formation au Normes  et Technologies de l'Informatique(IFNTI) est un événement empreint d'émotions, de fierté et de célébration. C'est un moment solennel où les étudiants diplômés, accompagnés de leurs proches et de membres du corps professoral, sont réunis pour célébrer leurs réalisations académiques.</p>
                                 <blockquote class="default">
-                                    Fondé en 2009, il est destiné aux bacheliers et aux étudiants souhaitant se
-                                    réorienter. L’IFNTI dispense une formation supérieure en licence de type LMD en
-                                    informatique. L’IFNTI est une Association à but non lucratif (ASBL). Elle a pour but
-                                    de contribuer à la transmission du savoir et du savoir-faire des technologies
-                                    informatique en privilégiant le sens de la responsabilité et de la qualité.
+                                    Le directeur de l'IFNTI ouvre la cérémonie par un discours inspirant, félicitant les diplômés pour leurs efforts, leur persévérance et leur engagement envers l'excellence. Il souligne également l'importance des compétences acquises au cours de leur parcours à l'IFNTI et encourage les diplômés à utiliser leurs connaissances pour contribuer positivement à la société et à l'industrie des technologies de l'information.
                                 </blockquote>
-                                <p>Situé à Sokodé dans la Région Centrale du Togo, l’IFNTI est implanté dans le quartier
-                                    administratif à proximité des deux grands lycées.</p>
                             </div>
                         </div>
                     </div>
 
                     <div class="blog-author">
                         <div class="author-bio">
-                            <h1>Fondateurs</h1>
-                            <h3 class="author_name"><a href="#">Jean-Pierre Paillard </a></h3>
-                            <h5>est ingénieur informaticien de l’ENSIMAG, Grenoble. Ancien maître de conférences, il a
-                                enseigné aux <a href="#">universités de Grenoble et de La Rochelle.</a></h5>
-                            <!--<p class="author_det">
-                                Lorem ipsum dolor sit amet, consectetur adip, sed do eiusmod tempor incididunt ut aut
-                                reiciendise voluptat maiores alias consequaturs aut perferendis doloribus omnis saperet
-                                docendi nec, eos ea alii molestiae aliquand.
-                            </p>-->
+                            <h1>Presentation de projets de Stages</h1>
+                            <p>la présentation des projets de stage de six mois réalisés par les étudiants. C'est l'occasion pour ces derniers de mettre en valeur leur travail, leurs compétences et les résultats obtenus au sein d'entreprises et d'organisations partenaires.</p>
                         </div>
-                        <div class="author-desc">
-                            <div class="our-team">
-                                <div class="team-img">
-                                    <img src="{{ asset('vitrine/images/img/fondateur.png') }}">
-                                    <div class="social">
-                                        <ul>
-                                            <li><a href="#" class="fa fa-facebook"></a></li>
-                                            <li><a href="#" class="fa fa-twitter"></a></li>
-                                            <li><a href="#" class="fa fa-linkedin"></a></li>
-                                            <li><a href="#" class="fa fa-skype"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Jean-Pierre Paillard </h3>
-                                    <span class="post">Fondateur, Ex Prof</span>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                     <hr class="hr3">
 
                     <div class="blog-author">
                         <div class="author-bio">
-                            <h1>Fondateurs</h1>
-                            <h3 class="author_name"><a href="#">Sabirou Téouri </a></h3>
-                            <h5>est ingénieur informaticien du CNAM, Paris. Travailleur indépendant, consultant
-                                formateur, il a enseigné à l’université de La Rochelle et travaillé au laboratoire de
-                                recherche L3I de La Rochelle. <a href="#">laboratoire de recherche L3I de La
-                                    Rochelle.</a></h5>
-                        </div>
-                        <div class="author-desc">
-                            <div class="our-team">
-                                <div class="team-img">
-                                    <img src="{{ asset('vitrine/images/img/fondateur1.png') }}">
-                                    <div class="social">
-                                        <ul>
-                                            <li><a href="#" class="fa fa-facebook"></a></li>
-                                            <li><a href="#" class="fa fa-twitter"></a></li>
-                                            <li><a href="#" class="fa fa-linkedin"></a></li>
-                                            <li><a href="#" class="fa fa-skype"></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="team-content">
-                                    <h3 class="title">Sabirou Téouri </h3>
-                                    <span class="post">Fondateur, Ex Prof</span>
-                                </div>
-                            </div>
+                            <h1>A retenire</h1>
+                            <h5>La Cérémonie de Remise de Diplômes à l'IFNTI est donc un événement marquant, rempli d'émotions intenses et de moments mémorables. Elle représente la conclusion d'un chapitre important dans la vie des étudiants et marque le début de nouvelles opportunités et de nouvelles réalisations. C'est une célébration de l'engagement, du travail acharné et du succès, ainsi qu'un</a></h5>
                         </div>
                     </div>
                 </div>
@@ -111,13 +56,7 @@
 
                 <div class="col-lg-3 col-12 right-single">
                     <div class="widget-tags">
-                        <p>Les initiateurs regroupent des compétences complémentaires : connaissance du terrain,
-                            motivation d’activité dans la Communauté économique des États de l’Afrique de l’Ouest
-                            (CEDEAO), maîtrise technologique et didactique, expérience professionnelle. Ils partagent
-                            des convictions fortes sur la possibilité de réussir à freiner la fuite des cerveaux par une
-                            formation de qualité, et sur la baisse d’attrait de l’émigration qui se fait sentir chez les
-                            nouvelles générations. Un engagement sur plus de dix ans dans des activités associatives
-                            locales leur a montré les potentialités des petites organisations : associations, ONG, PME.
+                        <p>Dans l'ensemble, cet événement met en lumière l'engagement de l'IFNTI à offrir une éducation axée sur la pratique et à former des professionnels compétents et prêts à relever les défis du monde de l'informatique et des technologies de l'information.
                         </p>
                     </div>
                 </div>

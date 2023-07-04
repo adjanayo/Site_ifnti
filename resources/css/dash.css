@@ -642,6 +642,33 @@ body {
 
 /* LOGOUT
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.logout-conteneur {
+.admin-profile .logout-conteneur {
     display: none;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    padding-top: 8px;
+    width: 8rem;
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    height: 30px;
+}
+
+#showLogout{
+    cursor: pointer;
+}
+
+.admin-profile #logout-form button#logout{ 
+    margin: 5px;
+    margin-top: 5px;
+    color: #8b8b8b;
+    left: 0px;
+    padding: 5px;
+    position: relative;
+    
+}
+
+.admin-profile #logout-form button#logout:hover{
+    color: #474747;
+
 }

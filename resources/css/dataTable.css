@@ -4,14 +4,19 @@
     --delay: 0s;
 }
 
+.conatainer-table{
+    overflow: scroll;
+}
+
 .dossier-data-table {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     border-collapse: collapse;
     border: #142940 1px solid;
     background-color: ivory;
-    margin: auto;
+    margin: 30px auto;
     width: 1200px;
+    
 }
 
 
@@ -36,11 +41,11 @@
 }
 
 .dossier-data-table .etat.est_complet {
-    color: orange;
+    color: green;
 }
 
 .dossier-data-table .etat.est_rejete {
-    color: #d14b69;
+    color: red;
 }
 
 .dossier-data-table .etat.est_rejete svg {
@@ -48,7 +53,7 @@
 }
 
 .dossier-data-table .etat.en_attente {
-    color: #3E4EC2;
+    color: orange;
     position: relative;
 }
 
@@ -115,11 +120,11 @@
 }
 
 .dossier-data-table tbody tr:nth-child(2n) {
-    background-color: ivory;
+    background-color: #f1efec;
 }
 
 .dossier-data-table tbody tr:hover {
-    background-color: rgba(201, 169, 110, 0.473);
+    background-color: #25252531;
 }
 
 

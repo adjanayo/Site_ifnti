@@ -22,7 +22,6 @@ class SessionConcourController extends Controller {
 
         foreach ( $sessionConcours as $sessionConcour ) {
             $dossiers[ $sessionConcour->id ] = Dossier::orderBy("moyenne_concours", 'desc')->get()->where( 'sessionconcour_id', $sessionConcour->id );
-            $lesDossiers = $dossiers[$sessionConcour->id];
             // dd($lesDossiers);
         }
         // dd($dossiers);
@@ -77,4 +76,6 @@ class SessionConcourController extends Controller {
     public function destroy( string $id ) {
         //
     }
+
+   
 }

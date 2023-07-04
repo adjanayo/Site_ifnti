@@ -28,7 +28,7 @@
                                 tous une proposition... </p>
                         </div>
                         <div class="blog-button">
-                            <a class="hover-btn-new orange" href="#"><span>Lire Plus<span></a>
+                            <a class="hover-btn-new orange" href="{{route("actu.ceremoniederemisedediplomes")}}"><span>Lire Plus<span></a>
                         </div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
                                 L’IFNTI accueillera une nouvelle promotion à la rentrée universitaire 2023-2024. Cette formation recrutera des bacheliers des séries C, D, E ... </p>
                         </div>
                         <div class="blog-button">
-                            <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
+                            <a class="hover-btn-new orange" href="{{route("actu.concoursdentree")}}"><span>Lire Plus</span></a>
                         </div>
                     </div>
                 </div>
@@ -73,7 +73,7 @@
                             <p>L'IFNTI organise chaque année une journée portes-ouvertes au cours duquel les étudiants accueillent le public pour lui montrer non seulement leurs productions techniques mais aussi les conditions de travail dont ils bénéficient et qui permettent d'arriver à ces résultats. </p>
                         </div>
                         <div class="blog-button">
-                            <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
+                            <a class="hover-btn-new orange" href="{{route("actu.journeesportesouvertes")}}"><span>Lire Plus</span></a>
                         </div>
                     </div>
                 </div>
@@ -99,7 +99,7 @@
                             <p>Afin d'encourager les filles dans le domaine des TICs , l'IFNTI a instauré un prix MISS TIC qui permet de récompenser chaque année une des filles qui s'investissent pour prouver leur talent dans le domaine des technologies informatiques.</p>
                         </div>
                         <div class="blog-button">
-                            <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
+                            <a class="hover-btn-new orange" href="{{route("actu.ceremoniederemisedediplomes")}}"><span>Lire Plus</span></a>
                         </div>
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                             <p>Knowbridge Institut University est une université 100% en ligne. C'est un partenaire dont le soutien permet à l'IFNTI de bénéficier du style anglo-saxon dans sa formation.</p>
                         </div>
                         <div class="blog-button">
-                            <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
+                            <a class="hover-btn-new orange" href="{{route("actu.partenariat")}}"><span>Lire Plus</span></a>
                         </div>
                     </div>
                 </div>
@@ -145,7 +145,7 @@
                             <p>Les applications sont de plus en plus embarquées sur des dispositifs mobiles au sein des systèmes ou des environnements variés. L'occasion vous sera donnée de concevoir et de réaliser des applications sur ces différentes plateformes.</p>
                         </div>
                         <div class="blog-button">
-                            <a class="hover-btn-new orange" href="#"><span>Lire Plus</span></a>
+                            <a class="hover-btn-new orange" href="{{route("actu.nouvellesdecouvertes")}}"><span>Lire Plus</span></a>
                         </div>
                     </div>
                 </div>

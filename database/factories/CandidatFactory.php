@@ -22,10 +22,11 @@ class CandidatFactory extends Factory
             'prenom' => $this->faker->firstName(),
             'dateNaissance' => $this->faker->date(),
             "genre" => $this->faker->randomElement(["Masculin", "Féminin"]),
+            "situation" => $this->faker->randomElement(["Célibataire", "Marié"]),
             "adresse" => $this->faker->city(),
             "telephone" => $this->faker->phoneNumber(),
             "email" => $this->faker->email(),
-            "etablissement" => $this->faker->company(),
+           // "etablissement" => $this->faker->company(),
             "nationalite" => $this->faker->word(),
             "tel_tuteur" => $this->faker->phoneNumber()
 

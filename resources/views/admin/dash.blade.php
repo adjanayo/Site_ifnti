@@ -5,8 +5,10 @@
         <nav>
             <a href="#" aria-label="forecastr logo" class="logo">
                 <img sizes="(min-width: 700px) 1200px,(min-width: 50px)
-                300px" srcset="{{ asset('admin/images/logotext-600.png')}} 700w,
-                {{ asset('admin/images/logotext.png') }} 300w," src="{{ asset('admin/images/logotext.png') }}" />
+                300px"
+                    srcset="{{ asset('admin/images/logotext-600.png') }} 700w,
+                {{ asset('admin/images/logotext.png') }} 300w,"
+                    src="{{ asset('admin/images/logotext.png') }}" />
 
             </a>
             <button class="toggle-mob-menu" aria-expanded="false" aria-label="open menu">
@@ -18,7 +20,7 @@
                 <li class="menu-heading">
                     <h3>Admin</h3>
                 </li>
-                <li>
+                {{-- <li>
                     <a href="#0">
                         <svg>
                             <use xlink:href="#pages"></use>
@@ -41,9 +43,9 @@
                         </svg>
                         <span>Trends</span>
                     </a>
-                </li>
+                </li> --}}
                 <li>
-                    <a href="{{ route("sessionConcours") }}">
+                    <a href="{{ route('sessionConcours') }}">
                         <svg>
                             <use xlink:href="#collection"></use>
                         </svg>
@@ -51,14 +53,14 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#0">
+                    <a href="{{route('dossier.index')}}">
                         <svg>
                             <use xlink:href="#comments"></use>
                         </svg>
-                        <span>Comments</span>
+                        <span>Dossiers</span>
                     </a>
                 </li>
-                <li>
+              {{--  <li>
                     <a href="#0">
                         <svg>
                             <use xlink:href="#appearance"></use>
@@ -92,7 +94,7 @@
                         </svg>
                         <span>Charts</span>
                     </a>
-                </li>
+                </li> --}}
                 <li>
                     <div class="switch">
                         <input type="checkbox" id="mode" checked>
@@ -130,11 +132,10 @@
                     </svg>
 
                     <div class="logout-conteneur">
-
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
-                            <button type="submit">
-                                {{ __('Logout') }}
+                            <button type="submit" id="logout">
+                                <i class="fas fa-sign-out-alt"></i> {{ __('Logout') }}
                             </button>
                         </form>
                     </div>
@@ -143,7 +144,7 @@
         </section>
         <section class="grid">
             <article>
-               @yield("action")
+                @yield('action')
             </article>
             {{-- <article></article>
             <article></article>
@@ -162,8 +163,7 @@
     </section>
     <!-- partial -->
     @push('js')
-
-    <script src="{{ asset('admin/js/jquery.min.js') }}"></script>
+        <script src="{{ asset('admin/js/jquery.min.js') }}"></script>
         <script>
             $(function() {
                 $('#showLogout').click(function(e) {

@@ -1,15 +1,32 @@
 @extends('admin.dash')
+
 @section('action')
-    <section class="show">
+    <section class="show"> @switch($dossier->etat)
+        @case('admis')
+            <div style="width: 100px;height:100px; border-radius:50%; background:green">
+            </div>
+        @break
+
+        @case('rejeté')
+            <div style="width: 100px;height:100px; border-radius:50%; background:red">
+
+            </div>
+        @break
+
+        @default
+            <div style="width: 100px;height:100px; border-radius:50%;background:orange">
+
+            </div>
+    @endswitch
         <div class="dossier-vue">
             <h1 class="leDossier">Dossier No {{ $dossier->id }}</h1>
 
 
             @switch($dossier->etat)
-                @case('complet')
+                @case('admis')
                     <div class="etat est_complet">
                         @include('admin.composants.dash.accepte')
-                        Conplet
+                        Admis
                     </div>
                 @break
 
@@ -26,206 +43,289 @@
                         En attente
                     </div>
             @endswitch
-            <h2 class="title-dossier">Informations candidat</h2>
-            <div class="info-candidat-container">
-                <div class="info-candidat">
-                    <span>Nom:</span>
-                    <span>{{ $dossier->candidat->nom }}</span>
-                </div>
-                <div class="info-candidat">
-                    <span>Prenom:</span>
-                    <span>{{ $dossier->candidat->prenom }}</span>
-                </div>
-                <div class="info-candidat">
-                    <span>Genre:</span>
-                    <span>{{ $dossier->candidat->genre }}</span>
-                </div>
-                <div class="info-candidat">
-                    <span>Nationnalité:</span>
-                    <span>{{ $dossier->candidat->nationalite }}</span>
-                </div>
-                <div class="info-candidat">
-                    <span>Date de naissance:</span>
-                    <span>{{ $dossier->candidat->dateNaissance }}</span>
-                </div>
-                <div class="info-candidat">
-                    <span>Etablisseent de provenance:</span>
-                    <span>{{ $dossier->candidat->etablissement }}</span>
-                </div>
-                <div class="info-candidat">
-                    <span>Adresse:</span>
-                    <span>{{ $dossier->candidat->adresse }}</span>
-                </div>
-                <div class="info-candidat">
-                    <span>Contact:</span>
-                    <span>{{ $dossier->candidat->telephone }}</span>
-                </div>
-                <div class="info-candidat">
-                    <span>Email:</span>
-                    <span>{{ $dossier->candidat->email }}</span>
-                </div>
-                <div class="info-candidat">
-                    <span>Tuteur:</span>
-                    <span>{{ $dossier->candidat->tel_tuteur }}</span>
-                </div>
-            </div>
-            <h2 class="title-dossier">Notes</h2>
-            <div class="info-candidat-container">
-                <div class="info-candidat">
-                    <span>Moyenne bac:</span>
-                    <span>{{ $dossier->moyenne_bac }}</span>
-                </div>
-                <div class="info-candidat">
-                    <span>Moyenne concours:</span>
-                    <span>{{ $dossier->moyenne_concours }}</span>
+            <div class="container-tous">
+                <div class="container-candidat">
+                    <h3>Informations candidat</h3>
+                    <div class="infos-personnelles">
+                        <div class="infos">
+                            <p>Nom</p>
+                            <p class="dot">:</p>
+                            <p>{{ $dossier->candidat->nom }}</p>
+                        </div>
+                        <div class="infos">
+                            <p>Prenom</p>
+                            <p class="dot">:</p>
+                            <p>{{ $dossier->candidat->prenom }}</p>
+                        </div>
+                        <div class="infos">
+                            <p>Genre</p>
+                            <p class="dot">:</p>
+                            <p>{{ $dossier->candidat->genre }}</p>
+                        </div>
+                        <div class="infos">
+                            <p>Nationnalité</p>
+                            <p class="dot">:</p>
+                            <p>{{ $dossier->candidat->nationalite }}</p>
+                        </div>
+                        <div class="infos">
+                            <p>Date de naissance</p>
+                            <p class="dot">:</p>
+                            <p>{{ $dossier->candidat->dateNaissance }}</p>
+                        </div>
+                        <div class="infos">
+                            <p>Etbls de provenance</p>
+                            <p class="dot">:</p>
+                            <p>{{ $dossier->candidat->etablissement }}</p>
+                        </div>
+                        <div class="infos">
+                            <p>Adresse</p>
+                            <p class="dot">:</p>
+                            <p>{{ $dossier->candidat->adresse }}</p>
+                        </div>
+                        <div class="infos">
+                            <p>Contact</p>
+                            <p class="dot">:</p>
+                            <p>{{ $dossier->candidat->telephone }}</p>
+                        </div>
+                        <div class="infos">
+                            <p>Email</p>
+                            <p class="dot">:</p>
+                            <p>{{ $dossier->candidat->email }}</p>
+                        </div>
+                        <div class="infos">
+                            <p>Tuteur</p>
+                            <p class="dot">:</p>
+                            <p>{{ $dossier->candidat->tel_tuteur }}</p>
+                        </div>
+                    </div>
                 </div>
 
+                <div class="divers">
+                    <h3>Notes</h3>
+                    <div class="container-notes">
+
+                        <div class="notes">
+                            <p>Moyenne bac</p>
+                            <p class="dot">:</p>
+                            <p>{{ $dossier->moyenne_bac }}</p>
+                        </div>
+                        <div class="notes">
+                            <p>Moyenne concours</p>
+                            <p class="dot">:</p>
+                            <p>{{ $dossier->moyenne_concours }}</p>
+                        </div>
+                    </div>
+                    <h3>Informations Concours</h3>
+                    <div class="container-notes">
+                        <div class="notes">
+                            <p>MATH</p>
+                            <p class="dot">:</p>
+                            <p>{{ $dossier->note->math }}</p>
+                        </div>
+                        <div class="notes">
+                            <p>Anglais</p>
+                            <p class="dot">:</p>
+                            <p>{{ $dossier->note->ang }}</p>
+                        </div>
+                        <div class="notes">
+                            <p>Français</p>
+                            <p class="dot">:</p>
+                            <p>{{ $dossier->note->fr }}</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             @php
                 $niveaux = $dossier->niveau;
             @endphp
-            @foreach ($niveaux as $niveau)
-                <h2 class="title-dossier">{{ $niveau->nom }} ({{ $niveau->annee }})</h2>
-                <div class="conatainer-table">
-                    <table class="dossier-data-table">
-                        <thead>
-                            <tr>
-                                <th>Decoupage</th>
-                                <th>MAth</th>
-                                <th>Français</th>
-                                <th>Anglais</th>
-                                <th>Bulltein</th>
-                            </tr>
-                        </thead>
-                        @php
-                            $decoupages = $niveau->decoupage;
-                        @endphp
-                        @foreach ($decoupages as $decoupage)
-                            <tbody>
-                                <tr>
-                                    <td>{{ $decoupage->nom }}</td>
-                                    @php
-                                        $matieres = $decoupage->matieres;
-                                    @endphp
-                                    @foreach ($matieres as $matiere)
-                                        @if ($matiere->nom == 'math')
-                                            <td>
-                                                {{ $matiere->note }}</td>
-                                        @endif
 
-                                        @if ($matiere->nom == 'fr')
-                                            <td>
-                                                {{ $matiere->note }}</td>
-                                        @endif
+            <div class="mes-tables">
 
-                                        @if ($matiere->nom == 'ang')
-                                            <td>
-                                                {{ $matiere->note }}</td>
-                                        @endif
+                <div class="preview" id="previous">
+                    <button id="a1" style="visibility: hidden;"><img src=" {{ asset('admin/images/prev.png') }}"
+                            alt="" id="prev"></button>
+                </div>
+                <div class="container-tables-" id="container-tables">
+                    @foreach ($niveaux as $niveau)
+                        <div class="conatainer-table1 @if ($loop->index < 2) active @endif">
+                            <h2 class="title-dossier">{{ $niveau->nom }} ({{ $niveau->annee }})</h2>
+                            <table class="dossier-tables ">
+                                <thead>
+                                    <tr>
+                                        <th>Decoupage</th>
+                                        <th>MAth</th>
+                                        <th>Français</th>
+                                        <th>Anglais</th>
+                                        <th>Bulltein</th>
+                                    </tr>
+                                </thead>
+                                @php
+                                    $decoupages = $niveau->decoupage;
+                                @endphp
+                                <tbody>
+                                    @foreach ($decoupages as $decoupage)
+                                        <tr>
+                                            <td>{{ $decoupage->nom }}</td>
+                                            @php
+                                                $matieres = $decoupage->matieres;
+                                            @endphp
+                                            @foreach ($matieres as $matiere)
+                                                @if ($matiere->nom == 'math')
+                                                    <td>{{ $matiere->note }}</td>
+                                                @endif
+                                                @if ($matiere->nom == 'fr')
+                                                    <td>
+                                                        {{ $matiere->note }}</td>
+                                                @endif
+
+                                                @if ($matiere->nom == 'ang')
+                                                    <td>
+                                                        {{ $matiere->note }}</td>
+                                                @endif
+                                            @endforeach
+
+                                            <td><button id="dowload">dowload</button></td>
+                                        </tr>
                                     @endforeach
-                                    <td>{{ $decoupage->bulletin->fichier }}</td>
-                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    @endforeach
+                </div>
+                <div class="next">
 
-                            </tbody>
-                        @endforeach
-                    </table>
-                </div>
-            @endforeach
-            <h2 class="title-dossier">Informations Concours</h2>
+                    <button id="a2"><img src="{{ asset('admin/images/next.png') }}" alt=""
+                            id="next"></button>
 
-            <div class="info-candidat-container">
-                <div class="info-candidat">
-                    <span>MAth:</span>
-                    <span>{{ $dossier->note->math }}</span>
                 </div>
-                <div class="info-candidat">
-                    <span>Anglais:</span>
-                    <span>{{ $dossier->note->ang }}</span>
-                </div>
-                <div class="info-candidat">
-                    <span>Français:</span>
-                    <span>{{ $dossier->note->fr }}</span>
-                </div>
-                <a href="#edit" id="show-dossier-editer-link">Editer</a>
+
 
             </div>
+            <a href="#edit-note" id="show-dossier-editer-note-link">Editer notes</a>
+            <a href="#edit" id="show-dossier-appreciation-link">Ajouter une appréciation</a>
+            <a href="#edit" id="show-dossier-editer-link">Gerer l'admission</a>
 
 
-        </div>
     </section>
-    <div class="tout">
-        <div class="dossier-modal" id='edit'>
-            <div class="adder-notes">
-                <a href="#" id="close">
-                    <hr id="trait1">
-                    <hr id="trait2">
-                </a>
-                <h1>Dossier
-                </h1>
-                <form action="" class="dossier-form">
-                    <section>
-                        <fieldset>
-                            <legend>Notes concours</legend>
-                            <div class="form-dossier-ligne">
-                                <label for="math">Math</label>
-                                <input type="number" name="" id="math">
-                            </div>
-                            <div class="form-dossier-ligne">
-                                <label for="anglais">Anglais</label>
-                                <input type="number" name="" id="anglais">
-                            </div>
-                            <div class="form-dossier-ligne">
-                                <label for="francais">Français</label>
-                                <input type="number" name="" id="francais">
-                            </div>
-                        </fieldset>
-                        <fieldset class="etat-dossier">
-                            <legend>Admission du candidat</legend>
-                            <div class="form-dossier-ligne">
-                                <label for="attente">En attente</label><input type="radio" name="admis" id="attente"
-                                    value="wait">
-                                <label for="attente" class="rad"></label>
-
-                            </div>
-                            <div class="form-dossier-ligne">
-                                <label for="rejete">Rejeté</label>
-                                <input type="radio" name="admis" id="rejete" value="reject">
-                                <label for="rejete" class="rad"></label>
-
-                            </div>
-                            <div class="form-dossier-ligne">
-                                <label for="admis">Admis</label>
-                                <input type="radio" name="admis" id="admis" value="true">
-                                <label for="admis" class="rad"></label>
-
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Appreciation</legend>
-                            <div class="dossier-appreciation">
-                                <textarea name="appreciation" id="appreciation" cols="30" rows="10"></textarea>
-                            </div>
-                        </fieldset>
-                    </section>
-                    <button type="submit" id='saver-doss'>Save</button>
-                </form>
-            </div>
-        </div>
-    </div>
+    @include('admin.dossiers.editNote')
+    @include('admin.dossiers.editAppreciation')
+    @include('admin.dossiers.editAdmission')
     @push('js')
         <script src="{{ asset('admin/js/jquery.min.js') }}"></script>
         <script>
             $(function() {
-                $("#close").click(function() {
-                    $(".tout").toggle();
+                $(".tout").hide();
+                $(".close-note").click(function() {
+                    $(".note-modal").toggle();
                     $(".show").toggleClass('blur');
                 })
-                $(".tout").hide();
+                $(".close-appreciation").click(function() {
+                    $(".appreciation-modal").toggle();
+                    $(".show").toggleClass('blur');
+                })
+                $(".close-admission").click(function() {
+                    $(".admission-modal").toggle();
+                    $(".show").toggleClass('blur');
+                })
+
+                $("#show-dossier-editer-note-link").click(function(e) {
+                    e.preventDefault();
+                    $(".note-modal").toggle();
+                    $(".show").toggleClass('blur');
+                })
+                $("#show-dossier-appreciation-link").click(function(e) {
+                    e.preventDefault();
+                    $(".appreciation-modal").toggle();
+                    $(".show").toggleClass('blur');
+                })
                 $("#show-dossier-editer-link").click(function(e) {
-                    $(".tout").toggle();
+                    e.preventDefault();
+                    $(".admission-modal").toggle();
                     $(".show").toggleClass('blur');
                 })
             })
+        </script>
+        <script>
+            const lienA1 = document.getElementById('a1');
+            const lienA2 = document.getElementById('a2');
+
+            const tableauImg = [
+                '../admin/images/next-white.png',
+                '../admin/images/prev-white.png',
+                '../admin/images/prev.png',
+                '../admin/images/next.png'
+            ]
+            const next = document.getElementById('next')
+            const prev = document.getElementById('prev')
+            const lien1 = document.getElementById('a1')
+            const lien2 = document.getElementById('a2')
+
+            lienA1.addEventListener('mouseenter', e => {
+                e.preventDefault
+                prev.setAttribute('src', tableauImg[1])
+            })
+
+            lienA1.addEventListener('mouseleave', e => {
+                e.preventDefault
+                prev.setAttribute('src', tableauImg[2])
+            })
+
+            lienA2.addEventListener('mouseenter', e => {
+                e.preventDefault
+
+                next.setAttribute('src', tableauImg[0])
+            })
+
+            lienA2.addEventListener('mouseleave', e => {
+                e.preventDefault
+                next.setAttribute('src', tableauImg[3])
+            })
+
+
+
+
+            $(document).ready(function() {
+                let currentChild = 0;
+                let totalChildren = $('#container-tables').children().length;
+
+                $('#a1').click(function() {
+                    if (currentChild > 0) {
+                        currentChild--;
+                    }
+                    updateChild();
+                });
+
+                $('#a2').click(function() {
+                    if (currentChild < totalChildren - 1) {
+                        currentChild++;
+                    }
+                    updateChild();
+                });
+
+                function updateChild() {
+                    let $children = $('#container-tables').children();
+                    $children.removeClass('active');
+                    let startIndex = currentChild * 2;
+                    let endIndex = startIndex + 1;
+                    $($children.slice(startIndex, endIndex + 1)).addClass('active');
+
+                    if ($('.conatainer-table1:last-child').hasClass('active')) {
+                        $('#a2').attr('style', 'visibility:hidden')
+                    } else {
+                        $('#a2').attr('style', 'visibility:visible')
+                    }
+
+                    if ($(".conatainer-table1:first-child").hasClass('active')) {
+                        $('#a1').attr('style', 'visibility:hidden')
+                    } else {
+                        $('#a1').attr('style', 'visibility:visible')
+
+                    }
+
+                }
+                //How to create a modal with jquery?
+            });
         </script>
     @endpush
 @endsection

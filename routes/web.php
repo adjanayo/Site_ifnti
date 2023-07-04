@@ -1,8 +1,13 @@
 <?php
 
-use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DossierController;
+use App\Http\Controllers\CandidatController;
+use App\Http\Controllers\SessionConcourController;
+use App\Models\Dossier;
+use GuzzleHttp\Psr7\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,12 +23,6 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/login', function () {
 //     redirect(route("login"));
 // });
-
-Auth::routes();
-
-Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/sessionConcour', [App\Http\Controllers\SessionConcourController::class, 'index'])->name('sessionConcours');
-Route::get('/dossier/{dossier}', [App\Http\Controllers\DossierController::class, 'show'])->name('dossier.show');
 
 
 /**Vitrine */
@@ -91,9 +90,62 @@ Route::prefix("formation/")->name("formation.")->group(
     }
 );
 
+Route::prefix("actu/")->name("actu.")->group(
+    function () {
+        Route::get('ceremoniederemisedediplomes', function () {
+            return view('vitrine.pages.actu.ceremoniederemisedediplomes');
+        })->name('ceremoniederemisedediplomes');
+        Route::get('concoursdentree', function () {
+            return view('vitrine.pages.actu.concoursdentree');
+        })->name('concoursdentree');
+        Route::get('journeesportesouvertes', function () {
+            return view('vitrine.pages.actu.journeesportesouvertes');
+        })->name('journeesportesouvertes');
+        Route::get('prixmisstic', function () {
+            return view('vitrine.pages.actu.prixmisstic');
+        })->name('prixmisstic');
+        Route::get('partenariat', function () {
+            return view('vitrine.pages.actu.partenariat');
+        })->name('partenariat');
+        Route::get('nouvellesdecouvertes', function () {
+            return view('vitrine.pages.actu.nouvellesdecouvertes');
+        })->name('nouvellesdecouvertes');
+    }
+);
+/*ADMIN*/
+Auth::routes();
 
-Route::prefix('admission/')->name('admission.')->group(function(){
-    Route::get('formulaire', function (){
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/sessionConcour', [SessionConcourController::class, 'index'])->name('sessionConcours');
+Route::get('/sessionConcour/go', [CandidatController::class, 'session'])->name('sessionConcours.choix');
+Route::get('/dossier/{dossier}', [DossierController::class, 'show'])->name('dossier.show');
+Route::put('dossier/mis_a_jours_note/{dossier}', [DossierController::class, 'updateNote'])->name("dossier.updateNote");
+Route::put('dossier/mis_a_jours_appreciation/{dossier}', [DossierController::class, 'updateAppreciation'])->name("dossier.updateAppreciation");
+
+Route::put('dossier/mis_a_jours_admission/{dossier}', [DossierController::class, 'updateDossierStatus'])->name("dossier.updateAdmission");
+
+
+
+Route::delete('dossier/{dossier}', [DossierController::class, 'destroy'])->name("dossier.destroy");
+Route::get('dossiers/index', [DossierController::class, 'index'])->name("dossier.index");
+Route::get('dossiers/index/search', [DossierController::class, 'index'])->name("dossier.search");
+
+
+//routes d'inscription
+
+Route::get('dossier/formulaire/creation', [CandidatController::class, 'create'])->name("dossier.create");
+
+Route::post('dossier/enregistrement', [CandidatController::class, 'store'])->name("dossier.store");
+
+
+
+Route::prefix('admission/')->name('admission.')->group(function () {
+    Route::get('formulaire', function () {
         return view('admission.index');
     });
 });
+
+
+// Route::get('/login', function () {
+//     redirect(route("login"));
+// });

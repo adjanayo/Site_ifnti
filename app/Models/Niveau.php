@@ -13,7 +13,7 @@ class Niveau extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nom', 'annee','systeme'];
+    protected $fillable = ['nom', 'annee','systeme','serie','etablissement','dossier_id'];
 
     protected $table = 'niveaus';
 

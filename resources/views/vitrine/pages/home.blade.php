@@ -22,7 +22,7 @@
                                             prévu le 10 juillet 2023 à 07H00 dans nos locaux. </p>
                                         <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="#" class="hover-btn-new"><span>En savoir plus</span></a>
+                                        <a href="{{route("ifnti.presentation")}}" class="hover-btn-new"><span>En savoir plus</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                                             matériels récents. </p>
                                         <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="#" class="hover-btn-new"><span>En savoir plus</span></a>
+                                        <a href="{{route("ifnti.presentation")}}" class="hover-btn-new"><span>En savoir plus</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -65,7 +65,7 @@
                                             journée portes-ouvertes le samedi 21 mai 2023.Présentation de projets étudiants tous plus innovants les uns que les autres..</p>
                                         <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="#" class="hover-btn-new"><span>En savoir plus</span></a>
+                                        <a href="{{route("ifnti.presentation")}}" class="hover-btn-new"><span>En savoir plus</span></a>
                                     </div>
                                 </div>
                             </div>
