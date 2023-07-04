@@ -7,6 +7,7 @@ use App\Http\Requests\DossierUPRequest;
 use App\Http\Requests\NoteRequest;
 use App\Models\Dossier;
 use App\Models\Note;
+use Exception;
 use Illuminate\Http\Request;
 
 class DossierController extends Controller
@@ -68,8 +69,12 @@ class DossierController extends Controller
      */
     public function show(string $id)
     {
-        $dossier = Dossier::findorFail($id);
-        return view('admin.dossiers.show', compact('dossier'));
+        try {
+            $dossier = Dossier::findorFail($id);
+            return view('admin.dossiers.show', compact('dossier'));
+        } catch (Exception $e) {
+            return back();
+        }
     }
 
     /**
