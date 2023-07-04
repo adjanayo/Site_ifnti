@@ -24,6 +24,8 @@ En fin lancer les deux commandes suivantes dans deux terminales différents
 ```
 npm run dev
 ```
+
+
 ```
 php artisan serve
 ```
