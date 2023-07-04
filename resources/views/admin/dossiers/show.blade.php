@@ -2,22 +2,22 @@
 
 @section('action')
     <section class="show"> @switch($dossier->etat)
-        @case('admis')
-            <div style="width: 50px;height:50px; border-radius:50%; background:green" class="view_status">
-            </div>
-        @break
+            @case('admis')
+                <div style="width: 50px;height:50px; border-radius:50%; background:green" class="view_status">
+                </div>
+            @break
 
-        @case('rejeté')
-            <div style="width: 50px;height:50px; border-radius:50%; background:red"class="view_status">
+            @case('rejeté')
+                <div style="width: 50px;height:50px; border-radius:50%; background:red"class="view_status">
 
-            </div>
-        @break
+                </div>
+            @break
 
-        @default
-            <div style="width: 50px;height:50px; border-radius:50%;background:orange"class="view_status">
+            @default
+                <div style="width: 50px;height:50px; border-radius:50%;background:orange"class="view_status">
 
-            </div>
-    @endswitch
+                </div>
+        @endswitch
         <div class="dossier-vue">
             <h1 class="leDossier">Dossier No {{ $dossier->id }}</h1>
 
@@ -46,7 +46,17 @@
             <div class="container-tous">
                 <div class="container-candidat">
                     <h3>Informations candidat</h3>
-                    <div class="infos-personnelles">
+                    <div class="infos-personnelles"
+                        @switch($dossier->etat) 
+                        @case('admis')
+                            style="border: 2px solid #1aa385"
+                            @break
+                        @case('rejeté')
+                            style="border: 2px solid red"
+                            @break
+                        @default
+                            style="border: 2px solid orange"
+                    @endswitch>
                         <div class="infos">
                             <p>Nom</p>
                             <p class="dot">:</p>
@@ -73,7 +83,7 @@
                             <p>{{ $dossier->candidat->dateNaissance }}</p>
                         </div>
                         <div class="infos">
-                            <p>Etbls de provenance</p>
+                            <p>Ets de provenance</p>
                             <p class="dot">:</p>
                             <p>{{ $dossier->candidat->etablissement }}</p>
                         </div>
@@ -102,8 +112,18 @@
 
                 <div class="divers">
                     <h3>Notes</h3>
-                    <div class="container-notes">
-
+                    <div class="container-notes"
+                        @switch($dossier->etat) 
+                        @case('admis')
+                            style="border: 2px solid #1aa385"
+                            @break
+                        @case('rejeté')
+                            style="border: 2px solid red"
+                            @break
+                        @default
+                            style="border: 2px solid orange"
+                    @endswitch>
+                        
                         <div class="notes">
                             <p>Moyenne bac</p>
                             <p class="dot">:</p>
@@ -116,7 +136,18 @@
                         </div>
                     </div>
                     <h3>Informations Concours</h3>
-                    <div class="container-notes">
+                    <div class="container-notes"
+                        @switch($dossier->etat) 
+                        @case('admis')
+                            style="border: 2px solid #1aa385"
+                            @break
+                        @case('rejeté')
+                            style="border: 2px solid red"
+                            @break
+                        @default
+                            style="border: 2px solid orange"
+                    @endswitch>
+
                         <div class="notes">
                             <p>MATH</p>
                             <p class="dot">:</p>

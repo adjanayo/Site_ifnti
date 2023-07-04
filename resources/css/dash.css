@@ -685,21 +685,3 @@ body {
  * animation slide-fwd-center
  * ----------------------------------------
  */
-@keyframes slide-fwd-center {
-    0% {
-        -webkit-transform        : translateZ(0);
-        transform                : translateZ(0);
-    }
-
-    100% {
-        -webkit-transform        : translateZ(160px);
-        transform                : scale(160px);
-    }
-}
-
-
-.view_status {
-    -webkit-animation        : slide-fwd-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
-    animation                : slide-fwd-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite both;
-
-}

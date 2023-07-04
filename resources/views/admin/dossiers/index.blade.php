@@ -10,7 +10,7 @@
                     <select name="etat" id="etat" value="{{ $input['etat'] ?? '' }}">
                         <option value=""> Selectionner</option>
                         <option value="en attente"> En attente</option>
-                        <option value="complet"> Complet</option>
+                        <option value="admis"> Admis</option>
                         <option value="rejeté"> Réjété</option>
                         <option value="tous"> Tous</option>
                     </select>
@@ -66,10 +66,10 @@
                             <td>
 
                                 @switch($dossier->etat)
-                                    @case('complet')
+                                    @case('admis')
                                         <div class="etat est_complet">
                                             @include('admin.composants.dash.accepte')
-                                            Complet
+                                            Admis
                                         </div>
                                     @break
 
