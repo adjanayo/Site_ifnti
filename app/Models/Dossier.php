@@ -43,5 +43,7 @@ class Dossier extends Model
         return $this->hasMany(Niveau::class);
     }
 
-
+    public function entretien():BelongsTo{
+        return $this->belongsTo(Entretien::class);
+    }
 }

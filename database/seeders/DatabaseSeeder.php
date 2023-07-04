@@ -7,6 +7,7 @@ namespace Database\Seeders;
 use App\Models\Candidat;
 use App\Models\Decoupage;
 use App\Models\Dossier;
+use App\Models\Entretien;
 use App\Models\Matiere;
 use App\Models\Niveau;
 use App\Models\SessionConcour;
@@ -29,7 +30,7 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         Candidat::factory()
-            ->count(20)
+            ->count(5)
             ->has(
                 Dossier::factory()
                     ->hasNote()
@@ -39,6 +40,7 @@ class DatabaseSeeder extends Seeder
                             'date_fin' => Date::create(2023, 7, 14),
                         ]
                     ))
+                    ->for(Entretien::factory())
                     ->has(Niveau::factory()
                         ->count(5)
                         ->has(
@@ -101,8 +103,8 @@ class DatabaseSeeder extends Seeder
                         ))
             )
             ->create();
-            Candidat::factory()
-            ->count(20)
+        Candidat::factory()
+            ->count(5)
             ->has(
                 Dossier::factory()
                     ->hasNote()
@@ -112,6 +114,7 @@ class DatabaseSeeder extends Seeder
                             'date_fin' => Date::create(2023, 9, 14),
                         ]
                     ))
+                    ->for(Entretien::factory())
                     ->has(Niveau::factory()
                         ->count(5)
                         ->has(
@@ -176,78 +179,79 @@ class DatabaseSeeder extends Seeder
             ->create();
 
         Candidat::factory()
-        ->count(20)
-        ->has(
-            Dossier::factory()
-                ->hasNote()
-                ->for(SessionConcour::factory()->state(
-                    [
-                        'date_debut' => Date::create(2023, 9, 10),
-                        'date_fin' => Date::create(2023, 9, 14),
-                    ]
-                ))
-                ->has(Niveau::factory()
-                    ->count(5)
-                    ->has(
-                        Decoupage::factory()
-                            ->count(3)
-                            ->hasBulletin()
-                            ->has(
-                                Matiere::factory()
-                                    ->count(3)
-                                    ->state(
-                                        new Sequence(
-                                            [
-                                                'nom' => "math",
-
-                                            ],
-                                            [
-                                                'nom' => "ang",
-                                            ],
-                                            [
-                                                'nom' => "fr",
-                                            ]
-                                        )
-                                    )
-                            )
-                            ->state(
-                                new Sequence(
-                                    [
-                                        'nom' => "Tim 1",
-
-                                    ],
-                                    [
-                                        'nom' => "Trim 2",
-                                    ],
-                                    [
-                                        'nom' => "Trim 3",
-                                    ],
-
-                                )
-                            )
-                    )
-                    ->state(
-                        new Sequence(
-                            [
-                                'nom' => "2nde",
-
-                            ],
-                            [
-                                'nom' => "1ere",
-                            ],
-                            [
-                                'nom' => "Tle",
-                            ],
-                            [
-                                'nom' => "proba",
-                            ],
-                            [
-                                'nom' => "bac",
-                            ]
-                        )
+            ->count(5)
+            ->has(
+                Dossier::factory()
+                    ->hasNote()
+                    ->for(SessionConcour::factory()->state(
+                        [
+                            'date_debut' => Date::create(2023, 9, 10),
+                            'date_fin' => Date::create(2023, 9, 14),
+                        ]
                     ))
-        )
-        ->create();
+                    // ->for(Entretien::factory())
+                    ->has(Niveau::factory()
+                        ->count(5)
+                        ->has(
+                            Decoupage::factory()
+                                ->count(3)
+                                ->hasBulletin()
+                                ->has(
+                                    Matiere::factory()
+                                        ->count(3)
+                                        ->state(
+                                            new Sequence(
+                                                [
+                                                    'nom' => "math",
+
+                                                ],
+                                                [
+                                                    'nom' => "ang",
+                                                ],
+                                                [
+                                                    'nom' => "fr",
+                                                ]
+                                            )
+                                        )
+                                )
+                                ->state(
+                                    new Sequence(
+                                        [
+                                            'nom' => "Tim 1",
+
+                                        ],
+                                        [
+                                            'nom' => "Trim 2",
+                                        ],
+                                        [
+                                            'nom' => "Trim 3",
+                                        ],
+
+                                    )
+                                )
+                        )
+                        ->state(
+                            new Sequence(
+                                [
+                                    'nom' => "2nde",
+
+                                ],
+                                [
+                                    'nom' => "1ere",
+                                ],
+                                [
+                                    'nom' => "Tle",
+                                ],
+                                [
+                                    'nom' => "proba",
+                                ],
+                                [
+                                    'nom' => "bac",
+                                ]
+                            )
+                        ))
+            )
+            ->create();
         $this->call(
             [
                 AdminSeeder::class,
