@@ -30,7 +30,6 @@
                             <th>Genre</th>
                             <th>Moyenne Bac</th>
                             <th>Moyenne concours</th>
-                            <th>Serie</th>
 
                             <th>Date de soumission</th>
                             <th>Status</th>
@@ -52,7 +51,6 @@
                                 <td>{{ $dossier->candidat->genre }}</td>
                                 <td>{{ $dossier->moyenne_bac }}</td>
                                 <td>{{ $dossier->moyenne_concours }}</td>
-                                <td>{{ $dossier->serie }}</td>
 
                                 <td>{{ $dossier->date_soumission }}</td>
                                 <td>

@@ -233,7 +233,6 @@ input:checked ~ .rad {
 #trait2 {
     position: absolute;
     left: 20px;
-    top: -30px;
     width: 2px;
     height: 30px;
     color: red;
@@ -253,8 +252,6 @@ input:checked ~ .rad {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100vw;
-    height: 100vh;
     background-color: rgba(255, 255, 255, 0.309);
     z-index: 999;
     display: flex;
@@ -270,6 +267,7 @@ input:checked ~ .rad {
 .blur {
     filter: blur(10px);
     z-index: -1;
+    position: relative;
 }
 
 .saver-doss {

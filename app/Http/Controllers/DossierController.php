@@ -22,7 +22,9 @@ class DossierController extends Controller
     {
         $query = Dossier::query();
 
-        if ($request->validated('etat')) {
+        if ($request->validated('etat') == 'tous') {
+            $query = $query;
+        } elseif ($request->validated('etat')) {
             $query = $query->where('etat', '=', $request->validated('etat'));
         }
 
@@ -33,6 +35,8 @@ class DossierController extends Controller
         if ($request->validated('session_id')) {
             $query = $query->where('sessionconcour_id', '=', $request->validated('session_id'));
         }
+
+
 
 
         return view('admin.dossiers.index', [

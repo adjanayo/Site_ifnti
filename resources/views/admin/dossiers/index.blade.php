@@ -12,6 +12,7 @@
                         <option value="en attente"> En attente</option>
                         <option value="complet"> Complet</option>
                         <option value="rejeté"> Réjété</option>
+                        <option value="tous"> Tous</option>
                     </select>
                 </div>
 
@@ -40,8 +41,6 @@
                         <th>Genre</th>
                         <th>Moyenne Bac</th>
                         <th>Moyenne concours</th>
-                        <th>Serie</th>
-
                         <th>Date de soumission</th>
                         <th>Status</th>
                     </tr>
@@ -63,8 +62,6 @@
                             <td>{{ $dossier->candidat->genre }}</td>
                             <td>{{ $dossier->moyenne_bac }}</td>
                             <td>{{ $dossier->moyenne_concours }}</td>
-                            <td>{{ $dossier->serie }}</td>
-
                             <td>{{ $dossier->date_soumission }}</td>
                             <td>
 
@@ -72,7 +69,7 @@
                                     @case('complet')
                                         <div class="etat est_complet">
                                             @include('admin.composants.dash.accepte')
-                                            Conplet
+                                            Complet
                                         </div>
                                     @break
 
@@ -101,4 +98,18 @@
             </div>
 
         </section>
+        @push('js')
+        <script src="{{ asset("admin/js/jquery.min.js") }}"></script>
+            <script>
+                $(document).ready(function() {
+                    $(".clickable-row").click(function() {
+                        // Récupérer l'URL ou l'action à effectuer lors du clic
+                        var url = $(this).data("href");
+
+                        // Rediriger vers l'URL ou exécuter une action spécifique
+                        window.location = url;
+                    });
+                });
+            </script>
+        @endpush
     @endsection
