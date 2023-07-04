@@ -23,6 +23,8 @@ php artisan migrate:fresh --seed
 En fin lancer les deux commandes suivantes dans deux terminales différents
 ```
 npm run dev
+```
+```
 php artisan serve
 ```
 Connecter vous à l'application et bon travail
