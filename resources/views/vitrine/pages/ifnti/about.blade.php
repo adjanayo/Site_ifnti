@@ -15,7 +15,7 @@
                             <img src="{{ asset('vitrine/images/img/page3_img2.png') }}" alt="" class="img-fluid">
                         </div>
                         <div class="post-content">
-                            <div class="post-date">
+                            <!--<div class="post-date">
                                 <span class="day">Ouver de </span>
                                 <span class="month">7h à 18h</span>
                             </div>
@@ -23,7 +23,7 @@
                                 <span><i class="fa fa-calendar"></i> <a href="#">May 11, 2015</a> </span>
                                 <span><i class="fa fa-tag"></i> <a href="#">News</a> </span>
                                 <span><i class="fa fa-comments"></i> <a href="#">12 Comments</a></span>
-                            </div>
+                            </div>-->
                             <div class="blog-title">
                                 <h2><a href="#" title="">Presentation</a></h2>
                             </div>

@@ -20,7 +20,7 @@
                                         <p class="lead" id="concour"> Le concours d'entrée pour l'année académique
                                             2023-2024 est
                                             prévu le 10 juillet 2023 à 07H00 dans nos locaux. </p>
-                                        <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
+                                        <a href="https://forms.gle/wgVHzuGSSbQij73g7" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <a href="{{route("ifnti.presentation")}}" class="hover-btn-new"><span>En savoir plus</span></a>
                                     </div>
@@ -41,7 +41,7 @@
                                         </h2>
                                         <p class="lead" data-animation="animated fadeInLeft">Nos salles sont équipées de
                                             matériels récents. </p>
-                                        <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
+                                        <a href="https://forms.gle/wgVHzuGSSbQij73g7" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <a href="{{route("ifnti.presentation")}}" class="hover-btn-new"><span>En savoir plus</span></a>
                                     </div>
@@ -63,7 +63,7 @@
                                         </h2>
                                         <p class="lead" data-animation="animated fadeInLeft">L'IFNTI organise une
                                             journée portes-ouvertes le samedi 21 mai 2023.Présentation de projets étudiants tous plus innovants les uns que les autres..</p>
-                                        <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
+                                        <a href="https://forms.gle/wgVHzuGSSbQij73g7" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         <a href="{{route("ifnti.presentation")}}" class="hover-btn-new"><span>En savoir plus</span></a>
                                     </div>
@@ -86,9 +86,9 @@
                                         <p class="lead" data-animation="animated fadeInLeft">Grand succès lors de la
                                             remise des diplômes. Les six candidats ont été diplômés et ont tous eu au moins une
                                             proposition d'emploie...</p>
-                                        <a href="#" class="hover-btn-new"><span>Je m’inscris</span></a>
+                                        <a href="https://forms.gle/wgVHzuGSSbQij73g7" class="hover-btn-new"><span>Je m’inscris</span></a>
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                        <a href="#" class="hover-btn-new"><span>En savoir plus</span></a>
+                                        <a href="{{route("ifnti.presentation")}}" class="hover-btn-new"><span>En savoir plus</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +136,7 @@
                             L’IFNTI dispense une formation supérieure en licence de type LMD en informatique. L’IFNTI
                             est une Association à but non lucratif (ASBL). . </p>
 
-                        <a href="#" class="hover-btn-new orange"><span>En savoir plus</span></a>
+                        <a href="{{route("ifnti.presentation")}}" class="hover-btn-new orange"><span>En savoir plus</span></a>
                     </div>
                 </div>
 
@@ -201,7 +201,7 @@
                     <span><br>
                         <i class="fa fa-angle-right"></i>Notre diplôme est reconnu par l'état togolais
                     </span><br>
-                    <a href="#" class="hover-btn-new orange" style="margin-top: 10px;"><span>En savoir
+                    <a href="{{route("actualite")}}" class="hover-btn-new orange" style="margin-top: 10px;"><span>En savoir
                             plus</span></a>
                 </div>
             </div>

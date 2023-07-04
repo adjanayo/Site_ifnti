@@ -37,22 +37,22 @@
                                     représenter et concevoir des systèmes logiciels avec l'Unified Modeling Language.
                                     Devenez un expert de la modélisation UML avec nous.</p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -72,22 +72,22 @@
                                     SQL. Développez vos compétences en gestion des données relationnelles pour une
                                     carrière prometteuse. </p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -105,22 +105,22 @@
                                     PL/pgSQL. Écrivez des requêtes avancées et développez des fonctions/procédures
                                     stockées. Devenez un expert du développement de bases de données avec nous.</p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -142,22 +142,22 @@
                                     représenter et concevoir des systèmes logiciels avec l'Unified Modeling Language.
                                     Devenez un expert de la modélisation UML avec nous.</p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -177,22 +177,22 @@
                                     SQL. Développez vos compétences en gestion des données relationnelles pour une
                                     carrière prometteuse. </p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -210,22 +210,22 @@
                                     PL/pgSQL. Écrivez des requêtes avancées et développez des fonctions/procédures
                                     stockées. Devenez un expert du développement de bases de données avec nous.</p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>

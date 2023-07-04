@@ -1,7 +1,7 @@
 <div class="tout admission-modal">
     <div class="dossier-modal" id='edit-admission'>
         <div class="adder-notes">
-            <a href="#" class="close-admission">
+            <a href="#" class="close-admission" id="close">
                 <hr id="trait1">
                 <hr id="trait2">
             </a>

@@ -30,9 +30,9 @@
             <h2>Français</h2>
             <h2>Anglais</h2>
 
-            <h2>Mathématique(sans l'étude des fonctions ni calcul des intégrales)</h2>
-            <p id="frais">Frais d'inscription au concours: 10 000 fcfa</p>
-            <h2 id="red">La date du prochain concours est le 29 septembre 2022 à 7h00 </h2>
+            <h2>Mathématique</h2><h2>(sans l'étude des fonctions ni calcul des intégrales)</h2>
+            <p id="frais">Frais d'inscription au concours: <h1 id="red" class="modif lf">10 000 fcfa</h1></p>
+            <h2 id="red" class="modif lf">La date du prochain concours est le 29 septembre 2022 à 7h00 </h2>
         </div>
     </div>
 @endsection
