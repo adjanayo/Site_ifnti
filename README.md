@@ -6,4 +6,4 @@
 ```
 composer require laravel/ui
 ```
--Rassurez vous d'avoir nodejs et npm installer sinon [installer nodejs|https://github.com/nodejs/help/wiki/Installation]
+-Rassurez vous d'avoir nodejs et npm installer sinon [installer nodejs](https://github.com/nodejs/help/wiki/Installation)
