@@ -53,12 +53,11 @@
             <div class="col-lg-4 col-md-4 col-xs-12">
                 <div class="widget clearfix">
                     <div class="widget-title">
-                        <h3>Contact Details</h3>
+                        <h3>Adresses</h3>
                     </div>
 
                     <ul class="footer-links">
-                        <li><a href="mailto:#">info@siteweb.com</a></li>
-                        <li><a href="https://dev.ifnti.com/">site web</a></li>
+                        <li><a href="mailto:#">contact@ifnti.com</a></li>
                         <li>
                             300 BP 40 Sokodé – Togo, Quartier Administratif, entre le lycée
                             Moderne et la Sotoco
@@ -82,7 +81,7 @@
         <div class="footer-distributed">
             <div class="footer-center">
                 <p class="footer-company-name">
-                    All Rights Reserved. &copy; 2022 <a href="{{ route('ifnti.presentation') }}">IFNTI</a> (Institut de
+                    All Rights Reserved. &copy; 2023 <a href="{{ route('ifnti.presentation') }}">IFNTI</a> (Institut de
                     formation aux normes et technologies de l'informatique)
                 </p>
             </div>
