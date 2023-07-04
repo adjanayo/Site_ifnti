@@ -35,22 +35,22 @@
                                 <p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets
                                     geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -67,22 +67,22 @@
                                 <p>Lorem ipsum door sit amet, fugiat deicata avise id cum, no quo maiorum intel ogrets
                                     geuiat operts elicata libere avisse id cumlegebat, liber regione eu sit.... </p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>

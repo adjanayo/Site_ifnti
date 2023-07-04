@@ -37,22 +37,22 @@
                                     résolution de problèmes et conception d'algorithmes. Développez votre expertise pour
                                     réussir dans le domaine de l'Algorithmie. </p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div><!-- end col -->
 
@@ -70,22 +70,22 @@
                                     applications de bureau puissantes. Maîtrisez les langages et les outils essentiels.
                                     Développez votre expertise avec nous. </p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div><!-- end col -->
 
@@ -104,22 +104,22 @@
                                     développer des compétences en HTML, CSS, JavaScript et bien plus encore, et
                                     lancez-vous dans le monde passionnant du développement web.</p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div><!-- end col -->
             </div><!-- end row -->
@@ -142,22 +142,22 @@
                                     Devenez un expert de la programmation embarquée et concrétisez vos projets innovants
                                     avec Arduino.</p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div><!-- end col -->
 
@@ -175,22 +175,22 @@
                                     utilisateur captivantes et maîtrisez les langages de programmation mobile. Lancez
                                     votre carrière dans le monde du développement d'applications mobiles avec nous. </p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div><!-- end col -->
 
@@ -209,22 +209,22 @@
                                     les ordinateurs de bureau. Développez votre expertise et ouvrez de nouvelles
                                     perspectives professionnelles dans le domaine du développement logiciel. </p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div><!-- end col -->
             </div><!-- end row -->

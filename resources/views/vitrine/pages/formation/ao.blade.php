@@ -37,22 +37,22 @@
                                     instructions, et devenir un expert dans le domaine de l'architecture et de la
                                     programmation des processeurs.</p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -70,22 +70,22 @@
                                     fonctionnement interne des systèmes. Rejoignez-nous pour maîtriser l'art du Code
                                     Assembleur et devenir un développeur polyvalent et compétent. </p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
 
@@ -105,22 +105,22 @@
                                     micro-programmes. Rejoignez-nous pour maîtriser la micro-programmation Z80 et
                                     devenir un expert dans ce domaine spécialisé.</p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
@@ -145,22 +145,22 @@
                                     systèmes. Rejoignez-nous pour devenir un expert dans le domaine de la mémoire
                                     informatique.</p>
                             </div>
-                            <div class="course-rating">
+                            <!--<div class="course-rating">
                                 4.5
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star-half"></i>
-                            </div>
+                            </div>-->
                         </div>
-                        <div class="course-meta-bot">
+                        <!--<div class="course-meta-bot">
                             <ul>
                                 <li><i class="fa fa-calendar" aria-hidden="true"></i> 6 Month</li>
                                 <li><i class="fa fa-users" aria-hidden="true"></i> 56 Student</li>
                                 <li><i class="fa fa-book" aria-hidden="true"></i> 7 Books</li>
                             </ul>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
             </div>
