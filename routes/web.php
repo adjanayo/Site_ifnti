@@ -122,6 +122,16 @@ Route::get('/dossier/{dossier}', [DossierController::class, 'show'])->name('doss
 Route::put('dossier/mis_a_jours_note/{dossier}', [DossierController::class, 'updateNote'])->name("dossier.updateNote");
 Route::put('dossier/mis_a_jours_appreciation/{dossier}', [DossierController::class, 'updateAppreciation'])->name("dossier.updateAppreciation");
 
+/* -------------------------------------------------------------------------- */
+/*                         Create an section route get                        */
+/* -------------------------------------------------------------------------- */
+
+Route::get('/create_session/create', [SessionConcourController::class, 'create'])->name('create_session');
+Route::post('/create_session/store', [SessionConcourController::class, 'store'])->name('store_session');
+
+/* -------------------------------------------------------------------------- */
+/*                                     FIN                                    */
+/* -------------------------------------------------------------------------- */
 Route::put('dossier/mis_a_jours_admission/{dossier}', [DossierController::class, 'updateDossierStatus'])->name("dossier.updateAdmission");
 
 
