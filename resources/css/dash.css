@@ -363,7 +363,6 @@ body {
 
 
 .page-content .grid>article {
-    position               : relative;
     clear                  : both;
     display                : flex;
     justify-content        : center;
