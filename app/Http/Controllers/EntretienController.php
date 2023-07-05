@@ -15,7 +15,16 @@ class EntretienController extends Controller
      */
     public function index()
     {
-        //
+        $entretiens = Entretien::paginate(1);
+        $dossiers = [];
+
+        foreach ( $entretiens as $entretien ) {
+            $dossiers[ $entretien->id ] = Dossier::orderBy("moyenne_concours", 'desc')->get()->where( 'entretien_id', $entretien->id );
+            // dd($lesDossiers);
+        }
+        // dd($dossiers);
+
+        return view( 'admin.entretiens', compact( 'entretiens', 'dossiers' ) );
     }
 
     /**

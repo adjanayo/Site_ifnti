@@ -137,7 +137,10 @@ Route::get('entretien/index', [EntretienController::class, 'index'])->name("entr
 Route::get('entretien/{entretien}', [EntretienController::class, 'show'])->name("entretien.show");
 Route::put('entretien/mise_a_jour/{entretien}', [EntretienController::class, 'update'])->name("entretien.update");
 Route::get('entretien/creation', [EntretienController::class, 'create'])->name("entretien.create");
+Route::get('entretien/assigner_un_dossier', [EntretienController::class, 'addDossier'])->name("entretien.addDosier");
 Route::post('entretien/creation', [EntretienController::class, 'store'])->name("entretien.store");
+Route::post('entretien/retirer_un_dossier/{entretien}', [EntretienController::class, 'retirerDossier'])->name("entretien.retirer");
+Route::post('entretien/assigner_un_dossier/{entretien}', [EntretienController::class, 'assignerDossier'])->name("entretien.assigner");
 //routes d'inscription
 
 Route::get('dossier/formulaire/creation', [CandidatController::class, 'create'])->name("dossier.create");
