@@ -41,7 +41,7 @@ class EntretienController extends Controller
     {
         try {
             $entretien = Entretien::findOrFail($id);
-            $dossiers[ $entretien->id ] = Dossier::orderBy("moyenne_concours", 'desc')->get()->where( '$entretien_id', $entretien->id );
+            $dossiers[$entretien->id] = Dossier::orderBy("moyenne_concours", 'desc')->get()->where('$entretien_id', $entretien->id);
         } catch (Exception $e) {
             return back();
         }
@@ -76,5 +76,27 @@ class EntretienController extends Controller
         $entretien = Entretien::findOrFail($id);
         $entretien->delete();
         return to_route('entretiens', $id);
+    }
+
+    public function assignerDossier(Request $request, $id)
+    {
+        if ($request->all() == '' | $request->all() == null) {
+            return back();
+        } else {
+            foreach ($request->all() as  $value) {
+                $doss  = Dossier::findOrFail($value);
+                $doss->entretien_id = $id;
+                $doss->save();
+            }
+        }
+        return to_route('entretien.show', $id);
+    }
+
+    public function retirerDossier(Request $request, $id)
+    {
+        $doss  = Dossier::findOrFail($request->dossier);
+        $doss->entretien_id = null;
+        $doss->save();
+        return to_route('entretien.show', $id);
     }
 }
