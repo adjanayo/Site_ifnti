@@ -97,14 +97,14 @@ class DossierController extends Controller
         $note->ang = $ang;
         $note->fr = $fr;
         $note->save();
-        return redirect(route("dossier.show", $id));
+        return to_route("dossier.show", $id);
     }
     public function updateAppreciation(DossierUpRequest $request,  $id)
     {
         $dossier = Dossier::findOrFail($id);
         $dossier->appreciation = $request->appreciation;
         $dossier->save();
-        return redirect(route("dossier.show", $id));
+        return to_route("dossier.show", $id);
     }
     public function updateDossierStatus(Request $request,  $id)
     {
@@ -113,7 +113,7 @@ class DossierController extends Controller
         $dossier->etat = $request->etat;
         // dd($dossier->etat);
         $dossier->save();
-        return redirect(route("dossier.show", $id));
+        return to_route("dossier.show", $id);
     }
 
     /**
@@ -121,6 +121,8 @@ class DossierController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $dossier = Dossier::findOrFail($id);
+        $dossier->delete();
+        return to_route("dossier.index", $id);
     }
 }
