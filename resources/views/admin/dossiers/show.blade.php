@@ -123,7 +123,7 @@
                         @default
                             style="border: 2px solid orange"
                     @endswitch>
-                        
+
                         <div class="notes">
                             <p>Moyenne bac</p>
                             <p class="dot">:</p>
@@ -357,6 +357,8 @@
                 }
                 //How to create a modal with jquery?
             });
+
+    
         </script>
     @endpush
 @endsection

@@ -4,7 +4,7 @@ namespace App\Http\Requests\dossiers;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class SearchFormRequest extends FormRequest
+class SessionFormCreateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,9 +22,8 @@ class SearchFormRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'date_entretien' => ['date', 'nullable'],
-            'session_id' => ['numeric', 'gte:0', 'nullable'],
-            'etat' => ['string', 'nullable'],
+            'date_debut' => ['required', 'date'],
+            'date_fin' => ['required', 'date']
         ];
     }
 }
