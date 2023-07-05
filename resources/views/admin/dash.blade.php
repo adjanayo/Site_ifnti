@@ -61,11 +61,11 @@
                     </a>
                 </li>
               {{--  <li>
-                    <a href="#0">
+                    <a href="#">
                         <svg>
                             <use xlink:href="#appearance"></use>
                         </svg>
-                        <span>Appearance</span>
+                        <span>Créer une session</span>
                     </a>
                 </li>
                 <li class="menu-heading">
