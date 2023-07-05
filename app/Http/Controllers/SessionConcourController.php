@@ -23,6 +23,7 @@ class SessionConcourController extends Controller
         //
         $sessionConcours = SessionConcour::paginate(1);
         $dossiers = [];
+        $entretien = null;
 
         foreach ($sessionConcours as $sessionConcour) {
             $dossiers[$sessionConcour->id] = Dossier::orderBy("moyenne_concours", 'desc')->get()->where('sessionconcour_id', $sessionConcour->id);
@@ -30,7 +31,8 @@ class SessionConcourController extends Controller
         }
         // dd($dossiers);
 
-        return view('admin.sessions.index', compact('sessionConcours', 'dossiers'));
+
+        return view( 'admin.sessions.index', compact( 'sessionConcours', 'dossiers', 'entretien' ) );
     }
 
     /**

@@ -17,14 +17,17 @@ return new class extends Migration
             $table->float('moyenne_concours')->nullable();
             $table->date('date_soumission')->nullable();
             $table->string('etat')->nullable();
-            $table->date('date_entretien')->nullable();
-            $table->boolean('estValide')->nullable();
+            $table->bigInteger('entretien_id')->nullable();
+            // $table->bigInteger('entretien_id')->nullable();
+            $table->boolean('estentretenu')->nullable();
             $table->string('appreciation')->nullable();
             $table->bigInteger('candidat_id');
             $table->bigInteger('sessionconcour_id');
             $table->timestamps();
             $table->foreign('candidat_id')->references('id')->on('candidats')->onDelete('cascade');
             $table->foreign('sessionconcour_id')->references('id')->on('sessionconcours')->onDelete('cascade');
+            $table->foreign('entretien_id')->references('id')->on('entretiens')->onDelete('cascade');
+
         });
     }
 
