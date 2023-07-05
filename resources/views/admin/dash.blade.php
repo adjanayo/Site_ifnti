@@ -60,14 +60,14 @@
                         <span>Dossiers</span>
                     </a>
                 </li>
-              {{--  <li>
-                    <a href="#0">
+               <li>
+                    <a href="{{route("entretiens")}}">
                         <svg>
                             <use xlink:href="#appearance"></use>
                         </svg>
-                        <span>Appearance</span>
+                        <span>Entretiens</span>
                     </a>
-                </li>
+                </li>{{--
                 <li class="menu-heading">
                     <h3>Settings</h3>
                 </li>

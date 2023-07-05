@@ -24,7 +24,7 @@ class EntretienController extends Controller
         }
         // dd($dossiers);
 
-        return view( 'admin.entretiens', compact( 'entretiens', 'dossiers' ) );
+        return view( 'admin.entretiens.index', compact( 'entretiens', 'dossiers' ) );
     }
 
     /**

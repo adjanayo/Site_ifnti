@@ -98,7 +98,7 @@
                     <td>
                         <form action="{{ route('entretien.assigner') }}" method="post">
                             @csrf
-                            <button type="submit">Ajouter</button>
+                            <button type="submit" class='saver-doss'>Ajouter</button>
                         </form>
                     </td>
                     @endif
