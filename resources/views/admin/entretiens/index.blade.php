@@ -81,9 +81,9 @@
 
                                 </td>
                                 <td>
-                                    <form action="{{ route('entretien.retirer') }}" method="post">
+                                    <form action="{{ route('entretien.retirer', $dossier->id) }}" method="post">
                                         @csrf
-                                        <button type="submit">Retirer</button>
+                                        <button type="submit" class='saver-doss'>Retirer</button>
                                     </form>
                                 </td>
                             </tr>
